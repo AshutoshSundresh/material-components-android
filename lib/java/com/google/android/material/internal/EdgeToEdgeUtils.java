@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import static android.graphics.Color.TRANSPARENT;
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.color.MaterialColors.isColorLight;
+import static com.bottombar.navigation.material.color.MaterialColors.isColorLight;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -33,7 +33,7 @@ import androidx.annotation.RestrictTo;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.color.MaterialColors;
 
 /**
  * A util class that helps apply edge-to-edge mode to activity/dialog windows.

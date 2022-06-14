@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static androidx.core.content.ContextCompat.getSystemService;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.ripple;
+package com.bottombar.navigation.material.ripple;
 
 import android.content.res.ColorStateList;
 import android.graphics.Canvas;
@@ -28,9 +28,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.annotation.RestrictTo.Scope;
 import androidx.core.graphics.drawable.TintAwareDrawable;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 
 /**
  * A compat {@link Drawable} that is used to provide an overlay for pressed, focused, and hovered

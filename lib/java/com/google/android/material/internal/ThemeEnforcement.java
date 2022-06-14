@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -93,7 +93,7 @@ public final class ThemeEnforcement {
    *
    * <p>New components should prefer to use {@link #obtainStyledAttributes(Context, AttributeSet,
    * int[], int, int, int...)}, and use {@link
-   * com.google.android.material.resources.MaterialResources} as a replacement for the functionality
+   * com.bottombar.navigation.material.resources.MaterialResources} as a replacement for the functionality
    * in {@link androidx.appcompat.widget.TintTypedArray}.
    *
    * <p>If the {@code enforceTextAppearance} attribute is set to <code>true</code> and

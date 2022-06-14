@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
 import android.graphics.RectF;
 

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.HapticFeedbackConstants.CLOCK_TICK;
 import static android.view.HapticFeedbackConstants.VIRTUAL_KEY;
 import static android.view.View.GONE;
 import static androidx.core.content.ContextCompat.getSystemService;
-import static com.google.android.material.timepicker.TimeFormat.CLOCK_12H;
-import static com.google.android.material.timepicker.TimeFormat.CLOCK_24H;
+import static com.bottombar.navigation.material.timepicker.TimeFormat.CLOCK_12H;
+import static com.bottombar.navigation.material.timepicker.TimeFormat.CLOCK_24H;
 import static java.util.Calendar.MINUTE;
 
 import android.os.Build.VERSION;
@@ -31,11 +31,11 @@ import android.os.Build.VERSION_CODES;
 import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.timepicker.ClockHandView.OnActionUpListener;
-import com.google.android.material.timepicker.ClockHandView.OnRotateListener;
-import com.google.android.material.timepicker.TimePickerControls.ActiveSelection;
-import com.google.android.material.timepicker.TimePickerView.OnPeriodChangeListener;
-import com.google.android.material.timepicker.TimePickerView.OnSelectionChange;
+import com.bottombar.navigation.material.timepicker.ClockHandView.OnActionUpListener;
+import com.bottombar.navigation.material.timepicker.ClockHandView.OnRotateListener;
+import com.bottombar.navigation.material.timepicker.TimePickerControls.ActiveSelection;
+import com.bottombar.navigation.material.timepicker.TimePickerView.OnPeriodChangeListener;
+import com.bottombar.navigation.material.timepicker.TimePickerView.OnSelectionChange;
 import java.util.Calendar;
 
 class TimePickerClockPresenter

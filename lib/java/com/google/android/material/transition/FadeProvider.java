@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import static com.google.android.material.transition.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.TransitionUtils.lerp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

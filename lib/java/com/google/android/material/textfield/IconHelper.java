@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import static com.google.android.material.internal.ViewUtils.dpToPx;
+import static com.bottombar.navigation.material.internal.ViewUtils.dpToPx;
 
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
@@ -29,8 +29,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.ripple.RippleUtils;
 import java.util.Arrays;
 
 class IconHelper {

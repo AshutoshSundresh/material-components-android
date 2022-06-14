@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -28,7 +28,7 @@ import android.view.View.OnFocusChangeListener;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
 
 /** Default initialization of the clear text end icon {@link TextInputLayout.EndIconMode}. */
 class ClearTextEndIconDelegate extends EndIconDelegate {

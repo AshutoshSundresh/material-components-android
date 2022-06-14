@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.circularreveal;
+package com.bottombar.navigation.material.circularreveal;
 
-import static com.google.android.material.math.MathUtils.DEFAULT_EPSILON;
+import static com.bottombar.navigation.material.math.MathUtils.DEFAULT_EPSILON;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -36,8 +36,8 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.circularreveal.CircularRevealWidget.RevealInfo;
-import com.google.android.material.math.MathUtils;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.RevealInfo;
+import com.bottombar.navigation.material.math.MathUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 

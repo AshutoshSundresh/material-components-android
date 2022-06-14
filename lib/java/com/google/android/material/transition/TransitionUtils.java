@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
 import android.animation.TimeInterpolator;
 import android.content.Context;
@@ -39,12 +39,12 @@ import androidx.transition.PathMotion;
 import androidx.transition.PatternPathMotion;
 import androidx.transition.Transition;
 import androidx.transition.TransitionSet;
-import com.google.android.material.motion.MotionUtils;
-import com.google.android.material.shape.AbsoluteCornerSize;
-import com.google.android.material.shape.CornerSize;
-import com.google.android.material.shape.RelativeCornerSize;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
+import com.bottombar.navigation.material.motion.MotionUtils;
+import com.bottombar.navigation.material.shape.AbsoluteCornerSize;
+import com.bottombar.navigation.material.shape.CornerSize;
+import com.bottombar.navigation.material.shape.RelativeCornerSize;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
 
 class TransitionUtils {
 

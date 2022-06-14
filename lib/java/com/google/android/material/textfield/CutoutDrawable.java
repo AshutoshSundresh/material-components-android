@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -28,8 +28,8 @@ import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 
 /**
  * A {@link MaterialShapeDrawable} that can draw a cutout for the label in {@link TextInputLayout}'s

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -24,7 +24,7 @@ import android.graphics.RectF;
 import androidx.annotation.ColorInt;
 import androidx.annotation.FloatRange;
 import androidx.annotation.NonNull;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.color.MaterialColors;
 
 /** A delegate class to help draw the graphics for {@link CircularProgressIndicator}. */
 final class CircularDrawingDelegate extends DrawingDelegate<CircularProgressIndicatorSpec> {

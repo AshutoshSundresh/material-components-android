@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -25,7 +25,7 @@ import android.view.View;
 import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.expandable.ExpandableWidget;
+import com.bottombar.navigation.material.expandable.ExpandableWidget;
 
 /**
  * Base Behavior for views that can react to an {@link ExpandableWidget}'s {@link
@@ -35,7 +35,7 @@ import com.google.android.material.expandable.ExpandableWidget;
  * <p>Behaviors should override {@link #onCreateExpandedStateChangeAnimation(View, View, boolean,
  * boolean)} to return an animation
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated
@@ -58,7 +58,7 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
    * <p>If the new {@code expanded} state is false, the {@code dependency} should be shown and the
    * {@code child} should be hidden.
    *
-   * @param dependency the {@link com.google.android.material.expandable.ExpandableWidget}
+   * @param dependency the {@link com.bottombar.navigation.material.expandable.ExpandableWidget}
    * dependency containing the new expanded state.
    * @param child the view that should react to the change in expanded state.
    * @param expanded the new expanded state.

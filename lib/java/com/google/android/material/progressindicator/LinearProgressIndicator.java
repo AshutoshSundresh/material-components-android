@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -153,7 +153,7 @@ public final class LinearProgressIndicator
    *
    * @see #setIndeterminateAnimationType(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#LinearProgressIndicator_indeterminateAnimationType
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#LinearProgressIndicator_indeterminateAnimationType
    */
   public int getIndeterminateAnimationType() {
     return spec.indeterminateAnimationType;
@@ -165,7 +165,7 @@ public final class LinearProgressIndicator
    * @param indeterminateAnimationType The new type of indeterminate animation.
    * @see #getIndeterminateAnimationType()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#LinearProgressIndicator_indeterminateAnimationType
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#LinearProgressIndicator_indeterminateAnimationType
    */
   public void setIndeterminateAnimationType(
       @IndeterminateAnimationType int indeterminateAnimationType) {
@@ -194,7 +194,7 @@ public final class LinearProgressIndicator
    *
    * @see #setIndicatorDirection(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#LinearProgressIndicator_indicatorDirectionLinear
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#LinearProgressIndicator_indicatorDirectionLinear
    */
   @IndicatorDirection
   public int getIndicatorDirection() {
@@ -207,7 +207,7 @@ public final class LinearProgressIndicator
    * @param indicatorDirection The new indicator direction.
    * @see #getIndicatorDirection()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#LinearProgressIndicator_indicatorDirectionLinear
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#LinearProgressIndicator_indicatorDirectionLinear
    */
   public void setIndicatorDirection(@IndicatorDirection int indicatorDirection) {
     spec.indicatorDirection = indicatorDirection;

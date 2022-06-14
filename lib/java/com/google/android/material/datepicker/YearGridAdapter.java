@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -24,7 +24,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import com.google.android.material.datepicker.MaterialCalendar.CalendarSelector;
+import com.bottombar.navigation.material.datepicker.MaterialCalendar.CalendarSelector;
 import java.util.Calendar;
 import java.util.Locale;
 

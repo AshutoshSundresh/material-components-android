@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import static com.google.android.material.transition.MaterialContainerTransform.FIT_MODE_AUTO;
-import static com.google.android.material.transition.MaterialContainerTransform.FIT_MODE_HEIGHT;
-import static com.google.android.material.transition.MaterialContainerTransform.FIT_MODE_WIDTH;
-import static com.google.android.material.transition.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FIT_MODE_AUTO;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FIT_MODE_HEIGHT;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FIT_MODE_WIDTH;
+import static com.bottombar.navigation.material.transition.TransitionUtils.lerp;
 
 import android.graphics.RectF;
-import com.google.android.material.transition.MaterialContainerTransform.FitMode;
+import com.bottombar.navigation.material.transition.MaterialContainerTransform.FitMode;
 
 class FitModeEvaluators {
 

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.dialog;
+package com.bottombar.navigation.material.dialog;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.DialogInterface.OnCancelListener;
@@ -50,9 +50,9 @@ import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.appcompat.view.ContextThemeWrapper;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 
 /**
  * An extension of {@link AlertDialog.Builder} for use with a Material theme (e.g.,

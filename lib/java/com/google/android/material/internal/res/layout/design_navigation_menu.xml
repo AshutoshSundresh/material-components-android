@@ -14,7 +14,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
 -->
-<com.google.android.material.internal.NavigationMenuView
+<com.bottombar.navigation.material.internal.NavigationMenuView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/design_navigation_view"
     android:layout_width="match_parent"

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.textfield.EditTextUtils.isEditable;
-import static com.google.android.material.textfield.IndicatorViewController.COUNTER_INDEX;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.textfield.EditTextUtils.isEditable;
+import static com.bottombar.navigation.material.textfield.IndicatorViewController.COUNTER_INDEX;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -87,16 +87,16 @@ import androidx.core.widget.TextViewCompat;
 import androidx.customview.view.AbsSavedState;
 import androidx.transition.Fade;
 import androidx.transition.TransitionManager;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.internal.CollapsingTextHelper;
-import com.google.android.material.internal.DescendantOffsetUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.internal.CollapsingTextHelper;
+import com.bottombar.navigation.material.internal.DescendantOffsetUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.LinkedHashSet;
@@ -151,16 +151,16 @@ import java.util.LinkedHashSet;
  * This is an example usage:
  *
  * <pre>
- * &lt;com.google.android.material.textfield.TextInputLayout
+ * &lt;com.bottombar.navigation.material.textfield.TextInputLayout
  *         android:layout_width=&quot;match_parent&quot;
  *         android:layout_height=&quot;wrap_content&quot;
  *         android:hint=&quot;@string/form_username&quot;&gt;
  *
- *     &lt;com.google.android.material.textfield.TextInputEditText
+ *     &lt;com.bottombar.navigation.material.textfield.TextInputEditText
  *             android:layout_width=&quot;match_parent&quot;
  *             android:layout_height=&quot;wrap_content&quot;/&gt;
  *
- * &lt;/com.google.android.material.textfield.TextInputLayout&gt;
+ * &lt;/com.bottombar.navigation.material.textfield.TextInputLayout&gt;
  * </pre>
  *
  * The hint should be set on the TextInputLayout, rather than the EditText. If a hint is specified
@@ -980,7 +980,7 @@ public class TextInputLayout extends LinearLayout {
    * <p>Customized boxCollapsedPaddingTop will be disabled if the font scale is larger than 1.3.
    *
    * @param boxCollapsedPaddingTop the value to use for the EditText's collapsed top padding
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxCollapsedPaddingTop
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxCollapsedPaddingTop
    * @see #getBoxCollapsedPaddingTop()
    */
   public void setBoxCollapsedPaddingTop(int boxCollapsedPaddingTop) {
@@ -1002,7 +1002,7 @@ public class TextInputLayout extends LinearLayout {
    * underline stroke in filled mode.
    *
    * @param boxStrokeWidthResId the resource dimension to use for the box's stroke width
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxStrokeWidth
    * @see #setBoxStrokeWidth(int)
    * @see #getBoxStrokeWidth()
    */
@@ -1015,7 +1015,7 @@ public class TextInputLayout extends LinearLayout {
    * in filled mode.
    *
    * @param boxStrokeWidth the value to use for the box's stroke
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxStrokeWidth
    * @see #getBoxStrokeWidth()
    */
   public void setBoxStrokeWidth(int boxStrokeWidth) {
@@ -1039,7 +1039,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @param boxStrokeWidthFocusedResId the resource dimension to use for the box's stroke width when
    *     focused
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxStrokeWidthFocused
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxStrokeWidthFocused
    * @see #setBoxStrokeWidthFocused(int)
    * @see #getBoxStrokeWidthFocused()
    */
@@ -1052,7 +1052,7 @@ public class TextInputLayout extends LinearLayout {
    * underline stroke in filled mode.
    *
    * @param boxStrokeWidthFocused the value to use for the box's stroke when focused
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxStrokeWidthFocused
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxStrokeWidthFocused
    * @see #getBoxStrokeWidthFocused()
    */
   public void setBoxStrokeWidthFocused(int boxStrokeWidthFocused) {
@@ -1137,7 +1137,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the box's stroke color when an error is being displayed.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_boxStrokeErrorColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_boxStrokeErrorColor
    * @see #setBoxStrokeErrorColor(ColorStateList)
    */
   @Nullable
@@ -1588,7 +1588,7 @@ public class TextInputLayout extends LinearLayout {
    * minEms} wide if its {@code layout_width} is set to {@code wrap_content}.
    *
    * @param minEms The minimum width in terms of ems to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_minEms
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_minEms
    * @see #getMinEms()
    */
   public void setMinEms(int minEms) {
@@ -1601,7 +1601,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the text field's minimum width in terms of ems, or -1 if no minimum width is set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_minEms
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_minEms
    * @see #setMinEms(int)
    */
   public int getMinEms() {
@@ -1613,7 +1613,7 @@ public class TextInputLayout extends LinearLayout {
    * maxEms} wide if its {@code layout_width} is set to {@code wrap_content}.
    *
    * @param maxEms The maximum width in terms of ems to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_maxEms
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_maxEms
    * @see #getMaxEms()
    */
   public void setMaxEms(int maxEms) {
@@ -1626,7 +1626,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the text field's maximum width in terms of ems, or -1 if no maximum width is set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_maxEms
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_maxEms
    * @see #setMaxEms(int)
    */
   public int getMaxEms() {
@@ -1638,7 +1638,7 @@ public class TextInputLayout extends LinearLayout {
    * its {@code layout_width} is set to {@code wrap_content}.
    *
    * @param minWidth The minimum width to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_minWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_minWidth
    * @see #setMinWidthResource(int)
    * @see #getMinWidth()
    */
@@ -1654,7 +1654,7 @@ public class TextInputLayout extends LinearLayout {
    * its {@code layout_width} is set to {@code wrap_content}.
    *
    * @param minWidthId The id of the minimum width dimension resource to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_minWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_minWidth
    * @see #setMinWidth(int)
    * @see #getMinWidth()
    */
@@ -1665,7 +1665,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the text field's minimum width, or -1 if no minimum width is set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_minWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_minWidth
    * @see #setMinWidth(int)
    * @see #setMinWidthResource(int) (int)
    */
@@ -1679,7 +1679,7 @@ public class TextInputLayout extends LinearLayout {
    * {@code layout_width} is set to {@code wrap_content}.
    *
    * @param maxWidth The maximum width to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_maxWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_maxWidth
    * @see #setMaxWidthResource(int)
    * @see #getMaxWidth()
    */
@@ -1695,7 +1695,7 @@ public class TextInputLayout extends LinearLayout {
    * {@code layout_width} is set to {@code wrap_content}.
    *
    * @param maxWidthId The id of the maximum width dimension resource to be set
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_maxWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_maxWidth
    * @see #setMaxWidth(int)
    * @see #getMaxWidth()
    */
@@ -1706,7 +1706,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the text field's maximum width, or -1 if no maximum width is set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_maxWidth
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_maxWidth
    * @see #setMaxWidth(int)
    * @see #setMaxWidthResource(int)
    */
@@ -1719,7 +1719,7 @@ public class TextInputLayout extends LinearLayout {
    * Set the hint to be displayed in the floating label, if enabled.
    *
    * @see #setHintEnabled(boolean)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_hint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_hint
    */
   public void setHint(@Nullable CharSequence hint) {
     if (hintEnabled) {
@@ -1754,7 +1754,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns the hint which is displayed in the floating label, if enabled.
    *
    * @return the hint, or null if there isn't one set, or the hint is not enabled.
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_android_hint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_android_hint
    */
   @Nullable
   public CharSequence getHint() {
@@ -1770,7 +1770,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @see #setHint(CharSequence)
    * @see #isHintEnabled()
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintEnabled
    */
   public void setHintEnabled(boolean enabled) {
     if (enabled != hintEnabled) {
@@ -1808,7 +1808,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns whether the floating label functionality is enabled or not in this layout.
    *
    * @see #setHintEnabled(boolean)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintEnabled
    */
   public boolean isHintEnabled() {
     return hintEnabled;
@@ -1829,7 +1829,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the collapsed hint text color, size, style from the specified TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintTextAppearance
    */
   public void setHintTextAppearance(@StyleRes int resId) {
     collapsingTextHelper.setCollapsedTextAppearance(resId);
@@ -1844,7 +1844,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the collapsed hint text color from the specified ColorStateList resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintTextColor
    */
   public void setHintTextColor(@Nullable ColorStateList hintTextColor) {
     if (focusedTextColor != hintTextColor) {
@@ -1863,7 +1863,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Gets the collapsed hint text color.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintTextColor
    */
   @Nullable
   public ColorStateList getHintTextColor() {
@@ -1894,7 +1894,7 @@ public class TextInputLayout extends LinearLayout {
    * before setting an error message via {@link #setError(CharSequence)}, will mean that this layout
    * will not change size when an error is displayed.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorEnabled
    */
   public void setErrorEnabled(boolean enabled) {
     indicatorViewController.setErrorEnabled(enabled);
@@ -1903,7 +1903,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color and size for the error message from the specified TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorTextAppearance
    */
   public void setErrorTextAppearance(@StyleRes int errorTextAppearance) {
     indicatorViewController.setErrorTextAppearance(errorTextAppearance);
@@ -1923,7 +1923,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color and size for the helper text from the specified TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_helperTextTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_helperTextTextAppearance
    */
   public void setHelperTextTextAppearance(@StyleRes int helperTextTextAppearance) {
     indicatorViewController.setHelperTextAppearance(helperTextTextAppearance);
@@ -1937,7 +1937,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns whether the error functionality is enabled or not in this layout.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorEnabled
    * @see #setErrorEnabled(boolean)
    */
   public boolean isErrorEnabled() {
@@ -1949,7 +1949,7 @@ public class TextInputLayout extends LinearLayout {
    * functionality before setting a helper message via {@link #setHelperText(CharSequence)} will
    * mean that this layout will not change size when a helper message is displayed.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_helperTextEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_helperTextEnabled
    */
   public void setHelperTextEnabled(boolean enabled) {
     indicatorViewController.setHelperTextEnabled(enabled);
@@ -1984,7 +1984,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns whether the helper text functionality is enabled or not in this layout.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_helperTextEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_helperTextEnabled
    * @see #setHelperTextEnabled(boolean)
    */
   public boolean isHelperTextEnabled() {
@@ -2005,7 +2005,7 @@ public class TextInputLayout extends LinearLayout {
    * content description instead.
    *
    * @param errorContentDescription Content description to set, or null to clear it
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorContentDescription
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorContentDescription
    */
   public void setErrorContentDescription(@Nullable final CharSequence errorContentDescription) {
     indicatorViewController.setErrorContentDescription(errorContentDescription);
@@ -2052,7 +2052,7 @@ public class TextInputLayout extends LinearLayout {
    * Set the drawable to use for the error icon.
    *
    * @param resId resource id of the drawable to set, or 0 to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorIconDrawable
    */
   public void setErrorIconDrawable(@DrawableRes int resId) {
     endLayout.setErrorIconDrawable(resId);
@@ -2062,7 +2062,7 @@ public class TextInputLayout extends LinearLayout {
    * Set the drawable to use for the error icon.
    *
    * @param errorIconDrawable Drawable to set, may be null to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorIconDrawable
    */
   public void setErrorIconDrawable(@Nullable Drawable errorIconDrawable) {
     endLayout.setErrorIconDrawable(errorIconDrawable);
@@ -2072,7 +2072,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns the drawable currently used for the error icon.
    *
    * @see #setErrorIconDrawable(Drawable)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorIconDrawable
    */
   @Nullable
   public Drawable getErrorIconDrawable() {
@@ -2083,7 +2083,7 @@ public class TextInputLayout extends LinearLayout {
    * Applies a tint to the error icon drawable.
    *
    * @param errorIconTintList the tint to apply, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorIconTint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorIconTint
    */
   public void setErrorIconTintList(@Nullable ColorStateList errorIconTintList) {
     endLayout.setErrorIconTintList(errorIconTintList);
@@ -2094,7 +2094,7 @@ public class TextInputLayout extends LinearLayout {
    * {@link PorterDuff.Mode#SRC_IN}.
    *
    * @param errorIconTintMode the blending mode used to apply the tint, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_errorIconTintMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_errorIconTintMode
    */
   public void setErrorIconTintMode(@Nullable PorterDuff.Mode errorIconTintMode) {
     endLayout.setErrorIconTintMode(errorIconTintMode);
@@ -2103,7 +2103,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Whether the character counter functionality is enabled or not in this layout.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterEnabled
    */
   public void setCounterEnabled(boolean enabled) {
     if (counterEnabled != enabled) {
@@ -2132,7 +2132,7 @@ public class TextInputLayout extends LinearLayout {
    * Sets the text color and size for the character counter using the specified TextAppearance
    * resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterTextAppearance
    * @see #setCounterTextColor(ColorStateList)
    */
   public void setCounterTextAppearance(int counterTextAppearance) {
@@ -2147,7 +2147,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * <p>This text color takes precedence over a text color set in counterTextAppearance.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterTextColor
    * @param counterTextColor text color used for the character counter
    */
   public void setCounterTextColor(@Nullable ColorStateList counterTextColor) {
@@ -2160,7 +2160,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the text color used for the character counter, or null if one has not been set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterTextColor
    * @see #setCounterTextColor(ColorStateList)
    * @return the text color used for the character counter
    */
@@ -2173,7 +2173,7 @@ public class TextInputLayout extends LinearLayout {
    * Sets the text color and size for the overflowed character counter using the specified
    * TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterOverflowTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterOverflowTextAppearance
    * @see #setCounterOverflowTextColor(ColorStateList)
    */
   public void setCounterOverflowTextAppearance(int counterOverflowTextAppearance) {
@@ -2189,7 +2189,7 @@ public class TextInputLayout extends LinearLayout {
    * <p>This text color takes precedence over a text color set in counterOverflowTextAppearance.
    *
    * @see #setCounterOverflowTextAppearance(int)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterOverflowTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterOverflowTextColor
    * @param counterOverflowTextColor the text color used for the overflowed character counter
    */
   public void setCounterOverflowTextColor(@Nullable ColorStateList counterOverflowTextColor) {
@@ -2203,7 +2203,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns the text color used for the overflowed character counter, or null if one has not been
    * set.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterOverflowTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterOverflowTextColor
    * @see #setCounterOverflowTextAppearance(int)
    * @return the text color used for the overflowed character counter
    */
@@ -2215,7 +2215,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns whether the character counter functionality is enabled or not in this layout.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterEnabled
    * @see #setCounterEnabled(boolean)
    */
   public boolean isCounterEnabled() {
@@ -2226,7 +2226,7 @@ public class TextInputLayout extends LinearLayout {
    * Sets the max length to display at the character counter.
    *
    * @param maxLength maxLength to display. Any value less than or equal to 0 will not be shown.
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterMaxLength
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterMaxLength
    */
   public void setCounterMaxLength(int maxLength) {
     if (counterMaxLength != maxLength) {
@@ -2410,7 +2410,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color used by the placeholder text in all states.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_placeholderTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_placeholderTextColor
    */
   public void setPlaceholderTextColor(@Nullable ColorStateList placeholderTextColor) {
     if (this.placeholderTextColor != placeholderTextColor) {
@@ -2424,7 +2424,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the ColorStateList used for the placeholder text.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_placeholderTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_placeholderTextColor
    */
   @Nullable
   public ColorStateList getPlaceholderTextColor() {
@@ -2435,7 +2435,7 @@ public class TextInputLayout extends LinearLayout {
    * Sets the text color and size for the placeholder text from the specified TextAppearance
    * resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_placeholderTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_placeholderTextAppearance
    */
   public void setPlaceholderTextAppearance(@StyleRes int placeholderTextAppearance) {
     this.placeholderTextAppearance = placeholderTextAppearance;
@@ -2447,7 +2447,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the TextAppearance resource used for the placeholder text color.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_placeholderTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_placeholderTextAppearance
    */
   @StyleRes
   public int getPlaceholderTextAppearance() {
@@ -2493,7 +2493,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color used by the prefix text in all states.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_prefixTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_prefixTextColor
    */
   public void setPrefixTextColor(@NonNull ColorStateList prefixTextColor) {
     startLayout.setPrefixTextColor(prefixTextColor);
@@ -2502,7 +2502,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the ColorStateList used for the prefix text.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_prefixTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_prefixTextColor
    */
   @Nullable
   public ColorStateList getPrefixTextColor() {
@@ -2512,7 +2512,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color and size for the prefix text from the specified TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_prefixTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_prefixTextAppearance
    */
   public void setPrefixTextAppearance(@StyleRes int prefixTextAppearance) {
     startLayout.setPrefixTextAppearance(prefixTextAppearance);
@@ -2557,7 +2557,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color used by the suffix text in all states.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_suffixTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_suffixTextColor
    */
   public void setSuffixTextColor(@NonNull ColorStateList suffixTextColor) {
     endLayout.setSuffixTextColor(suffixTextColor);
@@ -2566,7 +2566,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the ColorStateList used for the suffix text.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_suffixTextColor
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_suffixTextColor
    */
   @Nullable
   public ColorStateList getSuffixTextColor() {
@@ -2576,7 +2576,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Sets the text color and size for the suffix text from the specified TextAppearance resource.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_suffixTextAppearance
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_suffixTextAppearance
    */
   public void setSuffixTextAppearance(@StyleRes int suffixTextAppearance) {
     endLayout.setSuffixTextAppearance(suffixTextAppearance);
@@ -2604,7 +2604,7 @@ public class TextInputLayout extends LinearLayout {
   /**
    * Returns the max length shown at the character counter.
    *
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_counterMaxLength
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_counterMaxLength
    */
   public int getCounterMaxLength() {
     return counterMaxLength;
@@ -3008,7 +3008,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns whether any hint state changes, due to being focused or non-empty text, are animated.
    *
    * @see #setHintAnimationEnabled(boolean)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintAnimationEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintAnimationEnabled
    */
   public boolean isHintAnimationEnabled() {
     return hintAnimationEnabled;
@@ -3018,7 +3018,7 @@ public class TextInputLayout extends LinearLayout {
    * Set whether any hint state changes, due to being focused or non-empty text, are animated.
    *
    * @see #isHintAnimationEnabled()
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintAnimationEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintAnimationEnabled
    */
   public void setHintAnimationEnabled(boolean enabled) {
     hintAnimationEnabled = enabled;
@@ -3029,7 +3029,7 @@ public class TextInputLayout extends LinearLayout {
    * and not focused.
    *
    * @see #setExpandedHintEnabled(boolean)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintExpandedEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintExpandedEnabled
    */
   public boolean isExpandedHintEnabled() {
     return expandedHintEnabled;
@@ -3040,7 +3040,7 @@ public class TextInputLayout extends LinearLayout {
    * and not focused.
    *
    * @see #isExpandedHintEnabled()
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_hintExpandedEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_hintExpandedEnabled
    */
   public void setExpandedHintEnabled(boolean enabled) {
     if (expandedHintEnabled != enabled) {
@@ -3129,7 +3129,7 @@ public class TextInputLayout extends LinearLayout {
    * #setStartIconContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param resId resource id of the drawable to set, or 0 to clear and remove the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconDrawable
    */
   public void setStartIconDrawable(@DrawableRes int resId) {
     setStartIconDrawable(resId != 0 ? AppCompatResources.getDrawable(getContext(), resId) : null);
@@ -3142,7 +3142,7 @@ public class TextInputLayout extends LinearLayout {
    * #setStartIconContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param startIconDrawable Drawable to set, may be null to clear and remove the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconDrawable
    */
   public void setStartIconDrawable(@Nullable Drawable startIconDrawable) {
     startLayout.setStartIconDrawable(startIconDrawable);
@@ -3153,7 +3153,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @see #setStartIconDrawable(Drawable)
    * @return the drawable used for the start icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconDrawable
    */
   @Nullable
   public Drawable getStartIconDrawable() {
@@ -3217,7 +3217,7 @@ public class TextInputLayout extends LinearLayout {
    * readers will not announce the icon's checked state.
    *
    * @param startIconCheckable whether the icon should be checkable
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconCheckable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconCheckable
    */
   public void setStartIconCheckable(boolean startIconCheckable) {
     startLayout.setStartIconCheckable(startIconCheckable);
@@ -3239,7 +3239,7 @@ public class TextInputLayout extends LinearLayout {
    * explain the purpose or action of the icon.
    *
    * @param resId Resource ID of a content description string to set, or 0 to clear the description
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconContentDescription
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconContentDescription
    */
   public void setStartIconContentDescription(@StringRes int resId) {
     setStartIconContentDescription(resId != 0 ? getResources().getText(resId) : null);
@@ -3253,7 +3253,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @param startIconContentDescription Content description to set, or null to clear the content
    *     description
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconContentDescription
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconContentDescription
    */
   public void setStartIconContentDescription(@Nullable CharSequence startIconContentDescription) {
     startLayout.setStartIconContentDescription(startIconContentDescription);
@@ -3279,7 +3279,7 @@ public class TextInputLayout extends LinearLayout {
    * DrawableCompat#setTintList(Drawable, ColorStateList)}.
    *
    * @param startIconTintList the tint to apply, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconTint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconTint
    */
   public void setStartIconTintList(@Nullable ColorStateList startIconTintList) {
     startLayout.setStartIconTintList(startIconTintList);
@@ -3291,7 +3291,7 @@ public class TextInputLayout extends LinearLayout {
    * PorterDuff.Mode#SRC_IN}.
    *
    * @param startIconTintMode the blending mode used to apply the tint, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_startIconTintMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_startIconTintMode
    */
   public void setStartIconTintMode(@Nullable PorterDuff.Mode startIconTintMode) {
     startLayout.setStartIconTintMode(startIconTintMode);
@@ -3304,7 +3304,7 @@ public class TextInputLayout extends LinearLayout {
    * @param endIconMode the end icon mode to be set: {@link #END_ICON_PASSWORD_TOGGLE}, {@link
    *     #END_ICON_CLEAR_TEXT}, or {@link #END_ICON_CUSTOM}; or {@link #END_ICON_NONE} to clear the
    *     current icon if any
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconMode
    */
   public void setEndIconMode(@EndIconMode int endIconMode) {
     endLayout.setEndIconMode(endIconMode);
@@ -3315,7 +3315,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @return the end icon mode enum
    * @see #setEndIconMode(int)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconMode
    */
   @EndIconMode
   public int getEndIconMode() {
@@ -3419,7 +3419,7 @@ public class TextInputLayout extends LinearLayout {
    * readers will not announce the icon's checked state.
    *
    * @param endIconCheckable whether the icon should be checkable
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconCheckable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconCheckable
    */
   public void setEndIconCheckable(boolean endIconCheckable) {
     endLayout.setEndIconCheckable(endIconCheckable);
@@ -3442,7 +3442,7 @@ public class TextInputLayout extends LinearLayout {
    * #setEndIconContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param resId resource id of the drawable to set, or 0 to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconDrawable
    */
   public void setEndIconDrawable(@DrawableRes int resId) {
     endLayout.setEndIconDrawable(resId);
@@ -3456,7 +3456,7 @@ public class TextInputLayout extends LinearLayout {
    * #setEndIconContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param endIconDrawable Drawable to set, may be null to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconDrawable
    */
   public void setEndIconDrawable(@Nullable Drawable endIconDrawable) {
     endLayout.setEndIconDrawable(endIconDrawable);
@@ -3466,7 +3466,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns the drawable currently used for the end icon.
    *
    * @see #setEndIconDrawable(Drawable)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconDrawable
    */
   @Nullable
   public Drawable getEndIconDrawable() {
@@ -3480,7 +3480,7 @@ public class TextInputLayout extends LinearLayout {
    * explain the action of the icon.
    *
    * @param resId Resource ID of a content description string to set, or 0 to clear the description
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconContentDescription
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconContentDescription
    */
   public void setEndIconContentDescription(@StringRes int resId) {
     endLayout.setEndIconContentDescription(resId);
@@ -3494,7 +3494,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @param endIconContentDescription Content description to set, or null to clear the content
    *     description
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconContentDescription
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconContentDescription
    */
   public void setEndIconContentDescription(@Nullable CharSequence endIconContentDescription) {
     endLayout.setEndIconContentDescription(endIconContentDescription);
@@ -3520,7 +3520,7 @@ public class TextInputLayout extends LinearLayout {
    * DrawableCompat#setTintList(Drawable, ColorStateList)}.
    *
    * @param endIconTintList the tint to apply, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconTint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconTint
    */
   public void setEndIconTintList(@Nullable ColorStateList endIconTintList) {
     endLayout.setEndIconTintList(endIconTintList);
@@ -3532,7 +3532,7 @@ public class TextInputLayout extends LinearLayout {
    * PorterDuff.Mode#SRC_IN}.
    *
    * @param endIconTintMode the blending mode used to apply the tint, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_endIconTintMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_endIconTintMode
    */
   public void setEndIconTintMode(@Nullable PorterDuff.Mode endIconTintMode) {
     endLayout.setEndIconTintMode(endIconTintMode);
@@ -3604,7 +3604,7 @@ public class TextInputLayout extends LinearLayout {
    * #setPasswordVisibilityToggleContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param resId resource id of the drawable to set, or 0 to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleDrawable
    * @deprecated Use {@link #setEndIconDrawable(int)} instead.
    */
   @Deprecated
@@ -3619,7 +3619,7 @@ public class TextInputLayout extends LinearLayout {
    * #setPasswordVisibilityToggleContentDescription(CharSequence)}. This is used for accessibility.
    *
    * @param icon Drawable to set, may be null to clear the icon
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleDrawable
    * @deprecated Use {@link #setEndIconDrawable(Drawable)} instead.
    */
   @Deprecated
@@ -3635,7 +3635,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @param resId Resource ID of a content description string to set, or 0 to clear the description
    * @attr ref
-   *     com.google.android.material.R.styleable#TextInputLayout_passwordToggleContentDescription
+   *     com.ssos.support.R.styleable#TextInputLayout_passwordToggleContentDescription
    * @deprecated Use {@link #setEndIconContentDescription(int)} instead.
    */
   @Deprecated
@@ -3651,7 +3651,7 @@ public class TextInputLayout extends LinearLayout {
    *
    * @param description Content description to set, or null to clear the content description
    * @attr ref
-   *     com.google.android.material.R.styleable#TextInputLayout_passwordToggleContentDescription
+   *     com.ssos.support.R.styleable#TextInputLayout_passwordToggleContentDescription
    * @deprecated Use {@link #setEndIconContentDescription(CharSequence)} instead.
    */
   @Deprecated
@@ -3663,7 +3663,7 @@ public class TextInputLayout extends LinearLayout {
    * Returns the icon currently used for the password visibility toggle button.
    *
    * @see #setPasswordVisibilityToggleDrawable(Drawable)
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleDrawable
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleDrawable
    * @deprecated Use {@link #getEndIconDrawable()} instead.
    */
   @Nullable
@@ -3704,7 +3704,7 @@ public class TextInputLayout extends LinearLayout {
    * between the field's input being visibly disguised or not.
    *
    * @param enabled true to enable the functionality
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleEnabled
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleEnabled
    * @deprecated Use {@link #setEndIconMode(int)} instead.
    */
   @Deprecated
@@ -3721,7 +3721,7 @@ public class TextInputLayout extends LinearLayout {
    * DrawableCompat#setTintList(Drawable, ColorStateList)}.
    *
    * @param tintList the tint to apply, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleTint
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleTint
    * @deprecated Use {@link #setEndIconTintList(ColorStateList)} instead.
    */
   @Deprecated
@@ -3735,7 +3735,7 @@ public class TextInputLayout extends LinearLayout {
    * drawable. The default mode is {@link PorterDuff.Mode#SRC_IN}.
    *
    * @param mode the blending mode used to apply the tint, may be null to clear tint
-   * @attr ref com.google.android.material.R.styleable#TextInputLayout_passwordToggleTintMode
+   * @attr ref com.ssos.support.R.styleable#TextInputLayout_passwordToggleTintMode
    * @deprecated Use {@link #setEndIconTintMode(PorterDuff.Mode)} instead.
    */
   @Deprecated

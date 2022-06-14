@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shape;
+package com.bottombar.navigation.material.shape;
 
 import androidx.annotation.IntDef;
 import java.lang.annotation.Retention;

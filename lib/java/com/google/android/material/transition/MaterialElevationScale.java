@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
 /**
  * A {@link androidx.transition.Visibility} transition that scales the size of a surface up or down

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.resources.MaterialResources.getDimensionPixelSize;
+import static com.bottombar.navigation.material.resources.MaterialResources.getDimensionPixelSize;
 import static java.lang.Math.min;
 
 import android.content.Context;
@@ -31,10 +31,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.annotation.StyleRes;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.progressindicator.BaseProgressIndicator.HideAnimationBehavior;
-import com.google.android.material.progressindicator.BaseProgressIndicator.ShowAnimationBehavior;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.progressindicator.BaseProgressIndicator.HideAnimationBehavior;
+import com.bottombar.navigation.material.progressindicator.BaseProgressIndicator.ShowAnimationBehavior;
 
 /**
  * This class contains the parameters shared between linear type and circular type. The parameters

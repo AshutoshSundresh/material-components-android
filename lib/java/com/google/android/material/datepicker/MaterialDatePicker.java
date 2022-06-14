@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -52,12 +52,12 @@ import androidx.core.util.Pair;
 import androidx.core.view.OnApplyWindowInsetsListener;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.google.android.material.dialog.InsetDialogOnTouchListener;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.internal.EdgeToEdgeUtils;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.dialog.InsetDialogOnTouchListener;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.internal.EdgeToEdgeUtils;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.LinkedHashSet;

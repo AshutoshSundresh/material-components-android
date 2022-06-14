@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.timepicker.TimePickerView.GENERIC_VIEW_ACCESSIBILITY_CLASS_NAME;
+import static com.bottombar.navigation.material.timepicker.TimePickerView.GENERIC_VIEW_ACCESSIBILITY_CLASS_NAME;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -39,10 +39,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.internal.TextWatcherAdapter;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.textfield.TextInputLayout;
+import com.bottombar.navigation.material.chip.Chip;
+import com.bottombar.navigation.material.internal.TextWatcherAdapter;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.textfield.TextInputLayout;
 import java.util.Arrays;
 
 /**

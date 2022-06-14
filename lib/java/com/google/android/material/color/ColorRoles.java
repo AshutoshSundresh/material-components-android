@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
 import androidx.annotation.ColorInt;
 

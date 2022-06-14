@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.ripple;
+package com.bottombar.navigation.material.ripple;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -41,7 +41,7 @@ import androidx.annotation.RestrictTo;
 import androidx.annotation.RestrictTo.Scope;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.graphics.ColorUtils;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.color.MaterialColors;
 
 /**
  * Utils class for ripples.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shape;
+package com.bottombar.navigation.material.shape;
 
 import android.graphics.RectF;
 import androidx.annotation.FloatRange;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomnavigation;
+package com.bottombar.navigation.material.bottomnavigation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static java.lang.Math.min;
@@ -35,13 +35,13 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.internal.ViewUtils.RelativePadding;
-import com.google.android.material.navigation.NavigationBarMenuView;
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.behavior.HideBottomViewOnScrollBehavior;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils.RelativePadding;
+import com.bottombar.navigation.material.navigation.NavigationBarMenuView;
+import com.bottombar.navigation.material.navigation.NavigationBarView;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 
 /**
  * Represents a standard bottom navigation bar for application. It is an implementation of <a
@@ -52,7 +52,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
  * a single tap. They should be used when an application has three to five top-level destinations.
  *
  * <p>The bar can disappear on scroll, based on {@link
- * com.google.android.material.behavior.HideBottomViewOnScrollBehavior}, when it is placed within a
+ * com.bottombar.navigation.material.behavior.HideBottomViewOnScrollBehavior}, when it is placed within a
  * {@link CoordinatorLayout} and one of the children within the {@link CoordinatorLayout} is
  * scrolled. This behavior is only set if the {@code layout_behavior} property is set to {@link
  * HideBottomViewOnScrollBehavior}.
@@ -64,7 +64,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
  *
  * <pre>
  * layout resource file:
- * &lt;com.google.android.material.bottomnavigation.BottomNavigationView
+ * &lt;com.bottombar.navigation.material.bottomnavigation.BottomNavigationView
  *     xmlns:android="http://schemas.android.com/apk/res/android"
  *     xmlns:app="http://schema.android.com/apk/res/res-auto"
  *     android:id="@+id/navigation"

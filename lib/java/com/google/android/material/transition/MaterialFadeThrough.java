@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import androidx.annotation.AttrRes;
 

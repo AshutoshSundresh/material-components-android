@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.slider;
+package com.bottombar.navigation.material.slider;
 
 import androidx.annotation.NonNull;
 

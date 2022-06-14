@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.graphics.Color.TRANSPARENT;
 
@@ -31,7 +31,7 @@ import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
-import com.google.android.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
 
 /**
  * A utility class for common color variants used in Material themes.

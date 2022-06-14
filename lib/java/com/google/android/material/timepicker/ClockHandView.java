@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 
 import android.animation.Animator;

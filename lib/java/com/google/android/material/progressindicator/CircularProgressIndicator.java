@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static java.lang.Math.max;
 
@@ -97,7 +97,7 @@ public final class CircularProgressIndicator
    * @param trackThickness The new track/indicator thickness in pixel.
    * @see #getTrackThickness()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
    * @throws IllegalArgumentException if indicator size is less than twice of the track thickness.
    */
   @Override
@@ -111,7 +111,7 @@ public final class CircularProgressIndicator
    *
    * @see #setIndicatorInset(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorInset
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorInset
    */
   @Px
   public int getIndicatorInset() {
@@ -124,7 +124,7 @@ public final class CircularProgressIndicator
    * @param indicatorInset The new inset in pixels.
    * @see #getIndicatorInset()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorInset
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorInset
    */
   public void setIndicatorInset(@Px int indicatorInset) {
     if (spec.indicatorInset != indicatorInset) {
@@ -138,7 +138,7 @@ public final class CircularProgressIndicator
    *
    * @see #setIndicatorSize(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorSize
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorSize
    */
   @Px
   public int getIndicatorSize() {
@@ -151,7 +151,7 @@ public final class CircularProgressIndicator
    * @param indicatorSize The new size in pixels.
    * @see #getIndicatorSize()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorSize
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorSize
    */
   public void setIndicatorSize(@Px int indicatorSize) {
     indicatorSize = max(indicatorSize, getTrackThickness() * 2);
@@ -167,7 +167,7 @@ public final class CircularProgressIndicator
    *
    * @see #setIndicatorDirection(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorDirectionCircular
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorDirectionCircular
    */
   @IndicatorDirection
   public int getIndicatorDirection() {
@@ -180,7 +180,7 @@ public final class CircularProgressIndicator
    * @param indicatorDirection The new indicator direction.
    * @see #getIndicatorDirection()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorDirectionCircular
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#CircularProgressIndicator_indicatorDirectionCircular
    */
   public void setIndicatorDirection(@IndicatorDirection int indicatorDirection) {
     spec.indicatorDirection = indicatorDirection;

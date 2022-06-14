@@ -18,15 +18,15 @@
  * NOTE: THIS CLASS IS AUTO-GENERATED FROM THE EQUIVALENT CLASS IN THE PARENT TRANSITION PACKAGE.
  * IT SHOULD NOT BE EDITED DIRECTLY.
  */
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FIT_MODE_AUTO;
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FIT_MODE_HEIGHT;
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FIT_MODE_WIDTH;
-import static com.google.android.material.transition.platform.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FIT_MODE_AUTO;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FIT_MODE_HEIGHT;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FIT_MODE_WIDTH;
+import static com.bottombar.navigation.material.transition.platform.TransitionUtils.lerp;
 
 import android.graphics.RectF;
-import com.google.android.material.transition.platform.MaterialContainerTransform.FitMode;
+import com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FitMode;
 
 @androidx.annotation.RequiresApi(android.os.Build.VERSION_CODES.LOLLIPOP)
 class FitModeEvaluators {

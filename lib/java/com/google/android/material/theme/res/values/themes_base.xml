@@ -495,7 +495,7 @@
   <style name="Base.Theme.Material3.Dark" parent="Base.V14.Theme.Material3.Dark"/>
 
   <style name="Base.V14.Theme.MaterialComponents" parent="Base.V14.Theme.MaterialComponents.Bridge">
-    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.bottombar.navigation.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_dark_default_color_primary</item>
@@ -559,7 +559,7 @@
   </style>
 
   <style name="Base.V14.Theme.MaterialComponents.Light" parent="Base.V14.Theme.MaterialComponents.Light.Bridge">
-    <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    <item name="viewInflaterClass">com.bottombar.navigation.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
     <item name="colorPrimary">@color/design_default_color_primary</item>

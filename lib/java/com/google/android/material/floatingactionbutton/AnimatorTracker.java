@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
 import android.animation.Animator;
 import androidx.annotation.Nullable;

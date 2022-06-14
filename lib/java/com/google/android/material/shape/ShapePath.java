@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shape;
+package com.bottombar.navigation.material.shape;
 
 import android.graphics.Canvas;
 import android.graphics.Matrix;
@@ -23,7 +23,7 @@ import android.graphics.RectF;
 import android.os.Build.VERSION_CODES;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import com.google.android.material.shadow.ShadowRenderer;
+import com.bottombar.navigation.material.shadow.ShadowRenderer;
 import java.util.ArrayList;
 import java.util.List;
 

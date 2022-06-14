@@ -18,9 +18,9 @@
  * NOTE: THIS CLASS IS AUTO-GENERATED FROM THE EQUIVALENT CLASS IN THE PARENT TRANSITION PACKAGE.
  * IT SHOULD NOT BE EDITED DIRECTLY.
  */
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
-import static com.google.android.material.transition.platform.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.platform.TransitionUtils.lerp;
 
 import android.graphics.Canvas;
 import android.graphics.Path;
@@ -29,9 +29,9 @@ import android.graphics.RectF;
 import android.graphics.Region;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearancePathProvider;
-import com.google.android.material.transition.platform.MaterialContainerTransform.ProgressThresholds;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearancePathProvider;
+import com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.ProgressThresholds;
 
 /**
  * A class which is responsible calculating the path which represents a container transform's

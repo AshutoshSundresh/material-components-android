@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.resources.MaterialResources.getDimensionPixelSize;
+import static com.bottombar.navigation.material.resources.MaterialResources.getDimensionPixelSize;
 import static java.lang.Math.max;
 
 import android.content.Context;
@@ -29,8 +29,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.annotation.StyleRes;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.progressindicator.CircularProgressIndicator.IndicatorDirection;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.progressindicator.CircularProgressIndicator.IndicatorDirection;
 
 /**
  * This class contains the parameters for drawing a circular type progress indicator. The parameters

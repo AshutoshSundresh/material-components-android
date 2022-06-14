@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.snackbar;
+package com.bottombar.navigation.material.snackbar;
 
 import android.os.Handler;
 import android.os.Looper;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -52,10 +52,10 @@ import androidx.annotation.StyleRes;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityEventCompat;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.timepicker.TimePickerView.OnDoubleTapListener;
+import com.bottombar.navigation.material.button.MaterialButton;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.timepicker.TimePickerView.OnDoubleTapListener;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.LinkedHashSet;

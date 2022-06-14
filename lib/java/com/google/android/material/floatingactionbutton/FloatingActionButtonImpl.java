@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.core.util.Preconditions.checkNotNull;
 
@@ -48,20 +48,20 @@ import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.util.Preconditions;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.animation.AnimatorSetCompat;
-import com.google.android.material.animation.ImageMatrixProperty;
-import com.google.android.material.animation.MatrixEvaluator;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.internal.StateListAnimator;
-import com.google.android.material.motion.MotionUtils;
-import com.google.android.material.ripple.RippleDrawableCompat;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shadow.ShadowViewDelegate;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.animation.ImageMatrixProperty;
+import com.bottombar.navigation.material.animation.MatrixEvaluator;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.internal.StateListAnimator;
+import com.bottombar.navigation.material.motion.MotionUtils;
+import com.bottombar.navigation.material.ripple.RippleDrawableCompat;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shadow.ShadowViewDelegate;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 import java.util.ArrayList;
 import java.util.List;
 

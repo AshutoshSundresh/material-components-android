@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

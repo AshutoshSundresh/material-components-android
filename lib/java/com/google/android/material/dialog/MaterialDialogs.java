@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.dialog;
+package com.bottombar.navigation.material.dialog;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -30,7 +30,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.annotation.RestrictTo.Scope;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
 
 /**
  * Utility methods for handling Dialog Windows

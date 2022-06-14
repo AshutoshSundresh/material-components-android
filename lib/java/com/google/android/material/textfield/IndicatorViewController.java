@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.View.TRANSLATION_Y;
 import static android.view.View.VISIBLE;
@@ -49,9 +49,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.TextViewCompat;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.animation.AnimatorSetCompat;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.resources.MaterialResources;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
@@ -59,7 +59,7 @@ import java.util.List;
 
 /**
  * Controller for indicator views underneath the text input line in {@link
- * com.google.android.material.textfield.TextInputLayout}. This class controls helper and error
+ * com.bottombar.navigation.material.textfield.TextInputLayout}. This class controls helper and error
  * views.
  */
 final class IndicatorViewController {

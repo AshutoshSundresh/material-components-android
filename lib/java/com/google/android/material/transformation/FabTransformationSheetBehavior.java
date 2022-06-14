@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.os.Build;
@@ -29,9 +29,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.animation.Positioning;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.animation.Positioning;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,7 +42,7 @@ import java.util.Map;
  * <p>A sheet usually has some width and height that's smaller than the screen, has an elevation,
  * and may have a scrim underneath.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigationrail;
+package com.bottombar.navigation.material.navigationrail;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.navigationrail.NavigationRailView.DEFAULT_MENU_GRAVITY;
-import static com.google.android.material.navigationrail.NavigationRailView.NO_ITEM_MINIMUM_HEIGHT;
+import static com.bottombar.navigation.material.navigationrail.NavigationRailView.DEFAULT_MENU_GRAVITY;
+import static com.bottombar.navigation.material.navigationrail.NavigationRailView.NO_ITEM_MINIMUM_HEIGHT;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
@@ -31,8 +31,8 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Px;
 import androidx.annotation.RestrictTo;
-import com.google.android.material.navigation.NavigationBarItemView;
-import com.google.android.material.navigation.NavigationBarMenuView;
+import com.bottombar.navigation.material.navigation.NavigationBarItemView;
+import com.bottombar.navigation.material.navigation.NavigationBarMenuView;
 
 /** @hide For internal use only. */
 @RestrictTo(LIBRARY_GROUP)

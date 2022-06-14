@@ -16,5 +16,5 @@
   -->
 <resources>
   <!-- The class name for the HideBottomViewOnScrollBehavior -->
-  <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+  <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.bottombar.navigation.material.behavior.HideBottomViewOnScrollBehavior</string>
 </resources>

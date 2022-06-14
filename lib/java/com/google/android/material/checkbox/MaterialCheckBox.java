@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.checkbox;
+package com.bottombar.navigation.material.checkbox;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -35,10 +35,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.widget.CompoundButtonCompat;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
 import java.util.LinkedHashSet;
 
 /**
@@ -186,7 +186,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
    *
    * @param errorShown whether the checkbox should be on error state.
    * @see #isErrorShown()
-   * @attr ref com.google.android.material.R.styleable#MaterialCheckBox_errorShown
+   * @attr ref com.ssos.support.R.styleable#MaterialCheckBox_errorShown
    */
   public void setErrorShown(boolean errorShown) {
     if (this.errorShown == errorShown) {
@@ -203,7 +203,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
    * Returns whether the checkbox is on error state.
    *
    * @see #setErrorShown(boolean)
-   * @attr ref com.google.android.material.R.styleable#MaterialCheckBox_errorShown
+   * @attr ref com.ssos.support.R.styleable#MaterialCheckBox_errorShown
    */
   public boolean isErrorShown() {
     return errorShown;
@@ -215,7 +215,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
    * @param resId resource ID of the error announcement text
    * @see #setErrorShown(boolean)
    * @see #getErrorAccessibilityLabel()
-   * @attr ref com.google.android.material.R.styleable#MaterialCheckBox_errorAccessibilityLabel
+   * @attr ref com.ssos.support.R.styleable#MaterialCheckBox_errorAccessibilityLabel
    */
   public void setErrorAccessibilityLabelResource(@StringRes int resId) {
     setErrorAccessibilityLabel(resId != 0 ? getResources().getText(resId) : null);
@@ -227,7 +227,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
    * @param errorAccessibilityLabel the error announcement
    * @see #setErrorShown(boolean)
    * @see #getErrorAccessibilityLabel()
-   * @attr ref com.google.android.material.R.styleable#MaterialCheckBox_errorAccessibilityLabel
+   * @attr ref com.ssos.support.R.styleable#MaterialCheckBox_errorAccessibilityLabel
    */
   public void setErrorAccessibilityLabel(@Nullable CharSequence errorAccessibilityLabel) {
     this.errorAccessibilityLabel = errorAccessibilityLabel;
@@ -237,7 +237,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
    * Returns the accessibility label used for the error state announcement.
    *
    * @see #setErrorAccessibilityLabel(CharSequence)
-   * @attr ref com.google.android.material.R.styleable#MaterialCheckBox_errorAccessibilityLabel
+   * @attr ref com.ssos.support.R.styleable#MaterialCheckBox_errorAccessibilityLabel
    */
   @Nullable
   public CharSequence getErrorAccessibilityLabel() {

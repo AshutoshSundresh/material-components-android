@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -25,7 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.annotation.UiThread;
-import com.google.android.material.internal.MaterialCheckable.OnCheckedChangeListener;
+import com.bottombar.navigation.material.internal.MaterialCheckable.OnCheckedChangeListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

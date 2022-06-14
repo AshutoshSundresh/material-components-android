@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.os.Build;
 import androidx.annotation.RestrictTo;

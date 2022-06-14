@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomappbar;
+package com.bottombar.navigation.material.bottomappbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.shape.MaterialShapeDrawable.SHADOW_COMPAT_MODE_ALWAYS;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.shape.MaterialShapeDrawable.SHADOW_COMPAT_MODE_ALWAYS;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -55,22 +55,22 @@ import androidx.core.view.ViewCompat.NestedScrollType;
 import androidx.core.view.ViewCompat.ScrollAxis;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.customview.view.AbsSavedState;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.animation.TransformationCallback;
-import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
-import com.google.android.material.behavior.HideBottomViewOnScrollBehavior.OnScrollStateChangedListener;
-import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton.OnVisibilityChangedListener;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.internal.ViewUtils.RelativePadding;
-import com.google.android.material.motion.MotionUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.EdgeTreatment;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.TransformationCallback;
+import com.bottombar.navigation.material.behavior.HideBottomViewOnScrollBehavior;
+import com.bottombar.navigation.material.behavior.HideBottomViewOnScrollBehavior.OnScrollStateChangedListener;
+import com.bottombar.navigation.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton.OnVisibilityChangedListener;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils.RelativePadding;
+import com.bottombar.navigation.material.motion.MotionUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.EdgeTreatment;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -102,14 +102,14 @@ import java.util.List;
  * colorSurface}, as it is in the default style, you should set {@code materialThemeOverlay} to
  * {@code @style/ThemeOverlay.MaterialComponents.BottomAppBar.Surface}.
  *
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_backgroundTint
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_fabAlignmentMode
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_fabAnimationMode
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_fabCradleMargin
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_fabCradleRoundedCornerRadius
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_fabCradleVerticalOffset
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_hideOnScroll
- * @attr ref com.google.android.material.R.styleable#BottomAppBar_paddingBottomSystemWindowInsets
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_backgroundTint
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_fabAlignmentMode
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_fabAnimationMode
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_fabCradleMargin
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_fabCradleRoundedCornerRadius
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_fabCradleVerticalOffset
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_hideOnScroll
+ * @attr ref com.ssos.support.R.styleable#BottomAppBar_paddingBottomSystemWindowInsets
  */
 public class BottomAppBar extends Toolbar implements AttachedBehavior {
 

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import static com.google.android.material.timepicker.TimeFormat.CLOCK_12H;
-import static com.google.android.material.timepicker.TimeFormat.CLOCK_24H;
+import static com.bottombar.navigation.material.timepicker.TimeFormat.CLOCK_12H;
+import static com.bottombar.navigation.material.timepicker.TimeFormat.CLOCK_24H;
 import static java.util.Calendar.AM;
 import static java.util.Calendar.HOUR;
 import static java.util.Calendar.PM;
@@ -26,8 +26,8 @@ import android.content.res.Resources;
 import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.IntRange;
-import com.google.android.material.timepicker.TimePickerControls.ActiveSelection;
-import com.google.android.material.timepicker.TimePickerControls.ClockPeriod;
+import com.bottombar.navigation.material.timepicker.TimePickerControls.ActiveSelection;
+import com.bottombar.navigation.material.timepicker.TimePickerControls.ClockPeriod;
 import java.util.Arrays;
 
 /** The representation of the TimeModel used by TimePicker views. */

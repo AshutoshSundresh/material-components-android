@@ -34,7 +34,7 @@
     android:paddingRight="@dimen/mtrl_calendar_header_content_padding_fullscreen"
     tools:ignore="Overdraw">
 
-    <com.google.android.material.button.MaterialButton
+    <com.bottombar.navigation.material.button.MaterialButton
       android:id="@+id/cancel_button"
       style="?attr/materialCalendarHeaderCancelButton"
       android:layout_width="@dimen/mtrl_min_touch_target_size"
@@ -83,7 +83,7 @@
       android:layout_height="wrap_content"
       android:orientation="@integer/mtrl_calendar_header_orientation">
 
-      <com.google.android.material.button.MaterialButton
+      <com.bottombar.navigation.material.button.MaterialButton
         android:id="@+id/confirm_button"
         style="?attr/materialCalendarHeaderConfirmButton"
         android:layout_width="wrap_content"

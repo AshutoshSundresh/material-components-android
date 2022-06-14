@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
@@ -32,7 +32,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat.AnimationCallback;
 import androidx.vectordrawable.graphics.drawable.AnimationUtilsCompat;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.color.MaterialColors;
 import java.util.Arrays;
 
 /**

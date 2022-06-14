@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -211,7 +211,7 @@ public final class CalendarConstraints implements Parcelable {
     return month;
   }
 
-  /** Builder for {@link com.google.android.material.datepicker.CalendarConstraints}. */
+  /** Builder for {@link com.bottombar.navigation.material.datepicker.CalendarConstraints}. */
   public static final class Builder {
 
     /**

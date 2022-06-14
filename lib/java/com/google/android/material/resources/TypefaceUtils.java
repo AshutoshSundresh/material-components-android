@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.resources;
+package com.bottombar.navigation.material.resources;
 
 import android.content.Context;
 import android.content.res.Configuration;

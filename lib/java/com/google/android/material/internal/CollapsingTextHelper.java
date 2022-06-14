@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import static android.text.Layout.Alignment.ALIGN_CENTER;
 import static android.text.Layout.Alignment.ALIGN_NORMAL;
@@ -55,13 +55,13 @@ import androidx.core.math.MathUtils;
 import androidx.core.text.TextDirectionHeuristicsCompat;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.StaticLayoutBuilderCompat.StaticLayoutBuilderCompatException;
-import com.google.android.material.resources.CancelableFontCallback;
-import com.google.android.material.resources.CancelableFontCallback.ApplyFont;
-import com.google.android.material.resources.TextAppearance;
-import com.google.android.material.resources.TypefaceUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.StaticLayoutBuilderCompat.StaticLayoutBuilderCompatException;
+import com.bottombar.navigation.material.resources.CancelableFontCallback;
+import com.bottombar.navigation.material.resources.CancelableFontCallback.ApplyFont;
+import com.bottombar.navigation.material.resources.TextAppearance;
+import com.bottombar.navigation.material.resources.TypefaceUtils;
 
 /**
  * Helper class for rendering and animating collapsed text.

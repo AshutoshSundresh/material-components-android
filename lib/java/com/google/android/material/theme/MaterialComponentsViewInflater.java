@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.theme;
+package com.bottombar.navigation.material.theme;
 
 import android.content.Context;
 import androidx.appcompat.app.AppCompatViewInflater;
@@ -26,11 +26,11 @@ import androidx.appcompat.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.checkbox.MaterialCheckBox;
-import com.google.android.material.radiobutton.MaterialRadioButton;
-import com.google.android.material.textfield.MaterialAutoCompleteTextView;
-import com.google.android.material.textview.MaterialTextView;
+import com.bottombar.navigation.material.button.MaterialButton;
+import com.bottombar.navigation.material.checkbox.MaterialCheckBox;
+import com.bottombar.navigation.material.radiobutton.MaterialRadioButton;
+import com.bottombar.navigation.material.textfield.MaterialAutoCompleteTextView;
+import com.bottombar.navigation.material.textview.MaterialTextView;
 
 /**
  * An extension of {@link AppCompatViewInflater} that replaces some framework widgets with Material

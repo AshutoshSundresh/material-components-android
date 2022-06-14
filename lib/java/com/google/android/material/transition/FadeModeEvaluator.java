@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
 interface FadeModeEvaluator {
   /** Calculate the current start and end view sizes and scales depending on the fit mode. */

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomnavigation;
+package com.bottombar.navigation.material.bottomnavigation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -30,8 +30,8 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.RestrictTo;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.navigation.NavigationBarItemView;
-import com.google.android.material.navigation.NavigationBarMenuView;
+import com.bottombar.navigation.material.navigation.NavigationBarItemView;
+import com.bottombar.navigation.material.navigation.NavigationBarMenuView;
 
 /** @hide For internal use only. */
 @RestrictTo(LIBRARY_GROUP)

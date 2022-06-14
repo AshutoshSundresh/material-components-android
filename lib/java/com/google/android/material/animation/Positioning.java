@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.animation;
+package com.bottombar.navigation.material.animation;
 
 /** A representation of the positioning of a view relative to another. */
 public class Positioning {

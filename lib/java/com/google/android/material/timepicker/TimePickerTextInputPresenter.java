@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.View.GONE;
-import static com.google.android.material.timepicker.TimeFormat.CLOCK_12H;
+import static com.bottombar.navigation.material.timepicker.TimeFormat.CLOCK_12H;
 import static java.util.Calendar.AM;
 import static java.util.Calendar.HOUR;
 import static java.util.Calendar.MINUTE;
@@ -42,12 +42,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.ColorInt;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.button.MaterialButtonToggleGroup;
-import com.google.android.material.button.MaterialButtonToggleGroup.OnButtonCheckedListener;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.TextWatcherAdapter;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.timepicker.TimePickerView.OnSelectionChange;
+import com.bottombar.navigation.material.button.MaterialButtonToggleGroup;
+import com.bottombar.navigation.material.button.MaterialButtonToggleGroup.OnButtonCheckedListener;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.TextWatcherAdapter;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.timepicker.TimePickerView.OnSelectionChange;
 import java.lang.reflect.Field;
 import java.util.Locale;
 

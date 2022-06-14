@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.card;
+package com.bottombar.navigation.material.card;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.card.MaterialCardView.CHECKED_ICON_GRAVITY_TOP_END;
+import static com.bottombar.navigation.material.card.MaterialCardView.CHECKED_ICON_GRAVITY_TOP_END;
 
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
@@ -48,15 +48,15 @@ import androidx.annotation.StyleRes;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.card.MaterialCardView.CheckedIconGravity;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shape.CornerTreatment;
-import com.google.android.material.shape.CutCornerTreatment;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.RoundedCornerTreatment;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.card.MaterialCardView.CheckedIconGravity;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shape.CornerTreatment;
+import com.bottombar.navigation.material.shape.CutCornerTreatment;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.RoundedCornerTreatment;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 
 /** @hide */
 @RestrictTo(LIBRARY_GROUP)

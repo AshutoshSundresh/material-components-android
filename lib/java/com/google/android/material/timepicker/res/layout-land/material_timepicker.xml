@@ -50,7 +50,7 @@
     app:layout_constraintRight_toRightOf="@+id/material_clock_display"
     layout="@layout/material_clock_period_toggle_land" />
 
-  <com.google.android.material.timepicker.ClockFaceView
+  <com.bottombar.navigation.material.timepicker.ClockFaceView
     android:id="@+id/material_clock_face"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

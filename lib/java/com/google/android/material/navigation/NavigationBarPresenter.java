@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigation;
+package com.bottombar.navigation.material.navigation;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -31,9 +31,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
-import com.google.android.material.badge.BadgeDrawable;
-import com.google.android.material.badge.BadgeUtils;
-import com.google.android.material.internal.ParcelableSparseArray;
+import com.bottombar.navigation.material.badge.BadgeDrawable;
+import com.bottombar.navigation.material.badge.BadgeUtils;
+import com.bottombar.navigation.material.internal.ParcelableSparseArray;
 
 /**
  * For internal use only.

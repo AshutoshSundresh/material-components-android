@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.canvas;
+package com.bottombar.navigation.material.canvas;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 

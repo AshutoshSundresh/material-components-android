@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.lists;
+package com.bottombar.navigation.material.lists;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.view.LayoutInflater;
 import android.view.View;

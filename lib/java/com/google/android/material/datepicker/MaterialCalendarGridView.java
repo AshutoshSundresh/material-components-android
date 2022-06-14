@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
@@ -35,7 +35,7 @@ import androidx.core.util.Pair;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils;
 import java.util.Calendar;
 
 final class MaterialCalendarGridView extends GridView {

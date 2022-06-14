@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -27,9 +27,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.google.android.material.animation.AnimatorSetCompat;
-import com.google.android.material.animation.MotionTiming;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.animation.MotionTiming;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +37,7 @@ import java.util.List;
  * Behavior that should be attached to a scrim that should appear when a {@link
  * FloatingActionButton} is {@link FloatingActionButton#setExpanded(boolean)} expanded}.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated

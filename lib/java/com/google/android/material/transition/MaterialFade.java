@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.animation.TimeInterpolator;
 import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
-import com.google.android.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
 
 /**
  * A {@link androidx.transition.Visibility} transition that is composed of a fade and scale of

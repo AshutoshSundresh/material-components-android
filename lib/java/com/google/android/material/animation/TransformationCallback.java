@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.animation;
+package com.bottombar.navigation.material.animation;
 
 import android.view.View;
 
 /**
  * Callback to be invoked when the view undergoes a transformation (e.g., translation or scale).
  * This is particularly useful to react to animations applied to a view, such as the cutout of the
- * {@link com.google.android.material.bottomappbar.BottomAppBar} reacting to the {@link
- * com.google.android.material.floatingactionbutton.FloatingActionButton}.
+ * {@link com.bottombar.navigation.material.bottomappbar.BottomAppBar} reacting to the {@link
+ * com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton}.
  */
 public interface TransformationCallback<T extends View> {
   /**

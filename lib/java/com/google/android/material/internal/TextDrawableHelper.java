@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -25,8 +25,8 @@ import android.text.TextPaint;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
-import com.google.android.material.resources.TextAppearance;
-import com.google.android.material.resources.TextAppearanceFontCallback;
+import com.bottombar.navigation.material.resources.TextAppearance;
+import com.bottombar.navigation.material.resources.TextAppearanceFontCallback;
 import java.lang.ref.WeakReference;
 
 /**

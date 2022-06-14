@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.badge;
+package com.bottombar.navigation.material.badge;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.badge.BadgeUtils.updateBadgeBounds;
+import static com.bottombar.navigation.material.badge.BadgeUtils.updateBadgeBounds;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -46,11 +46,11 @@ import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.annotation.XmlRes;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.internal.TextDrawableHelper;
-import com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.TextAppearance;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.internal.TextDrawableHelper;
+import com.bottombar.navigation.material.internal.TextDrawableHelper.TextDrawableDelegate;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.TextAppearance;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -61,7 +61,7 @@ import java.util.Locale;
  * {@code BadgeDrawable} contains all the layout and draw logic for a badge.
  *
  * <p>You can use {@code BadgeDrawable} to display dynamic information such as a number of pending
- * requests in a {@link com.google.android.material.bottomnavigation.BottomNavigationView}. To
+ * requests in a {@link com.bottombar.navigation.material.bottomnavigation.BottomNavigationView}. To
  * create an instance of {@code BadgeDrawable}, use {@link #create(Context)} or {@link
  * #createFromResource(Context, int)}. How to add and display a {@code BadgeDrawable} on top of its
  * anchor view depends on the API level:
@@ -386,7 +386,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Returns this badge's background color.
    *
    * @see #setBackgroundColor(int)
-   * @attr ref com.google.android.material.R.styleable#Badge_backgroundColor
+   * @attr ref com.ssos.support.R.styleable#Badge_backgroundColor
    */
   @ColorInt
   public int getBackgroundColor() {
@@ -397,7 +397,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Sets this badge's background color.
    *
    * @param backgroundColor This badge's background color.
-   * @attr ref com.google.android.material.R.styleable#Badge_backgroundColor
+   * @attr ref com.ssos.support.R.styleable#Badge_backgroundColor
    */
   public void setBackgroundColor(@ColorInt int backgroundColor) {
     state.setBackgroundColor(backgroundColor);
@@ -416,7 +416,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Returns this badge's text color.
    *
    * @see #setBadgeTextColor(int)
-   * @attr ref com.google.android.material.R.styleable#Badge_badgeTextColor
+   * @attr ref com.ssos.support.R.styleable#Badge_badgeTextColor
    */
   @ColorInt
   public int getBadgeTextColor() {
@@ -427,7 +427,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Sets this badge's text color.
    *
    * @param badgeTextColor This badge's text color.
-   * @attr ref com.google.android.material.R.styleable#Badge_badgeTextColor
+   * @attr ref com.ssos.support.R.styleable#Badge_badgeTextColor
    */
   public void setBadgeTextColor(@ColorInt int badgeTextColor) {
     if (textDrawableHelper.getTextPaint().getColor() != badgeTextColor) {
@@ -467,7 +467,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * <p>WARNING: Do not call this method if you are planning to compare to BADGE_NUMBER_NONE
    *
    * @see #setNumber(int)
-   * @attr ref com.google.android.material.R.styleable#Badge_number
+   * @attr ref com.ssos.support.R.styleable#Badge_number
    */
   public int getNumber() {
     return hasNumber() ? state.getNumber() : 0;
@@ -479,7 +479,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * digits exceeds {@code maxCharacterCount} in which case a truncated version will be shown.
    *
    * @param number This badge's number.
-   * @attr ref com.google.android.material.R.styleable#Badge_number
+   * @attr ref com.ssos.support.R.styleable#Badge_number
    */
   public void setNumber(int number) {
     number = Math.max(0, number);
@@ -507,7 +507,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Returns this badge's max character count.
    *
    * @see #setMaxCharacterCount(int)
-   * @attr ref com.google.android.material.R.styleable#Badge_maxCharacterCount
+   * @attr ref com.ssos.support.R.styleable#Badge_maxCharacterCount
    */
   public int getMaxCharacterCount() {
     return state.getMaxCharacterCount();
@@ -517,7 +517,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableDelegate {
    * Sets this badge's max character count.
    *
    * @param maxCharacterCount This badge's max character count.
-   * @attr ref com.google.android.material.R.styleable#Badge_maxCharacterCount
+   * @attr ref com.ssos.support.R.styleable#Badge_maxCharacterCount
    */
   public void setMaxCharacterCount(int maxCharacterCount) {
     if (this.state.getMaxCharacterCount() != maxCharacterCount) {

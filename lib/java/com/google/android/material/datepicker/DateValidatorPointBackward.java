@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.annotation.NonNull;
-import com.google.android.material.datepicker.CalendarConstraints.DateValidator;
+import com.bottombar.navigation.material.datepicker.CalendarConstraints.DateValidator;
 import java.util.Arrays;
 
 /**

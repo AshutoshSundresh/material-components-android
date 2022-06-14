@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Math.min;
 
 import android.content.Context;
@@ -42,8 +42,8 @@ import androidx.annotation.StyleRes;
 import androidx.annotation.VisibleForTesting;
 import androidx.core.view.ViewCompat;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat.AnimationCallback;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
@@ -529,7 +529,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setTrackThickness(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
    */
   @Px
   public int getTrackThickness() {
@@ -542,7 +542,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param trackThickness The new track/indicator thickness in pixels.
    * @see #getTrackThickness()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackThickness
    */
   public void setTrackThickness(@Px int trackThickness) {
     if (spec.trackThickness != trackThickness) {
@@ -556,7 +556,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setIndicatorColor(int...)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_indicatorColor
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_indicatorColor
    */
   @NonNull
   public int[] getIndicatorColor() {
@@ -569,7 +569,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param indicatorColors The new colors used in indicator.
    * @see #getIndicatorColor()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_indicatorColor
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_indicatorColor
    */
   public void setIndicatorColor(@ColorInt int... indicatorColors) {
     if (indicatorColors.length == 0) {
@@ -588,7 +588,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setTrackColor(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackColor
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackColor
    */
   @ColorInt
   public int getTrackColor() {
@@ -601,7 +601,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param trackColor The new color used in the track of this progress indicator.
    * @see #getTrackColor()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackColor
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackColor
    */
   public void setTrackColor(@ColorInt int trackColor) {
     if (spec.trackColor != trackColor) {
@@ -615,7 +615,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setTrackCornerRadius(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackCornerRadius
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackCornerRadius
    */
   @Px
   public int getTrackCornerRadius() {
@@ -628,7 +628,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param trackCornerRadius The new corner radius in pixels.
    * @see #getTrackCornerRadius()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_trackCornerRadius
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_trackCornerRadius
    */
   public void setTrackCornerRadius(@Px int trackCornerRadius) {
     if (spec.trackCornerRadius != trackCornerRadius) {
@@ -641,7 +641,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setShowAnimationBehavior(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_showAnimationBehavior
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_showAnimationBehavior
    */
   @ShowAnimationBehavior
   public int getShowAnimationBehavior() {
@@ -654,7 +654,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param showAnimationBehavior The new behavior of show animation.
    * @see #getShowAnimationBehavior()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_showAnimationBehavior
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_showAnimationBehavior
    */
   public void setShowAnimationBehavior(@ShowAnimationBehavior int showAnimationBehavior) {
     spec.showAnimationBehavior = showAnimationBehavior;
@@ -666,7 +666,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    *
    * @see #setHideAnimationBehavior(int)
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_hideAnimationBehavior
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_hideAnimationBehavior
    */
   @HideAnimationBehavior
   public int getHideAnimationBehavior() {
@@ -679,7 +679,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
    * @param hideAnimationBehavior The new behavior of hide animation.
    * @see #getHideAnimationBehavior()
    * @attr ref
-   *     com.google.android.material.progressindicator.R.styleable#BaseProgressIndicator_hideAnimationBehavior
+   *     com.bottombar.navigation.material.progressindicator.R.styleable#BaseProgressIndicator_hideAnimationBehavior
    */
   public void setHideAnimationBehavior(@HideAnimationBehavior int hideAnimationBehavior) {
     spec.hideAnimationBehavior = hideAnimationBehavior;

@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.textfield.IconHelper.applyIconTint;
-import static com.google.android.material.textfield.IconHelper.refreshIconDrawableState;
-import static com.google.android.material.textfield.IconHelper.setCompatRippleBackgroundIfNeeded;
-import static com.google.android.material.textfield.IconHelper.setIconOnClickListener;
-import static com.google.android.material.textfield.IconHelper.setIconOnLongClickListener;
-import static com.google.android.material.textfield.TextInputLayout.END_ICON_CLEAR_TEXT;
-import static com.google.android.material.textfield.TextInputLayout.END_ICON_CUSTOM;
-import static com.google.android.material.textfield.TextInputLayout.END_ICON_DROPDOWN_MENU;
-import static com.google.android.material.textfield.TextInputLayout.END_ICON_NONE;
-import static com.google.android.material.textfield.TextInputLayout.END_ICON_PASSWORD_TOGGLE;
+import static com.bottombar.navigation.material.textfield.IconHelper.applyIconTint;
+import static com.bottombar.navigation.material.textfield.IconHelper.refreshIconDrawableState;
+import static com.bottombar.navigation.material.textfield.IconHelper.setCompatRippleBackgroundIfNeeded;
+import static com.bottombar.navigation.material.textfield.IconHelper.setIconOnClickListener;
+import static com.bottombar.navigation.material.textfield.IconHelper.setIconOnLongClickListener;
+import static com.bottombar.navigation.material.textfield.TextInputLayout.END_ICON_CLEAR_TEXT;
+import static com.bottombar.navigation.material.textfield.TextInputLayout.END_ICON_CUSTOM;
+import static com.bottombar.navigation.material.textfield.TextInputLayout.END_ICON_DROPDOWN_MENU;
+import static com.bottombar.navigation.material.textfield.TextInputLayout.END_ICON_NONE;
+import static com.bottombar.navigation.material.textfield.TextInputLayout.END_ICON_PASSWORD_TOGGLE;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -63,13 +63,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityManagerCompat;
 import androidx.core.view.accessibility.AccessibilityManagerCompat.TouchExplorationStateChangeListener;
 import androidx.core.widget.TextViewCompat;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.internal.TextWatcherAdapter;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.textfield.TextInputLayout.EndIconMode;
-import com.google.android.material.textfield.TextInputLayout.OnEditTextAttachedListener;
-import com.google.android.material.textfield.TextInputLayout.OnEndIconChangedListener;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.internal.TextWatcherAdapter;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.textfield.TextInputLayout.EndIconMode;
+import com.bottombar.navigation.material.textfield.TextInputLayout.OnEditTextAttachedListener;
+import com.bottombar.navigation.material.textfield.TextInputLayout.OnEndIconChangedListener;
 import java.util.LinkedHashSet;
 
 /**

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.button;
+package com.bottombar.navigation.material.button;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
@@ -61,12 +61,12 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.TextViewCompat;
 import androidx.customview.view.AbsSavedState;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.LinkedHashSet;
@@ -77,7 +77,7 @@ import java.util.LinkedHashSet;
  * <p>This class supplies updated Material styles for the button in the constructor. The widget will
  * display the correct default Material styles without the use of the style flag.
  *
- * <p>All attributes from {@code com.google.android.material.R.styleable#MaterialButton} are
+ * <p>All attributes from {@code com.ssos.support.R.styleable#MaterialButton} are
  * supported. Do not use the {@code android:background} attribute. MaterialButton manages its own
  * background drawable, and setting a new background means {@link MaterialButton} can no longer
  * guarantee that the new attributes it introduces will function properly. If the default background
@@ -677,7 +677,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the padding between the button icon and the button text, if icon is present.
    *
    * @param iconPadding Padding between the button icon and the button text, if icon is present.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconPadding
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconPadding
    * @see #getIconPadding()
    */
   public void setIconPadding(@Px int iconPadding) {
@@ -691,7 +691,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the padding between the button icon and the button text, if icon is present.
    *
    * @return Padding between the button icon and the button text, if icon is present.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconPadding
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconPadding
    * @see #setIconPadding(int)
    */
   @Px
@@ -703,7 +703,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the width and height of the icon. Use 0 to use source Drawable size.
    *
    * @param iconSize new dimension for width and height of the icon in pixels.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconSize
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconSize
    * @see #getIconSize()
    */
   public void setIconSize(@Px int iconSize) {
@@ -721,7 +721,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Returns the size of the icon if it was set.
    *
    * @return Returns the size of the icon if it was set in pixels, 0 otherwise.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconSize
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconSize
    * @see #setIconSize(int)
    */
   @Px
@@ -734,7 +734,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * the button.
    *
    * @param icon Drawable to use for the button's icon.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_icon
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_icon
    * @see #setIconResource(int)
    * @see #getIcon()
    */
@@ -750,7 +750,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * the left side of the button.
    *
    * @param iconResourceId Drawable resource ID to use for the button's icon.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_icon
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_icon
    * @see #setIcon(Drawable)
    * @see #getIcon()
    */
@@ -766,7 +766,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the icon shown for this button, if present.
    *
    * @return Icon shown for this button, if present.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_icon
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_icon
    * @see #setIcon(Drawable)
    * @see #setIconResource(int)
    */
@@ -778,7 +778,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the tint list for the icon shown for this button.
    *
    * @param iconTint Tint list for the icon shown for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconTint
    * @see #setIconTintResource(int)
    * @see #getIconTint()
    */
@@ -793,7 +793,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the tint list color resource for the icon shown for this button.
    *
    * @param iconTintResourceId Tint list color resource for the icon shown for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconTint
    * @see #setIconTint(ColorStateList)
    * @see #getIconTint()
    */
@@ -805,7 +805,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the tint list for the icon shown for this button.
    *
    * @return Tint list for the icon shown for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconTint
    * @see #setIconTint(ColorStateList)
    * @see #setIconTintResource(int)
    */
@@ -817,7 +817,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the tint mode for the icon shown for this button.
    *
    * @param iconTintMode Tint mode for the icon shown for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconTintMode
    * @see #getIconTintMode()
    */
   public void setIconTintMode(Mode iconTintMode) {
@@ -831,7 +831,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the tint mode for the icon shown for this button.
    *
    * @return Tint mode for the icon shown for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconTintMode
    * @see #setIconTintMode(Mode)
    */
   public Mode getIconTintMode() {
@@ -903,7 +903,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the ripple color for this button.
    *
    * @param rippleColor Color to use for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_rippleColor
    * @see #setRippleColorResource(int)
    * @see #getRippleColor()
    */
@@ -917,7 +917,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the ripple color resource for this button.
    *
    * @param rippleColorResourceId Color resource to use for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_rippleColor
    * @see #setRippleColor(ColorStateList)
    * @see #getRippleColor()
    */
@@ -931,7 +931,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the ripple color for this button.
    *
    * @return The color used for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_rippleColor
    * @see #setRippleColor(ColorStateList)
    * @see #setRippleColorResource(int)
    */
@@ -945,7 +945,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * stroke to be drawn.
    *
    * @param strokeColor Color to use for the stroke.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeColor
    * @see #setStrokeColorResource(int)
    * @see #getStrokeColor()
    */
@@ -960,7 +960,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * for a stroke to be drawn.
    *
    * @param strokeColorResourceId Color resource to use for the stroke.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeColor
    * @see #setStrokeColor(ColorStateList)
    * @see #getStrokeColor()
    */
@@ -974,7 +974,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the stroke color for this button.
    *
    * @return The color used for the stroke.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeColor
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeColor
    * @see #setStrokeColor(ColorStateList)
    * @see #setStrokeColorResource(int)
    */
@@ -987,7 +987,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * stroke to be drawn.
    *
    * @param strokeWidth Stroke width for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeWidth
    * @see #setStrokeWidthResource(int)
    * @see #getStrokeWidth()
    */
@@ -1002,7 +1002,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * must be set for a stroke to be drawn.
    *
    * @param strokeWidthResourceId Stroke width dimension resource for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeWidth
    * @see #setStrokeWidth(int)
    * @see #getStrokeWidth()
    */
@@ -1016,7 +1016,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the stroke width for this button.
    *
    * @return Stroke width for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_strokeWidth
    * @see #setStrokeWidth(int)
    * @see #setStrokeWidthResource(int)
    */
@@ -1029,7 +1029,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the corner radius for this button.
    *
    * @param cornerRadius Corner radius for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_cornerRadius
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_cornerRadius
    * @see #setCornerRadiusResource(int)
    * @see #getCornerRadius()
    */
@@ -1043,7 +1043,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets the corner radius dimension resource for this button.
    *
    * @param cornerRadiusResourceId Corner radius dimension resource for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_cornerRadius
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_cornerRadius
    * @see #setCornerRadius(int)
    * @see #getCornerRadius()
    */
@@ -1057,7 +1057,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the corner radius for this button.
    *
    * @return Corner radius for this button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_cornerRadius
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_cornerRadius
    * @see #setCornerRadius(int)
    * @see #setCornerRadiusResource(int)
    */
@@ -1070,7 +1070,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Gets the icon gravity for this button
    *
    * @return Icon gravity of the button.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconGravity
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconGravity
    * @see #setIconGravity(int)
    */
   @IconGravity
@@ -1081,7 +1081,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
   /**
    * Sets the icon gravity for this button
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_iconGravity
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_iconGravity
    * @param iconGravity icon gravity for this button
    * @see #getIconGravity()
    */
@@ -1095,7 +1095,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
   /**
    * Sets the button bottom inset
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_insetBottom
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_insetBottom
    * @see #getInsetBottom()
    */
   public void setInsetBottom(@Dimension int insetBottom) {
@@ -1105,7 +1105,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
   /**
    * Gets the bottom inset for this button
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_insetBottom
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_insetBottom
    * @see #setInsetTop(int)
    */
   @Dimension
@@ -1115,7 +1115,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
   /**
    * Sets the button top inset
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_insetTop
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_insetTop
    * @see #getInsetBottom()
    */
   public void setInsetTop(@Dimension int insetTop) {
@@ -1125,7 +1125,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
   /**
    * Gets the top inset for this button
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_insetTop
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_insetTop
    * @see #setInsetTop(int)
    */
   @Dimension
@@ -1243,7 +1243,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Returns whether this MaterialButton is checkable.
    *
    * @see #setCheckable(boolean)
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_checkable
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_checkable
    */
   public boolean isCheckable() {
     return materialButtonHelper != null && materialButtonHelper.isCheckable();
@@ -1253,7 +1253,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
    * Sets whether this MaterialButton is checkable.
    *
    * @param checkable Whether this button is checkable.
-   * @attr ref com.google.android.material.R.styleable#MaterialButton_android_checkable
+   * @attr ref com.ssos.support.R.styleable#MaterialButton_android_checkable
    */
   public void setCheckable(boolean checkable) {
     if (isUsingOriginalBackground()) {

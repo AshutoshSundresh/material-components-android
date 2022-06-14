@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.appbar;
+package com.bottombar.navigation.material.appbar;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -34,7 +34,7 @@ import java.util.List;
 
 /**
  * The {@link Behavior} for a scrolling view that is positioned vertically below another view. See
- * {@link com.google.android.material.appbar.HeaderBehavior}.
+ * {@link com.bottombar.navigation.material.appbar.HeaderBehavior}.
  */
 abstract class HeaderScrollingViewBehavior extends ViewOffsetBehavior<View> {
 
@@ -188,7 +188,7 @@ abstract class HeaderScrollingViewBehavior extends ViewOffsetBehavior<View> {
 
   /**
    * Set the distance that this view should overlap any {@link
-   * com.google.android.material.appbar.AppBarLayout}.
+   * com.bottombar.navigation.material.appbar.AppBarLayout}.
    *
    * @param overlayTop the distance in px
    */
@@ -198,7 +198,7 @@ abstract class HeaderScrollingViewBehavior extends ViewOffsetBehavior<View> {
 
   /**
    * Returns the distance that this view should overlap any {@link
-   * com.google.android.material.appbar.AppBarLayout}.
+   * com.bottombar.navigation.material.appbar.AppBarLayout}.
    */
   public final int getOverlayTop() {
     return overlayTop;

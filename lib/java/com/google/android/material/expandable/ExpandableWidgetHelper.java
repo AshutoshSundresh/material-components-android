@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.expandable;
+package com.bottombar.navigation.material.expandable;
 
 import android.os.Bundle;
 import android.os.Parcelable;

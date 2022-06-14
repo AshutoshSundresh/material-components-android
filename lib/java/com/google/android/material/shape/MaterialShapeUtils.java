@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shape;
+package com.bottombar.navigation.material.shape;
 
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import androidx.annotation.NonNull;
-import com.google.android.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils;
 
 /** Utility methods for {@link MaterialShapeDrawable} and related classes. */
 public class MaterialShapeUtils {

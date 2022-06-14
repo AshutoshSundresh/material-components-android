@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.circularreveal.cardview;
+package com.bottombar.navigation.material.circularreveal.cardview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -22,9 +22,9 @@ import android.util.AttributeSet;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.circularreveal.CircularRevealHelper;
-import com.google.android.material.circularreveal.CircularRevealWidget;
+import com.bottombar.navigation.material.card.MaterialCardView;
+import com.bottombar.navigation.material.circularreveal.CircularRevealHelper;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget;
 
 /**
  * A CircularRevealWidget wrapper for {@link MaterialCardView}.

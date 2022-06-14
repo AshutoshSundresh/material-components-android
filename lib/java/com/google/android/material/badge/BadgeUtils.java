@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.badge;
+package com.bottombar.navigation.material.badge;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -36,8 +36,8 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.internal.ParcelableSparseArray;
-import com.google.android.material.internal.ToolbarUtils;
+import com.bottombar.navigation.material.internal.ParcelableSparseArray;
+import com.bottombar.navigation.material.internal.ToolbarUtils;
 
 /**
  * Utility class for {@link BadgeDrawable}.

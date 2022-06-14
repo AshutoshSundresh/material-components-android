@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.motion;
+package com.bottombar.navigation.material.motion;
 
 import android.animation.TimeInterpolator;
 import android.content.Context;
@@ -23,7 +23,7 @@ import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
 import androidx.core.graphics.PathParser;
 import androidx.core.view.animation.PathInterpolatorCompat;
-import com.google.android.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
 
 /** A utility class for motion system functions. */
 public class MotionUtils {

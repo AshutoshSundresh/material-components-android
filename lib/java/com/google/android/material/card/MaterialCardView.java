@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.card;
+package com.bottombar.navigation.material.card;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -45,11 +45,11 @@ import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -340,7 +340,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the foreground color for this card.
    *
    * @param foregroundColor Color to use for the foreground.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_cardForegroundColor
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_cardForegroundColor
    * @see #getCardForegroundColor()
    */
   public void setCardForegroundColor(@Nullable ColorStateList foregroundColor) {
@@ -350,7 +350,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
   /**
    * Sets the ripple color for this card.
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_cardForegroundColor
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_cardForegroundColor
    * @see #setCardForegroundColor(ColorStateList)
    */
   @NonNull
@@ -455,7 +455,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Returns whether this Card is checkable.
    *
    * @see #setCheckable(boolean)
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_android_checkable
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_android_checkable
    */
   public boolean isCheckable() {
     return cardViewHelper != null && cardViewHelper.isCheckable();
@@ -465,7 +465,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets whether this Card is checkable.
    *
    * @param checkable Whether this chip is checkable.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_android_checkable
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_android_checkable
    */
   public void setCheckable(boolean checkable) {
     cardViewHelper.setCheckable(checkable);
@@ -515,7 +515,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the ripple color for this card.
    *
    * @param rippleColor Color to use for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_rippleColor
    * @see #setRippleColorResource(int)
    * @see #getRippleColor()
    */
@@ -527,7 +527,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the ripple color resource for this card.
    *
    * @param rippleColorResourceId Color resource to use for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_rippleColor
    * @see #setRippleColor(ColorStateList)
    * @see #getRippleColor()
    */
@@ -540,7 +540,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Gets the ripple color for this card.
    *
    * @return The color used for the ripple.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_rippleColor
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_rippleColor
    * @see #setRippleColor(ColorStateList)
    * @see #setRippleColorResource(int)
    */
@@ -552,7 +552,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Returns this cards's checked icon.
    *
    * @see #setCheckedIcon(Drawable)
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIcon
    */
   @Nullable
   public Drawable getCheckedIcon() {
@@ -563,7 +563,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets this card's checked icon using a resource id.
    *
    * @param id The resource id of this Card's checked icon.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIcon
    */
   public void setCheckedIconResource(@DrawableRes int id) {
     cardViewHelper.setCheckedIcon(AppCompatResources.getDrawable(getContext(), id));
@@ -573,7 +573,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets this card's checked icon.
    *
    * @param checkedIcon This card's checked icon.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIcon
    */
   public void setCheckedIcon(@Nullable Drawable checkedIcon) {
     cardViewHelper.setCheckedIcon(checkedIcon);
@@ -583,7 +583,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Returns the {@link android.content.res.ColorStateList} used to tint the checked icon.
    *
    * @see #setCheckedIconTint(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIconTint
    */
   @Nullable
   public ColorStateList getCheckedIconTint() {
@@ -595,7 +595,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * android.content.res.ColorStateList}.
    *
    * @param checkedIconTint The tint color of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIconTint
    */
   public void setCheckedIconTint(@Nullable ColorStateList checkedIconTint) {
     cardViewHelper.setCheckedIconTint(checkedIconTint);
@@ -610,7 +610,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the size of the checked icon
    *
    * @param checkedIconSize checked icon size
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIconSize
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIconSize
    */
   public void setCheckedIconSize(@Dimension int checkedIconSize) {
     cardViewHelper.setCheckedIconSize(checkedIconSize);
@@ -620,7 +620,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the size of the checked icon using a resource id.
    *
    * @param checkedIconSizeResId The resource id of this Card's checked icon size
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIconSize
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIconSize
    */
   public void setCheckedIconSizeResource(@DimenRes int checkedIconSizeResId) {
     if (checkedIconSizeResId != 0) {
@@ -641,7 +641,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Sets the margin of the checked icon using a resource id.
    *
    * @param checkedIconMarginResId The resource id of this Card's checked icon margin
-   * @attr ref com.google.android.material.R.styleable#MaterialCardView_checkedIconMargin
+   * @attr ref com.ssos.support.R.styleable#MaterialCardView_checkedIconMargin
    */
   public void setCheckedIconMarginResource(@DimenRes int checkedIconMarginResId) {
     if (checkedIconMarginResId != NO_ID) {
@@ -686,7 +686,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
    * Gets the checked icon gravity for this card
    *
    * @return Checked Icon gravity of the card.
-   * @attr ref com.google.android.material.R.styleable#MaterialCard_checkedIconGravity
+   * @attr ref com.ssos.support.R.styleable#MaterialCard_checkedIconGravity
    * @see #setCheckedIconGravity(int)
    */
   @CheckedIconGravity
@@ -697,7 +697,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
   /**
    * Sets the checked icon gravity for this card
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialCard_checkedIconGravity
+   * @attr ref com.ssos.support.R.styleable#MaterialCard_checkedIconGravity
    * @param checkedIconGravity checked icon gravity for this card
    * @see #getCheckedIconGravity()
    */

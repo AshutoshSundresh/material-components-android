@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tabs;
+package com.bottombar.navigation.material.tabs;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static androidx.viewpager.widget.ViewPager.SCROLL_STATE_DRAGGING;
 import static androidx.viewpager.widget.ViewPager.SCROLL_STATE_IDLE;
 import static androidx.viewpager.widget.ViewPager.SCROLL_STATE_SETTLING;
-import static com.google.android.material.animation.AnimationUtils.FAST_OUT_SLOW_IN_INTERPOLATOR;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.animation.AnimationUtils.FAST_OUT_SLOW_IN_INTERPOLATOR;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -92,14 +92,14 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionIt
 import androidx.core.widget.TextViewCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import com.google.android.material.badge.BadgeDrawable;
-import com.google.android.material.badge.BadgeUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.badge.BadgeDrawable;
+import com.bottombar.navigation.material.badge.BadgeUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -128,17 +128,17 @@ import java.util.Iterator;
  * example usage is like so:
  *
  * <pre>
- * &lt;com.google.android.material.tabs.TabLayout
+ * &lt;com.bottombar.navigation.material.tabs.TabLayout
  *         android:layout_height=&quot;wrap_content&quot;
  *         android:layout_width=&quot;match_parent&quot;&gt;
  *
- *     &lt;com.google.android.material.tabs.TabItem
+ *     &lt;com.bottombar.navigation.material.tabs.TabItem
  *             android:text=&quot;@string/tab_text&quot;/&gt;
  *
- *     &lt;com.google.android.material.tabs.TabItem
+ *     &lt;com.bottombar.navigation.material.tabs.TabItem
  *             android:icon=&quot;@drawable/ic_android&quot;/&gt;
  *
- * &lt;/com.google.android.material.tabs.TabLayout&gt;
+ * &lt;/com.bottombar.navigation.material.tabs.TabLayout&gt;
  * </pre>
  *
  * <h3>ViewPager integration</h3>
@@ -155,7 +155,7 @@ import java.util.Iterator;
  *     android:layout_width=&quot;match_parent&quot;
  *     android:layout_height=&quot;match_parent&quot;&gt;
  *
- *     &lt;com.google.android.material.tabs.TabLayout
+ *     &lt;com.bottombar.navigation.material.tabs.TabLayout
  *         android:layout_width=&quot;match_parent&quot;
  *         android:layout_height=&quot;wrap_content&quot;
  *         android:layout_gravity=&quot;top&quot; /&gt;
@@ -164,16 +164,16 @@ import java.util.Iterator;
  * </pre>
  *
  * @see <a href="http://www.google.com/design/spec/components/tabs.html">Tabs</a>
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabPadding
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabPaddingStart
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabPaddingTop
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabPaddingEnd
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabPaddingBottom
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabContentStart
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabBackground
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabMinWidth
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabMaxWidth
- * @attr ref com.google.android.material.R.styleable#TabLayout_tabTextAppearance
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabPadding
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabPaddingStart
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabPaddingTop
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabPaddingEnd
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabPaddingBottom
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabContentStart
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabBackground
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabMinWidth
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabMaxWidth
+ * @attr ref com.ssos.support.R.styleable#TabLayout_tabTextAppearance
  */
 @ViewPager.DecorView
 public class TabLayout extends HorizontalScrollView {
@@ -302,7 +302,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setSelectedTabIndicatorGravity(int)
    * @see #getTabIndicatorGravity()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorGravity
    */
   public static final int INDICATOR_GRAVITY_BOTTOM = 0;
 
@@ -315,7 +315,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setSelectedTabIndicatorGravity(int)
    * @see #getTabIndicatorGravity()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorGravity
    */
   public static final int INDICATOR_GRAVITY_CENTER = 1;
 
@@ -328,7 +328,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setSelectedTabIndicatorGravity(int)
    * @see #getTabIndicatorGravity()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorGravity
    */
   public static final int INDICATOR_GRAVITY_TOP = 2;
 
@@ -339,7 +339,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setSelectedTabIndicatorGravity(int)
    * @see #getTabIndicatorGravity()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorGravity
    */
   public static final int INDICATOR_GRAVITY_STRETCH = 3;
 
@@ -365,7 +365,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setTabIndicatorAnimationMode(int)
    * @see #getTabIndicatorAnimationMode()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorAnimationMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorAnimationMode
    */
   public static final int INDICATOR_ANIMATION_MODE_LINEAR = 0;
 
@@ -381,7 +381,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setTabIndicatorAnimationMode(int)
    * @see #getTabIndicatorAnimationMode()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorAnimationMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorAnimationMode
    */
   public static final int INDICATOR_ANIMATION_MODE_ELASTIC = 1;
 
@@ -391,7 +391,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @see #setTabIndicatorAnimationMode(int)
    * @see #getTabIndicatorAnimationMode()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorAnimationMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorAnimationMode
    */
   public static final int INDICATOR_ANIMATION_MODE_FADE = 2;
 
@@ -638,7 +638,7 @@ public class TabLayout extends HorizontalScrollView {
    * set to {@code Color.TRANSPARENT} to avoid your color/tint being overridden.
    *
    * @param color color to use for the indicator
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorColor
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorColor
    */
   public void setSelectedTabIndicatorColor(@ColorInt int color) {
     this.tabSelectedIndicatorColor = color;
@@ -651,7 +651,7 @@ public class TabLayout extends HorizontalScrollView {
    * @deprecated If possible, set the intrinsic height directly on a custom indicator drawable
    *     passed to {@link #setSelectedTabIndicator(Drawable)}.
    * @param height height to use for the indicator in pixels
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorHeight
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorHeight
    */
   @Deprecated
   public void setSelectedTabIndicatorHeight(int height) {
@@ -1012,7 +1012,7 @@ public class TabLayout extends HorizontalScrollView {
    * </ul>
    *
    * @param mode one of {@link #MODE_FIXED} or {@link #MODE_SCROLLABLE}.
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabMode
    */
   public void setTabMode(@Mode int mode) {
     if (mode != this.mode) {
@@ -1035,7 +1035,7 @@ public class TabLayout extends HorizontalScrollView {
    * Set the gravity to use when laying out the tabs.
    *
    * @param gravity one of {@link #GRAVITY_CENTER} or {@link #GRAVITY_FILL}.
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabGravity
    */
   public void setTabGravity(@TabGravity int gravity) {
     if (tabGravity != gravity) {
@@ -1066,7 +1066,7 @@ public class TabLayout extends HorizontalScrollView {
    * @param indicatorGravity one of {@link #INDICATOR_GRAVITY_BOTTOM}, {@link
    *     #INDICATOR_GRAVITY_CENTER}, {@link #INDICATOR_GRAVITY_TOP}, or {@link
    *     #INDICATOR_GRAVITY_STRETCH}
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorGravity
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorGravity
    */
   public void setSelectedTabIndicatorGravity(@TabIndicatorGravity int indicatorGravity) {
     if (tabIndicatorGravity != indicatorGravity) {
@@ -1095,7 +1095,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @param tabIndicatorAnimationMode one of {@link #INDICATOR_ANIMATION_MODE_LINEAR} or {@link
    *     #INDICATOR_ANIMATION_MODE_ELASTIC}
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorAnimationMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorAnimationMode
    * @see #getTabIndicatorAnimationMode()
    */
   public void setTabIndicatorAnimationMode(
@@ -1123,7 +1123,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @return one of {@link #INDICATOR_ANIMATION_MODE_LINEAR} or {@link
    *     #INDICATOR_ANIMATION_MODE_ELASTIC}
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorAnimationMode
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorAnimationMode
    * @see #setTabIndicatorAnimationMode(int)
    */
   @TabIndicatorAnimationMode
@@ -1143,7 +1143,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @param tabIndicatorFullWidth Whether or not to fit selection indicator width to full width of
    *     the tab item
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorFullWidth
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorFullWidth
    * @see #isTabIndicatorFullWidth()
    */
   public void setTabIndicatorFullWidth(boolean tabIndicatorFullWidth) {
@@ -1157,7 +1157,7 @@ public class TabLayout extends HorizontalScrollView {
    * the tab item's content.
    *
    * @return whether or not selection indicator width is fit to the full width of the tab item
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabIndicatorFullWidth
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabIndicatorFullWidth
    * @see #setTabIndicatorFullWidth(boolean)
    */
   public boolean isTabIndicatorFullWidth() {
@@ -1169,7 +1169,7 @@ public class TabLayout extends HorizontalScrollView {
    * underneath tab icons.
    *
    * @see #isInlineLabel()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabInlineLabel
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabInlineLabel
    */
   public void setInlineLabel(boolean inline) {
     if (inlineLabel != inline) {
@@ -1190,7 +1190,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @param inlineResourceId Resource ID for boolean inline flag
    * @see #isInlineLabel()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabInlineLabel
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabInlineLabel
    */
   public void setInlineLabelResource(@BoolRes int inlineResourceId) {
     setInlineLabel(getResources().getBoolean(inlineResourceId));
@@ -1201,7 +1201,7 @@ public class TabLayout extends HorizontalScrollView {
    * displayed underneath tab icons.
    *
    * @see #setInlineLabel(boolean)
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabInlineLabel
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabInlineLabel
    */
   public boolean isInlineLabel() {
     return inlineLabel;
@@ -1214,7 +1214,7 @@ public class TabLayout extends HorizontalScrollView {
    * <p>Defaults to false.
    *
    * @see #hasUnboundedRipple()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabUnboundedRipple
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabUnboundedRipple
    */
   public void setUnboundedRipple(boolean unboundedRipple) {
     if (this.unboundedRipple != unboundedRipple) {
@@ -1234,7 +1234,7 @@ public class TabLayout extends HorizontalScrollView {
    *
    * @param unboundedRippleResourceId Resource ID for boolean unbounded ripple value
    * @see #hasUnboundedRipple()
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabUnboundedRipple
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabUnboundedRipple
    */
   public void setUnboundedRippleResource(@BoolRes int unboundedRippleResourceId) {
     setUnboundedRipple(getResources().getBoolean(unboundedRippleResourceId));
@@ -1245,7 +1245,7 @@ public class TabLayout extends HorizontalScrollView {
    * the tab item size.
    *
    * @see #setUnboundedRipple(boolean)
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabUnboundedRipple
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabUnboundedRipple
    */
   public boolean hasUnboundedRipple() {
     return unboundedRipple;
@@ -1272,8 +1272,8 @@ public class TabLayout extends HorizontalScrollView {
   /**
    * Sets the text colors for the different states (normal, selected) used for the tabs.
    *
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabTextColor
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabSelectedTextColor
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabTextColor
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabSelectedTextColor
    */
   public void setTabTextColors(int normalColor, int selectedColor) {
     setTabTextColors(createColorStateList(normalColor, selectedColor));
@@ -1325,7 +1325,7 @@ public class TabLayout extends HorizontalScrollView {
    * than a ripple.
    *
    * @param color color (or ColorStateList) to use for the ripple
-   * @attr ref com.google.android.material.R.styleable#TabLayout_tabRippleColor
+   * @attr ref com.ssos.support.R.styleable#TabLayout_tabRippleColor
    * @see #getTabRippleColor()
    */
   public void setTabRippleColor(@Nullable ColorStateList color) {

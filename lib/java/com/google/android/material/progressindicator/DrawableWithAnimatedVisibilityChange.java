@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,7 +31,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
-import com.google.android.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tabs;
+package com.bottombar.navigation.material.tabs;
 
 import static androidx.viewpager2.widget.ViewPager2.SCROLL_STATE_DRAGGING;
 import static androidx.viewpager2.widget.ViewPager2.SCROLL_STATE_IDLE;

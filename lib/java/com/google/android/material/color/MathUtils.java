@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;

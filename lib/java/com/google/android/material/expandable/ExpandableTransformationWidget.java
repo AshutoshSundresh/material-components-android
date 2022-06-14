@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.expandable;
+package com.bottombar.navigation.material.expandable;
 
 import androidx.annotation.IdRes;
 

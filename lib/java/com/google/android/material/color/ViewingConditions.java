@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
 /**
  * In traditional color spaces, a color can be identified solely by the observer's measurement of

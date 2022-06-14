@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -39,8 +39,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.core.graphics.ColorUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearancePathProvider;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearancePathProvider;
 
 /**
  * A Drawable that draws borders for {@link FloatingActionButton}

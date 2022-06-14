@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.core.util.Preconditions.checkNotNull;
 
@@ -38,10 +38,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shadow.ShadowViewDelegate;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shadow.ShadowViewDelegate;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.util.ArrayList;
 import java.util.List;
 

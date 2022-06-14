@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.google.android.material.slider;
+package com.bottombar.navigation.material.slider;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.core.math.MathUtils.clamp;
 import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.RangeInfoCompat.RANGE_TYPE_FLOAT;
-import static com.google.android.material.slider.LabelFormatter.LABEL_FLOATING;
-import static com.google.android.material.slider.LabelFormatter.LABEL_GONE;
-import static com.google.android.material.slider.LabelFormatter.LABEL_VISIBLE;
-import static com.google.android.material.slider.LabelFormatter.LABEL_WITHIN_BOUNDS;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.slider.LabelFormatter.LABEL_FLOATING;
+import static com.bottombar.navigation.material.slider.LabelFormatter.LABEL_GONE;
+import static com.bottombar.navigation.material.slider.LabelFormatter.LABEL_VISIBLE;
+import static com.bottombar.navigation.material.slider.LabelFormatter.LABEL_WITHIN_BOUNDS;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Float.compare;
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
@@ -82,17 +82,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.RangeInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.drawable.DrawableUtils;
-import com.google.android.material.internal.DescendantOffsetUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewOverlayImpl;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.CornerFamily;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.tooltip.TooltipDrawable;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.drawable.DrawableUtils;
+import com.bottombar.navigation.material.internal.DescendantOffsetUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewOverlayImpl;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.CornerFamily;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.tooltip.TooltipDrawable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.math.BigDecimal;
@@ -117,7 +117,7 @@ import java.util.List;
  * displays the selected value using letters to indicate magnitude (e.g.: 1.5K, 3M, 12B, etc..).
  *
  * <p>With the default style {@link
- * com.google.android.material.R.style#Widget_MaterialComponents_Slider}, colorPrimary and
+ * com.ssos.support.R.style#Widget_MaterialComponents_Slider}, colorPrimary and
  * colorOnPrimary are used to customize the color of the slider when enabled, and colorOnSurface is
  * used when disabled. The following attributes are used to customize the slider's appearance
  * further:
@@ -172,25 +172,25 @@ import java.util.List;
  *       be thrown when the view is laid out.
  * </ul>
  *
- * @attr ref com.google.android.material.R.styleable#Slider_android_enabled
- * @attr ref com.google.android.material.R.styleable#Slider_android_stepSize
- * @attr ref com.google.android.material.R.styleable#Slider_android_valueFrom
- * @attr ref com.google.android.material.R.styleable#Slider_android_valueTo
- * @attr ref com.google.android.material.R.styleable#Slider_haloColor
- * @attr ref com.google.android.material.R.styleable#Slider_haloRadius
- * @attr ref com.google.android.material.R.styleable#Slider_labelBehavior
- * @attr ref com.google.android.material.R.styleable#Slider_labelStyle
- * @attr ref com.google.android.material.R.styleable#Slider_thumbColor
- * @attr ref com.google.android.material.R.styleable#Slider_thumbElevation
- * @attr ref com.google.android.material.R.styleable#Slider_thumbRadius
- * @attr ref com.google.android.material.R.styleable#Slider_tickColor
- * @attr ref com.google.android.material.R.styleable#Slider_tickColorActive
- * @attr ref com.google.android.material.R.styleable#Slider_tickColorInactive
- * @attr ref com.google.android.material.R.styleable#Slider_tickVisible
- * @attr ref com.google.android.material.R.styleable#Slider_trackColor
- * @attr ref com.google.android.material.R.styleable#Slider_trackColorActive
- * @attr ref com.google.android.material.R.styleable#Slider_trackColorInactive
- * @attr ref com.google.android.material.R.styleable#Slider_trackHeight
+ * @attr ref com.ssos.support.R.styleable#Slider_android_enabled
+ * @attr ref com.ssos.support.R.styleable#Slider_android_stepSize
+ * @attr ref com.ssos.support.R.styleable#Slider_android_valueFrom
+ * @attr ref com.ssos.support.R.styleable#Slider_android_valueTo
+ * @attr ref com.ssos.support.R.styleable#Slider_haloColor
+ * @attr ref com.ssos.support.R.styleable#Slider_haloRadius
+ * @attr ref com.ssos.support.R.styleable#Slider_labelBehavior
+ * @attr ref com.ssos.support.R.styleable#Slider_labelStyle
+ * @attr ref com.ssos.support.R.styleable#Slider_thumbColor
+ * @attr ref com.ssos.support.R.styleable#Slider_thumbElevation
+ * @attr ref com.ssos.support.R.styleable#Slider_thumbRadius
+ * @attr ref com.ssos.support.R.styleable#Slider_tickColor
+ * @attr ref com.ssos.support.R.styleable#Slider_tickColorActive
+ * @attr ref com.ssos.support.R.styleable#Slider_tickColorInactive
+ * @attr ref com.ssos.support.R.styleable#Slider_tickVisible
+ * @attr ref com.ssos.support.R.styleable#Slider_trackColor
+ * @attr ref com.ssos.support.R.styleable#Slider_trackColorActive
+ * @attr ref com.ssos.support.R.styleable#Slider_trackColorInactive
+ * @attr ref com.ssos.support.R.styleable#Slider_trackHeight
  */
 abstract class BaseSlider<
         S extends BaseSlider<S, L, T>,
@@ -626,7 +626,7 @@ abstract class BaseSlider<
    * Returns the slider's {@code valueFrom} value.
    *
    * @see #setValueFrom(float)
-   * @attr ref com.google.android.material.R.styleable#Slider_android_valueFrom
+   * @attr ref com.ssos.support.R.styleable#Slider_android_valueFrom
    */
   public float getValueFrom() {
     return valueFrom;
@@ -640,7 +640,7 @@ abstract class BaseSlider<
    *
    * @param valueFrom The minimum value for the slider's range of values
    * @see #getValueFrom()
-   * @attr ref com.google.android.material.R.styleable#Slider_android_valueFrom
+   * @attr ref com.ssos.support.R.styleable#Slider_android_valueFrom
    */
   public void setValueFrom(float valueFrom) {
     this.valueFrom = valueFrom;
@@ -652,7 +652,7 @@ abstract class BaseSlider<
    * Returns the slider's {@code valueTo} value.
    *
    * @see #setValueTo(float)
-   * @attr ref com.google.android.material.R.styleable#Slider_android_valueTo
+   * @attr ref com.ssos.support.R.styleable#Slider_android_valueTo
    */
   public float getValueTo() {
     return valueTo;
@@ -666,7 +666,7 @@ abstract class BaseSlider<
    *
    * @param valueTo The maximum value for the slider's range of values
    * @see #getValueTo()
-   * @attr ref com.google.android.material.R.styleable#Slider_android_valueTo
+   * @attr ref com.ssos.support.R.styleable#Slider_android_valueTo
    */
   public void setValueTo(float valueTo) {
     this.valueTo = valueTo;
@@ -781,7 +781,7 @@ abstract class BaseSlider<
    * than 0 means that the slider is operating in discrete mode.
    *
    * @see #setStepSize(float)
-   * @attr ref com.google.android.material.R.styleable#Slider_android_stepSize
+   * @attr ref com.ssos.support.R.styleable#Slider_android_stepSize
    */
   public float getStepSize() {
     return stepSize;
@@ -803,7 +803,7 @@ abstract class BaseSlider<
    *     in continuous mode and not have any ticks.
    * @throws IllegalArgumentException If the step size is less than 0
    * @see #getStepSize()
-   * @attr ref com.google.android.material.R.styleable#Slider_android_stepSize
+   * @attr ref com.ssos.support.R.styleable#Slider_android_stepSize
    */
   public void setStepSize(float stepSize) {
     if (stepSize < 0.0f) {
@@ -1001,7 +1001,7 @@ abstract class BaseSlider<
    *
    * @see #setThumbElevation(float)
    * @see #setThumbElevationResource(int)
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbElevation
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbElevation
    */
   public float getThumbElevation() {
     return defaultThumbDrawable.getElevation();
@@ -1011,7 +1011,7 @@ abstract class BaseSlider<
    * Sets the elevation of the thumb.
    *
    * @see #getThumbElevation()
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbElevation
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbElevation
    */
   public void setThumbElevation(float elevation) {
     defaultThumbDrawable.setElevation(elevation);
@@ -1021,7 +1021,7 @@ abstract class BaseSlider<
    * Sets the elevation of the thumb from a dimension resource.
    *
    * @see #getThumbElevation()
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbElevation
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbElevation
    */
   public void setThumbElevationResource(@DimenRes int elevation) {
     setThumbElevation(getResources().getDimension(elevation));
@@ -1035,7 +1035,7 @@ abstract class BaseSlider<
    *
    * @see #setThumbRadius(int)
    * @see #setThumbRadiusResource(int)
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbRadius
    */
   @Dimension
   public int getThumbRadius() {
@@ -1049,7 +1049,7 @@ abstract class BaseSlider<
    * {@link #setCustomThumbDrawablesForValues(Drawable...)}.
    *
    * @see #getThumbRadius()
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbRadius
    */
   public void setThumbRadius(@IntRange(from = 0) @Dimension int radius) {
     if (radius == thumbRadius) {
@@ -1079,7 +1079,7 @@ abstract class BaseSlider<
    * {@link #setCustomThumbDrawablesForValues(Drawable...)}.
    *
    * @see #getThumbRadius()
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbRadius
    */
   public void setThumbRadiusResource(@DimenRes int radius) {
     setThumbRadius(getResources().getDimensionPixelSize(radius));
@@ -1090,7 +1090,7 @@ abstract class BaseSlider<
    * for a stroke to be drawn.
    *
    * @param thumbStrokeColor Color to use for the stroke in the thumbs.
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeColor
    * @see #setThumbStrokeColorResource(int)
    * @see #getThumbStrokeColor()
    */
@@ -1104,7 +1104,7 @@ abstract class BaseSlider<
    * must be set for a stroke to be drawn.
    *
    * @param thumbStrokeColorResourceId Color resource to use for the stroke.
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeColor
    * @see #setThumbStrokeColor(ColorStateList)
    * @see #getThumbStrokeColor()
    */
@@ -1119,7 +1119,7 @@ abstract class BaseSlider<
    * Gets the stroke color for the thumb.
    *
    * @return The color used for the stroke in the thumb.
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeColor
    * @see #setThumbStrokeColor(ColorStateList)
    * @see #setThumbStrokeColorResource(int)
    */
@@ -1132,7 +1132,7 @@ abstract class BaseSlider<
    * for a stroke to be drawn.
    *
    * @param thumbStrokeWidth Stroke width for the thumb
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeWidth
    * @see #setThumbStrokeWidthResource(int)
    * @see #getThumbStrokeWidth()
    */
@@ -1146,7 +1146,7 @@ abstract class BaseSlider<
    * width must be set for a stroke to be drawn.
    *
    * @param thumbStrokeWidthResourceId Stroke width dimension resource for the thumb
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeWidth
    * @see #setThumbStrokeWidth(float)
    * @see #getThumbStrokeWidth()
    */
@@ -1160,7 +1160,7 @@ abstract class BaseSlider<
    * Gets the stroke width for the thumb
    *
    * @return Stroke width for the thumb.
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbStrokeWidth
    * @see #setThumbStrokeWidth(float)
    * @see #setThumbStrokeWidthResource(int)
    */
@@ -1173,7 +1173,7 @@ abstract class BaseSlider<
    *
    * @see #setHaloRadius(int)
    * @see #setHaloRadiusResource(int)
-   * @attr ref com.google.android.material.R.styleable#Slider_haloRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_haloRadius
    */
   @Dimension()
   public int getHaloRadius() {
@@ -1184,7 +1184,7 @@ abstract class BaseSlider<
    * Sets the radius of the halo in pixels.
    *
    * @see #getHaloRadius()
-   * @attr ref com.google.android.material.R.styleable#Slider_haloRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_haloRadius
    */
   public void setHaloRadius(@IntRange(from = 0) @Dimension int radius) {
     if (radius == haloRadius) {
@@ -1205,7 +1205,7 @@ abstract class BaseSlider<
    * Sets the radius of the halo from a dimension resource.
    *
    * @see #getHaloRadius()
-   * @attr ref com.google.android.material.R.styleable#Slider_haloRadius
+   * @attr ref com.ssos.support.R.styleable#Slider_haloRadius
    */
   public void setHaloRadiusResource(@DimenRes int radius) {
     setHaloRadius(getResources().getDimensionPixelSize(radius));
@@ -1215,7 +1215,7 @@ abstract class BaseSlider<
    * Returns the {@link LabelBehavior} used.
    *
    * @see #setLabelBehavior(int)
-   * @attr ref com.google.android.material.R.styleable#Slider_labelBehavior
+   * @attr ref com.ssos.support.R.styleable#Slider_labelBehavior
    */
   @LabelBehavior
   public int getLabelBehavior() {
@@ -1227,7 +1227,7 @@ abstract class BaseSlider<
    *
    * @see LabelBehavior
    * @see #getLabelBehavior()
-   * @attr ref com.google.android.material.R.styleable#Slider_labelBehavior
+   * @attr ref com.ssos.support.R.styleable#Slider_labelBehavior
    */
   public void setLabelBehavior(@LabelBehavior int labelBehavior) {
     if (this.labelBehavior != labelBehavior) {
@@ -1240,7 +1240,7 @@ abstract class BaseSlider<
    * Returns whether the labels should be always shown based on the {@link LabelBehavior}.
    *
    * @see LabelBehavior
-   * @attr ref com.google.android.material.R.styleable#Slider_labelBehavior
+   * @attr ref com.ssos.support.R.styleable#Slider_labelBehavior
    */
   private boolean shouldAlwaysShowLabel() {
     return this.labelBehavior == LABEL_VISIBLE;
@@ -1262,7 +1262,7 @@ abstract class BaseSlider<
    * Returns the height of the track in pixels.
    *
    * @see #setTrackHeight(int)
-   * @attr ref com.google.android.material.R.styleable#Slider_trackHeight
+   * @attr ref com.ssos.support.R.styleable#Slider_trackHeight
    */
   @Dimension()
   public int getTrackHeight() {
@@ -1273,7 +1273,7 @@ abstract class BaseSlider<
    * Set the height of the track in pixels.
    *
    * @see #getTrackHeight()
-   * @attr ref com.google.android.material.R.styleable#Slider_trackHeight
+   * @attr ref com.ssos.support.R.styleable#Slider_trackHeight
    */
   public void setTrackHeight(@IntRange(from = 0) @Dimension int trackHeight) {
     if (this.trackHeight != trackHeight) {
@@ -1311,7 +1311,7 @@ abstract class BaseSlider<
    * Returns the color of the halo.
    *
    * @see #setHaloTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_haloColor
+   * @attr ref com.ssos.support.R.styleable#Slider_haloColor
    */
   @NonNull
   public ColorStateList getHaloTintList() {
@@ -1322,7 +1322,7 @@ abstract class BaseSlider<
    * Sets the color of the halo.
    *
    * @see #getHaloTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_haloColor
+   * @attr ref com.ssos.support.R.styleable#Slider_haloColor
    */
   public void setHaloTintList(@NonNull ColorStateList haloColor) {
     if (haloColor.equals(this.haloColor)) {
@@ -1345,7 +1345,7 @@ abstract class BaseSlider<
    * Returns the color of the thumb.
    *
    * @see #setThumbTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbColor
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbColor
    */
   @NonNull
   public ColorStateList getThumbTintList() {
@@ -1356,7 +1356,7 @@ abstract class BaseSlider<
    * Sets the color of the thumb.
    *
    * @see #getThumbTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_thumbColor
+   * @attr ref com.ssos.support.R.styleable#Slider_thumbColor
    */
   public void setThumbTintList(@NonNull ColorStateList thumbColor) {
     if (thumbColor.equals(defaultThumbDrawable.getFillColor())) {
@@ -1377,7 +1377,7 @@ abstract class BaseSlider<
    * @see #setTickActiveTintList(ColorStateList)
    * @see #getTickInactiveTintList()
    * @see #getTickActiveTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColor
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColor
    */
   @NonNull
   public ColorStateList getTickTintList() {
@@ -1395,7 +1395,7 @@ abstract class BaseSlider<
    * @see #setTickInactiveTintList(ColorStateList)
    * @see #setTickActiveTintList(ColorStateList)
    * @see #getTickTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColor
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColor
    */
   public void setTickTintList(@NonNull ColorStateList tickColor) {
     setTickInactiveTintList(tickColor);
@@ -1408,7 +1408,7 @@ abstract class BaseSlider<
    * @see #setTickActiveTintList(ColorStateList)
    * @see #setTickTintList(ColorStateList)
    * @see #getTickTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColorActive
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColorActive
    */
   @NonNull
   public ColorStateList getTickActiveTintList() {
@@ -1420,7 +1420,7 @@ abstract class BaseSlider<
    *
    * @see #getTickActiveTintList()
    * @see #setTickTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColorActive
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColorActive
    */
   public void setTickActiveTintList(@NonNull ColorStateList tickColor) {
     if (tickColor.equals(tickColorActive)) {
@@ -1437,7 +1437,7 @@ abstract class BaseSlider<
    * @see #setTickInactiveTintList(ColorStateList)
    * @see #setTickTintList(ColorStateList)
    * @see #getTickTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColorInactive
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColorInactive
    */
   @NonNull
   public ColorStateList getTickInactiveTintList() {
@@ -1449,7 +1449,7 @@ abstract class BaseSlider<
    *
    * @see #getTickInactiveTintList()
    * @see #setTickTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_tickColorInactive
+   * @attr ref com.ssos.support.R.styleable#Slider_tickColorInactive
    */
   public void setTickInactiveTintList(@NonNull ColorStateList tickColor) {
     if (tickColor.equals(tickColorInactive)) {
@@ -1464,7 +1464,7 @@ abstract class BaseSlider<
    * Returns whether the tick marks are visible. Only used when the slider is in discrete mode.
    *
    * @see #setTickVisible(boolean)
-   * @attr ref com.google.android.material.R.styleable#Slider_tickVisible
+   * @attr ref com.ssos.support.R.styleable#Slider_tickVisible
    */
   public boolean isTickVisible() {
     return tickVisible;
@@ -1474,7 +1474,7 @@ abstract class BaseSlider<
    * Sets whether the tick marks are visible. Only used when the slider is in discrete mode.
    *
    * @param tickVisible The visibility of tick marks.
-   * @attr ref com.google.android.material.R.styleable#Slider_tickVisible
+   * @attr ref com.ssos.support.R.styleable#Slider_tickVisible
    */
   public void setTickVisible(boolean tickVisible) {
     if (this.tickVisible != tickVisible) {
@@ -1493,7 +1493,7 @@ abstract class BaseSlider<
    * @see #setTrackActiveTintList(ColorStateList)
    * @see #getTrackInactiveTintList()
    * @see #getTrackActiveTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColor
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColor
    */
   @NonNull
   public ColorStateList getTrackTintList() {
@@ -1511,7 +1511,7 @@ abstract class BaseSlider<
    * @see #setTrackInactiveTintList(ColorStateList)
    * @see #setTrackActiveTintList(ColorStateList)
    * @see #getTrackTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColor
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColor
    */
   public void setTrackTintList(@NonNull ColorStateList trackColor) {
     setTrackInactiveTintList(trackColor);
@@ -1524,7 +1524,7 @@ abstract class BaseSlider<
    * @see #setTrackActiveTintList(ColorStateList)
    * @see #setTrackTintList(ColorStateList)
    * @see #getTrackTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColorActive
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColorActive
    */
   @NonNull
   public ColorStateList getTrackActiveTintList() {
@@ -1536,7 +1536,7 @@ abstract class BaseSlider<
    *
    * @see #getTrackActiveTintList()
    * @see #setTrackTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColorActive
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColorActive
    */
   public void setTrackActiveTintList(@NonNull ColorStateList trackColor) {
     if (trackColor.equals(trackColorActive)) {
@@ -1553,7 +1553,7 @@ abstract class BaseSlider<
    * @see #setTrackInactiveTintList(ColorStateList)
    * @see #setTrackTintList(ColorStateList)
    * @see #getTrackTintList()
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColorInactive
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColorInactive
    */
   @NonNull
   public ColorStateList getTrackInactiveTintList() {
@@ -1565,7 +1565,7 @@ abstract class BaseSlider<
    *
    * @see #getTrackInactiveTintList()
    * @see #setTrackTintList(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Slider_trackColorInactive
+   * @attr ref com.ssos.support.R.styleable#Slider_trackColorInactive
    */
   public void setTrackInactiveTintList(@NonNull ColorStateList trackColor) {
     if (trackColor.equals(trackColorInactive)) {

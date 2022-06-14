@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.elevation;
+package com.bottombar.navigation.material.elevation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -24,7 +24,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.DimenRes;
 import androidx.annotation.Dimension;
 import androidx.annotation.NonNull;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.color.MaterialColors;
 
 /**
  * Provides a convenient way to get color values of tonal variations of {@code R.attr.colorSurface}.

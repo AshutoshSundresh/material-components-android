@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.chip;
+package com.bottombar.navigation.material.chip;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -36,9 +36,9 @@ import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionInfoCompat;
-import com.google.android.material.internal.CheckableGroup;
-import com.google.android.material.internal.FlowLayout;
-import com.google.android.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.CheckableGroup;
+import com.bottombar.navigation.material.internal.FlowLayout;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
 import java.util.List;
 import java.util.Set;
 

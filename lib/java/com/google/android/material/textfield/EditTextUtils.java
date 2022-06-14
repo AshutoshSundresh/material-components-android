@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
 import android.text.InputType;
 import android.widget.EditText;

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigationrail;
+package com.bottombar.navigation.material.navigationrail;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static java.lang.Math.max;
@@ -27,7 +27,7 @@ import androidx.annotation.DimenRes;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.RestrictTo;
-import com.google.android.material.navigation.NavigationBarItemView;
+import com.bottombar.navigation.material.navigation.NavigationBarItemView;
 
 /** @hide For internal use only. */
 @RestrictTo(LIBRARY_GROUP)

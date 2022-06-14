@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.theme.overlay;
+package com.bottombar.navigation.material.theme.overlay;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;

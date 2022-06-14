@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomappbar;
+package com.bottombar.navigation.material.bottomappbar;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static java.lang.Math.abs;
@@ -22,9 +22,9 @@ import static java.lang.Math.abs;
 import androidx.annotation.FloatRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.RestrictTo;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.shape.EdgeTreatment;
-import com.google.android.material.shape.ShapePath;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton;
+import com.bottombar.navigation.material.shape.EdgeTreatment;
+import com.bottombar.navigation.material.shape.ShapePath;
 
 /**
  * Top edge treatment for the bottom app bar which "cradles" a circular {@link

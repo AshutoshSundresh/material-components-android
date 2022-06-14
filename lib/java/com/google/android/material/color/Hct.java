@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
 /**
  * A color system built using CAM16 hue and chroma, and L* from L*a*b*.

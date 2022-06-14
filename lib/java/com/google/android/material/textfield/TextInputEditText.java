@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -35,15 +35,15 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.internal.ManufacturerUtils;
-import com.google.android.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ManufacturerUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
 
 /**
  * A special sub-class of {@link android.widget.EditText} designed for use as a child of {@link
- * com.google.android.material.textfield.TextInputLayout}.
+ * com.bottombar.navigation.material.textfield.TextInputLayout}.
  *
  * <p>Using this class allows us to display a hint in the IME when in 'extract' mode and provides
- * accessibility support for {@link com.google.android.material.textfield.TextInputLayout}.
+ * accessibility support for {@link com.bottombar.navigation.material.textfield.TextInputLayout}.
  *
  * <p><strong>Note:</strong> If you programmatically construct a {@link TextInputEditText} as a
  * child of a {@link TextInputLayout}, you should use {@link TextInputLayout}'s `context` to

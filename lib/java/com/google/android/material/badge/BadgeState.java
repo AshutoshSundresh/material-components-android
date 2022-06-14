@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.badge;
+package com.bottombar.navigation.material.badge;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.badge.BadgeDrawable.TOP_END;
+import static com.bottombar.navigation.material.badge.BadgeDrawable.TOP_END;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -40,11 +40,11 @@ import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.annotation.StyleableRes;
 import androidx.annotation.XmlRes;
-import com.google.android.material.badge.BadgeDrawable.BadgeGravity;
-import com.google.android.material.drawable.DrawableUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.resources.TextAppearance;
+import com.bottombar.navigation.material.badge.BadgeDrawable.BadgeGravity;
+import com.bottombar.navigation.material.drawable.DrawableUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.resources.TextAppearance;
 import java.util.Locale;
 
 /**

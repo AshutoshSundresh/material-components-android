@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.slider;
+package com.bottombar.navigation.material.slider;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,8 +25,8 @@ import android.util.AttributeSet;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.slider.Slider.OnChangeListener;
-import com.google.android.material.slider.Slider.OnSliderTouchListener;
+import com.bottombar.navigation.material.slider.Slider.OnChangeListener;
+import com.bottombar.navigation.material.slider.Slider.OnSliderTouchListener;
 
 /**
  * A widget that allows picking a value within a given range by sliding a thumb along a horizontal
@@ -37,7 +37,7 @@ import com.google.android.material.slider.Slider.OnSliderTouchListener;
  * <p>{@code android:value}: <b>Optional.</b> The initial value of the slider. If not specified, the
  * slider's minimum value {@code android:valueFrom} is used.
  *
- * @attr ref com.google.android.material.R.styleable#SingleSlider_android_value
+ * @attr ref com.ssos.support.R.styleable#SingleSlider_android_value
  */
 public class Slider extends BaseSlider<Slider, OnChangeListener, OnSliderTouchListener> {
 
@@ -80,7 +80,7 @@ public class Slider extends BaseSlider<Slider, OnChangeListener, OnSliderTouchLi
    * Returns the value of the slider.
    *
    * @see #setValue(float)
-   * @attr ref com.google.android.material.R.styleable#Slider_android_value
+   * @attr ref com.ssos.support.R.styleable#Slider_android_value
    */
   public float getValue() {
     return getValues().get(0);
@@ -100,7 +100,7 @@ public class Slider extends BaseSlider<Slider, OnChangeListener, OnSliderTouchLi
    *
    * @param value The value to which to set the slider
    * @see #getValue()
-   * @attr ref com.google.android.material.R.styleable#Slider_android_value
+   * @attr ref com.ssos.support.R.styleable#Slider_android_value
    */
   public void setValue(float value) {
     setValues(value);

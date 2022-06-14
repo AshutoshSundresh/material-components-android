@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.behavior;
+package com.bottombar.navigation.material.behavior;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 

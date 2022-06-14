@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import static androidx.core.util.Preconditions.checkNotNull;
 

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tabs;
+package com.bottombar.navigation.material.tabs;
 
-import static com.google.android.material.animation.AnimationUtils.lerp;
+import static com.bottombar.navigation.material.animation.AnimationUtils.lerp;
 
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
@@ -25,9 +25,9 @@ import androidx.annotation.Dimension;
 import androidx.annotation.FloatRange;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.tabs.TabLayout.SlidingTabIndicator;
-import com.google.android.material.tabs.TabLayout.TabView;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.tabs.TabLayout.SlidingTabIndicator;
+import com.bottombar.navigation.material.tabs.TabLayout.TabView;
 
 /**
  * A class used to manipulate the {@link SlidingTabIndicator}'s indicator {@link Drawable} at any

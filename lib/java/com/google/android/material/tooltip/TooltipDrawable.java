@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tooltip;
+package com.bottombar.navigation.material.tooltip;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -41,17 +41,17 @@ import androidx.annotation.RestrictTo;
 import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.core.graphics.ColorUtils;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.TextDrawableHelper;
-import com.google.android.material.internal.TextDrawableHelper.TextDrawableDelegate;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.resources.TextAppearance;
-import com.google.android.material.shape.EdgeTreatment;
-import com.google.android.material.shape.MarkerEdgeTreatment;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.OffsetEdgeTreatment;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.TextDrawableHelper;
+import com.bottombar.navigation.material.internal.TextDrawableHelper.TextDrawableDelegate;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.resources.TextAppearance;
+import com.bottombar.navigation.material.shape.EdgeTreatment;
+import com.bottombar.navigation.material.shape.MarkerEdgeTreatment;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.OffsetEdgeTreatment;
 
 /**
  * A Tooltip that supports shape theming and draws a pointer on the bottom in the center of the
@@ -194,7 +194,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
   /**
    * Return the text that TooltipDrawable is displaying.
    *
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_text
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_text
    */
   @Nullable
   public CharSequence getText() {
@@ -206,7 +206,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param id the resource identifier of the string resource to be displayed
    * @see #setText(CharSequence)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_text
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_text
    */
   public void setTextResource(@StringRes int id) {
     setText(context.getResources().getString(id));
@@ -217,7 +217,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param text text to be displayed
    * @see #setTextResource(int)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_text
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_text
    */
   public void setText(@Nullable CharSequence text) {
     if (!TextUtils.equals(this.text, text)) {
@@ -230,7 +230,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
   /**
    * Returns the TextAppearance used by this tooltip.
    *
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_textAppearance
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_textAppearance
    */
   @Nullable
   public TextAppearance getTextAppearance() {
@@ -241,7 +241,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Sets this tooltip's text appearance using a resource id.
    *
    * @param id The resource id of this tooltip's text appearance.
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_textAppearance
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_textAppearance
    */
   public void setTextAppearanceResource(@StyleRes int id) {
     setTextAppearance(new TextAppearance(context, id));
@@ -251,7 +251,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Sets this tooltip's text appearance.
    *
    * @param textAppearance This tooltip's text appearance.
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_textAppearance
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_textAppearance
    */
   public void setTextAppearance(@Nullable TextAppearance textAppearance) {
     textDrawableHelper.setTextAppearance(textAppearance, context);
@@ -261,7 +261,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Returns the minimum width of TooltipDrawable in terms of pixels.
    *
    * @see #setMinWidth(int)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_minWidth
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_minWidth
    */
   public int getMinWidth() {
     return minWidth;
@@ -272,7 +272,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param minWidth the minimum width of TooltipDrawable in terms of pixels
    * @see #getMinWidth()
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_minWidth
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_minWidth
    */
   public void setMinWidth(@Px int minWidth) {
     this.minWidth = minWidth;
@@ -283,7 +283,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Returns the minimum height of TooltipDrawable in terms of pixels.
    *
    * @see #setMinHeight(int)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_minHeight
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_minHeight
    */
   public int getMinHeight() {
     return minHeight;
@@ -294,7 +294,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param minHeight the minimum height of TooltipDrawable in terms of pixels
    * @see #getMinHeight()
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_minHeight
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_minHeight
    */
   public void setMinHeight(@Px int minHeight) {
     this.minHeight = minHeight;
@@ -305,7 +305,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Returns the padding between the text of TooltipDrawable and the sides in terms of pixels.
    *
    * @see #setTextPadding(int)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_padding
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_padding
    */
   public int getTextPadding() {
     return padding;
@@ -316,7 +316,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param padding the padding to use around the text
    * @see #getTextPadding()
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_padding
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_padding
    */
   public void setTextPadding(@Px int padding) {
     this.padding = padding;
@@ -327,7 +327,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    * Returns the margin around the TooltipDrawable.
    *
    * @see #setLayoutMargin(int)
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_layout_margin
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_layout_margin
    */
   public int getLayoutMargin() {
     return layoutMargin;
@@ -338,7 +338,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
    *
    * @param layoutMargin the margin to use around the TooltipDrawable
    * @see #getLayoutMargin()
-   * @attr ref com.google.android.material.R.styleable#Tooltip_android_layout_margin
+   * @attr ref com.ssos.support.R.styleable#Tooltip_android_layout_margin
    */
   public void setLayoutMargin(@Px int layoutMargin) {
     this.layoutMargin = layoutMargin;

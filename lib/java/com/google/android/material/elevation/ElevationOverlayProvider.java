@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.elevation;
+package com.bottombar.navigation.material.elevation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -24,9 +24,9 @@ import android.view.View;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.core.graphics.ColorUtils;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
 
 /** Utility for calculating elevation overlay alpha values and colors. */
 public class ElevationOverlayProvider {

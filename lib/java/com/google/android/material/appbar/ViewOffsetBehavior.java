@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.appbar;
+package com.bottombar.navigation.material.appbar;
 
 import android.content.Context;
 import android.util.AttributeSet;

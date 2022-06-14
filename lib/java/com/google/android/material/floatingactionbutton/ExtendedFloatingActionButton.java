@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Math.min;
 
 import android.animation.Animator;
@@ -46,13 +46,13 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout.AttachedBehavior;
 import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.google.android.material.button.MaterialButton;
-import com.google.android.material.internal.DescendantOffsetUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.appbar.AppBarLayout;
+import com.bottombar.navigation.material.bottomsheet.BottomSheetBehavior;
+import com.bottombar.navigation.material.button.MaterialButton;
+import com.bottombar.navigation.material.internal.DescendantOffsetUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.util.List;
 
 /**
@@ -540,7 +540,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the show animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_showMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_showMotionSpec
    */
   public void setShowMotionSpec(@Nullable MotionSpec spec) {
     showStrategy.setMotionSpec(spec);
@@ -549,7 +549,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the show animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_showMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_showMotionSpec
    */
   public void setShowMotionSpecResource(@AnimatorRes int id) {
     setShowMotionSpec(MotionSpec.createFromResource(getContext(), id));
@@ -564,7 +564,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the hide animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_hideMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_hideMotionSpec
    */
   public void setHideMotionSpec(@Nullable MotionSpec spec) {
     hideStrategy.setMotionSpec(spec);
@@ -573,7 +573,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the hide animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_hideMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_hideMotionSpec
    */
   public void setHideMotionSpecResource(@AnimatorRes int id) {
     setHideMotionSpec(MotionSpec.createFromResource(getContext(), id));
@@ -588,7 +588,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the extend animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_extendMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_extendMotionSpec
    */
   public void setExtendMotionSpec(@Nullable MotionSpec spec) {
     extendStrategy.setMotionSpec(spec);
@@ -597,7 +597,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the extend animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_extendMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_extendMotionSpec
    */
   public void setExtendMotionSpecResource(@AnimatorRes int id) {
     setExtendMotionSpec(MotionSpec.createFromResource(getContext(), id));
@@ -614,7 +614,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the shrink animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_shrinkMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_shrinkMotionSpec
    */
   public void setShrinkMotionSpec(@Nullable MotionSpec spec) {
     shrinkStrategy.setMotionSpec(spec);
@@ -623,7 +623,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Updates the motion spec for the shrink animation.
    *
-   * @attr ref com.google.android.material.R.styleable#ExtendedFloatingActionButton_shrinkMotionSpec
+   * @attr ref com.ssos.support.R.styleable#ExtendedFloatingActionButton_shrinkMotionSpec
    */
   public void setShrinkMotionSpecResource(@AnimatorRes int id) {
     setShrinkMotionSpec(MotionSpec.createFromResource(getContext(), id));
@@ -811,7 +811,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
   /**
    * Behavior designed for use with {@link ExtendedFloatingActionButton} instances. Its main
    * function is to move {@link ExtendedFloatingActionButton} views so that any displayed {@link
-   * com.google.android.material.snackbar.Snackbar}s do not cover them.
+   * com.bottombar.navigation.material.snackbar.Snackbar}s do not cover them.
    */
   protected static class ExtendedFloatingActionButtonBehavior<
       T extends ExtendedFloatingActionButton>
@@ -858,7 +858,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * <p>In case auto-shrink is enabled, it will take precedence over the auto-hide option.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @param autoHide true to enable automatic hiding
      */
     public void setAutoHideEnabled(boolean autoHide) {
@@ -870,7 +870,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * not enough space to be displayed.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @return true if enabled
      */
     public boolean isAutoHideEnabled() {
@@ -883,7 +883,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * BottomSheetBehavior}.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
      * @param autoShrink true to enable automatic shrinking
      */
     public void setAutoShrinkEnabled(boolean autoShrink) {
@@ -895,7 +895,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * is not enough space to be displayed.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
      * @return true if enabled
      */
     public boolean isAutoShrinkEnabled() {
@@ -1020,9 +1020,9 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * only when the auto-shrink is {@code false} and auto-hide is {@code true}.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @see #setAutoShrinkEnabled(boolean)
      * @see #setAutoHideEnabled(boolean)
      */
@@ -1043,9 +1043,9 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Atta
      * only when the auto-shrink is {@code false} and auto-hide is {@code true}.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
      * @attr ref
-     *     com.google.android.material.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
+     *     com.ssos.support.R.styleable#ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @see #setAutoShrinkEnabled(boolean)
      * @see #setAutoHideEnabled(boolean)
      */

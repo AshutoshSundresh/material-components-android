@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionInfoCompat.SELECTION_MODE_SINGLE;
 import static java.lang.Math.abs;
@@ -53,8 +53,8 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionItemInfoCompat;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.timepicker.ClockHandView.OnRotateListener;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.timepicker.ClockHandView.OnRotateListener;
 import java.util.Arrays;
 
 /**

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -24,8 +24,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat.AnimationCallback;
-import com.google.android.material.animation.ArgbEvaluatorCompat;
-import com.google.android.material.color.MaterialColors;
+import com.bottombar.navigation.material.animation.ArgbEvaluatorCompat;
+import com.bottombar.navigation.material.color.MaterialColors;
 
 /**
  * This is the implementation class for drawing progress indicator in the circular indeterminate

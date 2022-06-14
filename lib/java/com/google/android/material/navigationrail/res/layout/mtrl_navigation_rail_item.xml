@@ -36,7 +36,7 @@
       android:contentDescription="@null"
       android:duplicateParentState="true" />
   </FrameLayout>
-  <com.google.android.material.internal.BaselineLayout
+  <com.bottombar.navigation.material.internal.BaselineLayout
       android:id="@id/navigation_bar_item_labels_group"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -62,5 +62,5 @@
         android:maxLines="1"
         android:textSize="@dimen/mtrl_navigation_rail_active_text_size"
         android:visibility="invisible" />
-  </com.google.android.material.internal.BaselineLayout>
+  </com.bottombar.navigation.material.internal.BaselineLayout>
 </merge>

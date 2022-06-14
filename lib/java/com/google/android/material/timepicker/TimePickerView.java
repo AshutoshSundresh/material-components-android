@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static java.util.Calendar.AM;
 import static java.util.Calendar.HOUR;
@@ -40,11 +40,11 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.button.MaterialButtonToggleGroup;
-import com.google.android.material.button.MaterialButtonToggleGroup.OnButtonCheckedListener;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.timepicker.ClockHandView.OnActionUpListener;
-import com.google.android.material.timepicker.ClockHandView.OnRotateListener;
+import com.bottombar.navigation.material.button.MaterialButtonToggleGroup;
+import com.bottombar.navigation.material.button.MaterialButtonToggleGroup.OnButtonCheckedListener;
+import com.bottombar.navigation.material.chip.Chip;
+import com.bottombar.navigation.material.timepicker.ClockHandView.OnActionUpListener;
+import com.bottombar.navigation.material.timepicker.ClockHandView.OnRotateListener;
 import java.util.Locale;
 
 /**

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
 import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
 import static android.view.inputmethod.EditorInfo.IME_ACTION_NEXT;
@@ -30,8 +30,8 @@ import android.view.View.OnKeyListener;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
-import com.google.android.material.textfield.TextInputLayout;
-import com.google.android.material.timepicker.TimePickerControls.ActiveSelection;
+import com.bottombar.navigation.material.textfield.TextInputLayout;
+import com.bottombar.navigation.material.timepicker.TimePickerControls.ActiveSelection;
 
 /**
  * A class for the keyboard logic when the TimePicker is in {@code TimeFormat.KEYBOARD}

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shadow;
+package com.bottombar.navigation.material.shadow;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 

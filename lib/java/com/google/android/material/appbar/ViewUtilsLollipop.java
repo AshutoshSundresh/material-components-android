@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.appbar;
+package com.bottombar.navigation.material.appbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
@@ -28,7 +28,7 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import com.google.android.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
 
 @RequiresApi(21)
 class ViewUtilsLollipop {

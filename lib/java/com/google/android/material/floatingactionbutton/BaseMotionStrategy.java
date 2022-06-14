@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
-import static com.google.android.material.animation.AnimationUtils.lerp;
+import static com.bottombar.navigation.material.animation.AnimationUtils.lerp;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -31,8 +31,8 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.Preconditions;
-import com.google.android.material.animation.AnimatorSetCompat;
-import com.google.android.material.animation.MotionSpec;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.animation.MotionSpec;
 import java.util.ArrayList;
 import java.util.List;
 

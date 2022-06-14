@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.switchmaterial;
+package com.bottombar.navigation.material.switchmaterial;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -27,10 +27,10 @@ import androidx.appcompat.widget.SwitchCompat;
 import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.elevation.ElevationOverlayProvider;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.elevation.ElevationOverlayProvider;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
 
 /**
  * A class that creates a Material Themed Switch.

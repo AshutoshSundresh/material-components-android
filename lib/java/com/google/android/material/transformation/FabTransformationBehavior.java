@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.animation.AnimationUtils.lerp;
+import static com.bottombar.navigation.material.animation.AnimationUtils.lerp;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -49,20 +49,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.AnimatorSetCompat;
-import com.google.android.material.animation.ArgbEvaluatorCompat;
-import com.google.android.material.animation.ChildrenAlphaProperty;
-import com.google.android.material.animation.DrawableAlphaProperty;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.animation.MotionTiming;
-import com.google.android.material.animation.Positioning;
-import com.google.android.material.circularreveal.CircularRevealCompat;
-import com.google.android.material.circularreveal.CircularRevealHelper;
-import com.google.android.material.circularreveal.CircularRevealWidget;
-import com.google.android.material.circularreveal.CircularRevealWidget.CircularRevealScrimColorProperty;
-import com.google.android.material.circularreveal.CircularRevealWidget.RevealInfo;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.math.MathUtils;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.animation.ArgbEvaluatorCompat;
+import com.bottombar.navigation.material.animation.ChildrenAlphaProperty;
+import com.bottombar.navigation.material.animation.DrawableAlphaProperty;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.animation.MotionTiming;
+import com.bottombar.navigation.material.animation.Positioning;
+import com.bottombar.navigation.material.circularreveal.CircularRevealCompat;
+import com.bottombar.navigation.material.circularreveal.CircularRevealHelper;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.CircularRevealScrimColorProperty;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.RevealInfo;
+import com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton;
+import com.bottombar.navigation.material.math.MathUtils;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,7 +70,7 @@ import java.util.List;
  * Abstract base behavior for any non-scrim view that should appear when a {@link
  * FloatingActionButton} is {@link FloatingActionButton#setExpanded(boolean)} expanded}.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated

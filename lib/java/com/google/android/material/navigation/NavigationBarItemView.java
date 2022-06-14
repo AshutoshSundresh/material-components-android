@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigation;
+package com.bottombar.navigation.material.navigation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static java.lang.Math.max;
@@ -63,12 +63,12 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionItemInfoCompat;
 import androidx.core.widget.TextViewCompat;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.badge.BadgeDrawable;
-import com.google.android.material.badge.BadgeUtils;
-import com.google.android.material.motion.MotionUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.badge.BadgeDrawable;
+import com.bottombar.navigation.material.badge.BadgeUtils;
+import com.bottombar.navigation.material.motion.MotionUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.ripple.RippleUtils;
 
 /**
  * Provides a view that will be used to render destination items inside a {@link

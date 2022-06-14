@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
 import androidx.annotation.NonNull;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.resources.MaterialResources;
 
 /**
  * Data class for loaded {@code R.styleable.MaterialCalendar} and {@code

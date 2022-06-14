@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigationrail;
+package com.bottombar.navigation.material.navigationrail;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
@@ -37,10 +37,10 @@ import androidx.annotation.Px;
 import androidx.annotation.RestrictTo;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.internal.ViewUtils.RelativePadding;
-import com.google.android.material.navigation.NavigationBarView;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils.RelativePadding;
+import com.bottombar.navigation.material.navigation.NavigationBarView;
 
 /**
  * Represents a standard navigation rail view for application. It is an implementation of <a
@@ -56,12 +56,12 @@ import com.google.android.material.navigation.NavigationBarView;
  * using {@code MenuItem#setChecked(true)}.
  *
  * <p>A header view (such as a {@link
- * com.google.android.material.floatingactionbutton.FloatingActionButton}, logo, etc.) can be added
+ * com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton}, logo, etc.) can be added
  * with the {@code app:headerLayout} attribute or by using {@link #addHeaderView}.
  *
  * <pre>
  * layout resource file:
- * &lt;com.google.android.material.navigationrail.NavigationRailView
+ * &lt;com.bottombar.navigation.material.navigationrail.NavigationRailView
  *     xmlns:android="http://schemas.android.com/apk/res/android"
  *     xmlns:app="http://schema.android.com/apk/res/res-auto"
  *     android:id="@+id/navigation"
@@ -84,7 +84,7 @@ import com.google.android.material.navigation.NavigationBarView;
  * &lt;/menu&gt;
  *
  * res/layout/my_navigation_rail_fab.xml:
- * &lt;com.google.android.material.floatingactionbutton.FloatingActionButton
+ * &lt;com.bottombar.navigation.material.floatingactionbutton.FloatingActionButton
  *     xmlns:android="http://schemas.android.com/apk/res/android"
  *     xmlns:app="http://schemas.android.com/apk/res-auto"
  *     android:id="@+id/my_navigation_rail_fab"

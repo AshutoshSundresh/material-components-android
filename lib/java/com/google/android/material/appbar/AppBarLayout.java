@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.android.material.appbar;
+package com.bottombar.navigation.material.appbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static androidx.core.math.MathUtils.clamp;
 import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_SCROLL_BACKWARD;
 import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_SCROLL_FORWARD;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Math.abs;
 
 import android.animation.ValueAnimator;
@@ -69,11 +69,11 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 import androidx.customview.view.AbsSavedState;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.appbar.AppBarLayout.BaseBehavior.SavedState;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.appbar.AppBarLayout.BaseBehavior.SavedState;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -113,7 +113,7 @@ import java.util.List;
  *
  *     &lt;/androidx.core.widget.NestedScrollView&gt;
  *
- *     &lt;com.google.android.material.appbar.AppBarLayout
+ *     &lt;com.bottombar.navigation.material.appbar.AppBarLayout
  *             android:layout_height=&quot;wrap_content&quot;
  *             android:layout_width=&quot;match_parent&quot;&gt;
  *
@@ -121,11 +121,11 @@ import java.util.List;
  *                 ...
  *                 app:layout_scrollFlags=&quot;scroll|enterAlways&quot;/&gt;
  *
- *         &lt;com.google.android.material.tabs.TabLayout
+ *         &lt;com.bottombar.navigation.material.tabs.TabLayout
  *                 ...
  *                 app:layout_scrollFlags=&quot;scroll|enterAlways&quot;/&gt;
  *
- *     &lt;/com.google.android.material.appbar.AppBarLayout&gt;
+ *     &lt;/com.bottombar.navigation.material.appbar.AppBarLayout&gt;
  *
  * &lt;/androidx.coordinatorlayout.widget.CoordinatorLayout&gt;
  * </pre>
@@ -599,7 +599,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
    *
    * @param expanded true if the layout should be fully expanded, false if it should be fully
    *     collapsed
-   * @attr ref com.google.android.material.R.styleable#AppBarLayout_expanded
+   * @attr ref com.ssos.support.R.styleable#AppBarLayout_expanded
    */
   public void setExpanded(boolean expanded) {
     setExpanded(expanded, ViewCompat.isLaidOut(this));
@@ -614,7 +614,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
    * @param expanded true if the layout should be fully expanded, false if it should be fully
    *     collapsed
    * @param animate Whether to animate to the new state
-   * @attr ref com.google.android.material.R.styleable#AppBarLayout_expanded
+   * @attr ref com.ssos.support.R.styleable#AppBarLayout_expanded
    */
   public void setExpanded(boolean expanded, boolean animate) {
     setExpanded(expanded, animate, true);
@@ -1045,7 +1045,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
    *     a {@link android.animation.StateListAnimator}. If a target elevation is set, either by this
    *     method or the {@code app:elevation} attribute, a new state list animator is created which
    *     uses the given {@code elevation} value.
-   * @attr ref com.google.android.material.R.styleable#AppBarLayout_elevation
+   * @attr ref com.ssos.support.R.styleable#AppBarLayout_elevation
    */
   @Deprecated
   public void setTargetElevation(float elevation) {
@@ -1260,7 +1260,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
      *     #SCROLL_FLAG_SNAP_MARGINS}. Otherwise, use {@link #SCROLL_FLAG_NO_SCROLL} to disable
      *     scrolling.
      * @see #getScrollFlags()
-     * @attr ref com.google.android.material.R.styleable#AppBarLayout_Layout_layout_scrollFlags
+     * @attr ref com.ssos.support.R.styleable#AppBarLayout_Layout_layout_scrollFlags
      */
     public void setScrollFlags(@ScrollFlags int flags) {
       scrollFlags = flags;
@@ -1270,7 +1270,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
      * Returns the scrolling flags.
      *
      * @see #setScrollFlags(int)
-     * @attr ref com.google.android.material.R.styleable#AppBarLayout_Layout_layout_scrollFlags
+     * @attr ref com.ssos.support.R.styleable#AppBarLayout_Layout_layout_scrollFlags
      */
     @ScrollFlags
     public int getScrollFlags() {
@@ -1310,7 +1310,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
      *
      * @param interpolator the interpolator to use, or null to use normal 1-to-1 scrolling.
      * @attr ref
-     *     com.google.android.material.R.styleable#AppBarLayout_Layout_layout_scrollInterpolator
+     *     com.ssos.support.R.styleable#AppBarLayout_Layout_layout_scrollInterpolator
      * @see #getScrollInterpolator()
      */
     public void setScrollInterpolator(Interpolator interpolator) {
@@ -1322,7 +1322,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
      * {@link LayoutParams}. Null indicates 'normal' 1-to-1 scrolling.
      *
      * @attr ref
-     *     com.google.android.material.R.styleable#AppBarLayout_Layout_layout_scrollInterpolator
+     *     com.ssos.support.R.styleable#AppBarLayout_Layout_layout_scrollInterpolator
      * @see #setScrollInterpolator(Interpolator)
      */
     public Interpolator getScrollInterpolator() {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
 import android.content.Context;
 import android.view.View;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.circularreveal;
+package com.bottombar.navigation.material.circularreveal;
 
 import android.animation.TypeEvaluator;
 import android.graphics.Canvas;
@@ -24,8 +24,8 @@ import android.view.ViewAnimationUtils;
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.circularreveal.CircularRevealHelper.Delegate;
-import com.google.android.material.math.MathUtils;
+import com.bottombar.navigation.material.circularreveal.CircularRevealHelper.Delegate;
+import com.bottombar.navigation.material.math.MathUtils;
 
 /**
  * Interface which denotes that a {@link View} supports a circular clip and scrim color, even for

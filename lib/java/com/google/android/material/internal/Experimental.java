@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.internal;
+package com.bottombar.navigation.material.internal;
 
 import androidx.annotation.NonNull;
 import java.lang.annotation.ElementType;

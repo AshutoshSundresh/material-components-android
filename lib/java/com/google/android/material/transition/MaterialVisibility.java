@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -27,8 +27,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.transition.TransitionValues;
 import androidx.transition.Visibility;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.animation.AnimatorSetCompat;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimatorSetCompat;
 import java.util.ArrayList;
 import java.util.List;
 

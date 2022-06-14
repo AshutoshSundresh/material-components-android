@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tabs;
+package com.bottombar.navigation.material.tabs;
 
-import static com.google.android.material.animation.AnimationUtils.lerp;
+import static com.bottombar.navigation.material.animation.AnimationUtils.lerp;
 
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.behavior;
+package com.bottombar.navigation.material.behavior;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -34,7 +34,7 @@ import androidx.annotation.RestrictTo;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
 import java.util.LinkedHashSet;
 
 /**

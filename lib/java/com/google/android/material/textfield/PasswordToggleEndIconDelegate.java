@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.text.InputType;
 import android.text.method.PasswordTransformationMethod;

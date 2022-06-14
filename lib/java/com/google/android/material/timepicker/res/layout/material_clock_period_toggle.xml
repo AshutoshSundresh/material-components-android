@@ -15,7 +15,7 @@
      limitations under the License.
  -->
 
-<com.google.android.material.button.MaterialButtonToggleGroup
+<com.bottombar.navigation.material.button.MaterialButtonToggleGroup
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:id="@+id/material_clock_period_toggle"
@@ -31,18 +31,18 @@
   app:selectionRequired="true"
   app:singleSelection="true">
 
-  <com.google.android.material.button.MaterialButton
+  <com.bottombar.navigation.material.button.MaterialButton
     style="?attr/materialButtonOutlinedStyle"
     android:id="@+id/material_clock_period_am_button"
     android:insetTop="8dp"
     android:layout_width="wrap_content"
     android:text="@string/material_timepicker_am"/>
-  <com.google.android.material.button.MaterialButton
+  <com.bottombar.navigation.material.button.MaterialButton
     style="?attr/materialButtonOutlinedStyle"
     android:id="@+id/material_clock_period_pm_button"
     android:layout_width="wrap_content"
     android:insetBottom="8dp"
     android:text="@string/material_timepicker_pm"/>
 
-</com.google.android.material.button.MaterialButtonToggleGroup>
+</com.bottombar.navigation.material.button.MaterialButtonToggleGroup>
 

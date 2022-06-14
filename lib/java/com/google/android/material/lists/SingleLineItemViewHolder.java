@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.lists;
+package com.bottombar.navigation.material.lists;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;

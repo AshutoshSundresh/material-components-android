@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.google.android.material.color;
+package com.bottombar.navigation.material.color;
 
 import android.app.Activity;
 import androidx.annotation.NonNull;
 import androidx.annotation.StyleRes;
-import com.google.android.material.color.DynamicColors.OnAppliedCallback;
-import com.google.android.material.color.DynamicColors.Precondition;
+import com.bottombar.navigation.material.color.DynamicColors.OnAppliedCallback;
+import com.bottombar.navigation.material.color.DynamicColors.Precondition;
 
 /** Wrapper class for specifying dynamic colors options when applying dynamic colors. */
 public class DynamicColorsOptions {

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.divider;
+package com.bottombar.navigation.material.divider;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -34,9 +34,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.Px;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 
 /**
  * A Material divider view.
@@ -118,7 +118,7 @@ public class MaterialDivider extends View {
    *
    * @param thickness The thickness value to be set.
    * @see #getDividerThickness()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerThickness
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerThickness
    */
   public void setDividerThickness(@Px int thickness) {
     if (this.thickness != thickness) {
@@ -133,7 +133,7 @@ public class MaterialDivider extends View {
    *
    * @param thicknessId The id of the thickness dimension resource to be set.
    * @see #getDividerThickness()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerThickness
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerThickness
    */
   public void setDividerThicknessResource(@DimenRes int thicknessId) {
     setDividerThickness(getContext().getResources().getDimensionPixelSize(thicknessId));
@@ -143,7 +143,7 @@ public class MaterialDivider extends View {
    * Returns the {@code app:dividerThickness} set on the divider.
    *
    * @see #setDividerThickness(int)
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerThickness
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerThickness
    */
   public int getDividerThickness() {
     return thickness;
@@ -154,7 +154,7 @@ public class MaterialDivider extends View {
    *
    * @param insetStart The start inset to be set.
    * @see #getDividerInsetStart()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetStart
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetStart
    */
   public void setDividerInsetStart(@Px int insetStart) {
     this.insetStart = insetStart;
@@ -165,7 +165,7 @@ public class MaterialDivider extends View {
    *
    * @param insetStartId The id of the inset dimension resource to be set.
    * @see #getDividerInsetStart()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetStart
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetStart
    */
   public void setDividerInsetStartResource(@DimenRes int insetStartId) {
     setDividerInsetStart(getContext().getResources().getDimensionPixelOffset(insetStartId));
@@ -175,7 +175,7 @@ public class MaterialDivider extends View {
    * Returns the divider's start inset.
    *
    * @see #setDividerInsetStart(int)
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetStart
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetStart
    */
   @Px
   public int getDividerInsetStart() {
@@ -187,7 +187,7 @@ public class MaterialDivider extends View {
    *
    * @param insetEnd The end inset to be set.
    * @see #getDividerInsetEnd()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetEnd
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetEnd
    */
   public void setDividerInsetEnd(@Px int insetEnd) {
     this.insetEnd = insetEnd;
@@ -198,7 +198,7 @@ public class MaterialDivider extends View {
    *
    * @param insetEndId The id of the inset dimension resource to be set.
    * @see #getDividerInsetEnd()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetEnd
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetEnd
    */
   public void setDividerInsetEndResource(@DimenRes int insetEndId) {
     setDividerInsetEnd(getContext().getResources().getDimensionPixelOffset(insetEndId));
@@ -208,7 +208,7 @@ public class MaterialDivider extends View {
    * Returns the divider's end inset.
    *
    * @see #setDividerInsetEnd(int)
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerInsetEnd
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerInsetEnd
    */
   @Px
   public int getDividerInsetEnd() {
@@ -220,7 +220,7 @@ public class MaterialDivider extends View {
    *
    * @param color The color to be set.
    * @see #getDividerColor()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerColor
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerColor
    */
   public void setDividerColor(@ColorInt int color) {
     if (this.color != color) {
@@ -235,7 +235,7 @@ public class MaterialDivider extends View {
    *
    * @param colorId The id of the color resource to be set.
    * @see #getDividerColor()
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerColor
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerColor
    */
   public void setDividerColorResource(@ColorRes int colorId) {
     setDividerColor(ContextCompat.getColor(getContext(), colorId));
@@ -245,7 +245,7 @@ public class MaterialDivider extends View {
    * Returns the divider color.
    *
    * @see #setDividerColor(int)
-   * @attr ref com.google.android.material.R.styleable#MaterialDivider_dividerColor
+   * @attr ref com.ssos.support.R.styleable#MaterialDivider_dividerColor
    */
   public int getDividerColor() {
     return color;

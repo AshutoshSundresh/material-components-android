@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.animation;
+package com.bottombar.navigation.material.animation;
 
 import android.animation.TimeInterpolator;
 import android.view.animation.DecelerateInterpolator;

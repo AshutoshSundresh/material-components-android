@@ -18,15 +18,15 @@
  * NOTE: THIS CLASS IS AUTO-GENERATED FROM THE EQUIVALENT CLASS IN THE PARENT TRANSITION PACKAGE.
  * IT SHOULD NOT BE EDITED DIRECTLY.
  */
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FADE_MODE_CROSS;
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FADE_MODE_IN;
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FADE_MODE_OUT;
-import static com.google.android.material.transition.platform.MaterialContainerTransform.FADE_MODE_THROUGH;
-import static com.google.android.material.transition.platform.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FADE_MODE_CROSS;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FADE_MODE_IN;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FADE_MODE_OUT;
+import static com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FADE_MODE_THROUGH;
+import static com.bottombar.navigation.material.transition.platform.TransitionUtils.lerp;
 
-import com.google.android.material.transition.platform.MaterialContainerTransform.FadeMode;
+import com.bottombar.navigation.material.transition.platform.MaterialContainerTransform.FadeMode;
 
 @androidx.annotation.RequiresApi(android.os.Build.VERSION_CODES.LOLLIPOP)
 class FadeModeEvaluators {

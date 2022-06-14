@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -32,7 +32,7 @@ import androidx.annotation.RestrictTo.Scope;
 import androidx.annotation.StringRes;
 import androidx.annotation.StyleRes;
 import androidx.core.util.Pair;
-import com.google.android.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils;
 import java.util.Collection;
 
 /**

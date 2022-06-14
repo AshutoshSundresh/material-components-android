@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigation;
+package com.bottombar.navigation.material.navigation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -55,12 +55,12 @@ import androidx.annotation.StyleRes;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
 import androidx.customview.view.AbsSavedState;
-import com.google.android.material.badge.BadgeDrawable;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.badge.BadgeDrawable;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -715,7 +715,7 @@ public abstract class NavigationBarView extends FrameLayout {
    * <p>The label is either always shown, never shown, or only shown when activated. Also supports
    * "auto" mode, which uses the item count to determine whether to show or hide the label.
    *
-   * @attr ref com.google.android.material.R.styleable#NavigationBarView_labelVisibilityMode
+   * @attr ref com.ssos.support.R.styleable#NavigationBarView_labelVisibilityMode
    * @param labelVisibilityMode mode which decides whether or not the label should be shown. Can be
    *     one of {@link NavigationBarView#LABEL_VISIBILITY_AUTO}, {@link
    *     NavigationBarView#LABEL_VISIBILITY_SELECTED}, {@link
@@ -733,7 +733,7 @@ public abstract class NavigationBarView extends FrameLayout {
   /**
    * Returns the current label visibility mode used by this {@link NavigationBarView}.
    *
-   * @attr ref com.google.android.material.R.styleable#BottomNavigationView_labelVisibilityMode
+   * @attr ref com.ssos.support.R.styleable#BottomNavigationView_labelVisibilityMode
    * @see #setLabelVisibilityMode(int)
    */
   @NavigationBarView.LabelVisibility

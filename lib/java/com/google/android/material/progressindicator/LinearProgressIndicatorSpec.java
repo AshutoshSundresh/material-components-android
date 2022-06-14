@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.progressindicator;
+package com.bottombar.navigation.material.progressindicator;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -25,9 +25,9 @@ import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.progressindicator.LinearProgressIndicator.IndeterminateAnimationType;
-import com.google.android.material.progressindicator.LinearProgressIndicator.IndicatorDirection;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.progressindicator.LinearProgressIndicator.IndeterminateAnimationType;
+import com.bottombar.navigation.material.progressindicator.LinearProgressIndicator.IndicatorDirection;
 
 /**
  * This class contains the parameters for drawing a linear type progress indicator. The parameters

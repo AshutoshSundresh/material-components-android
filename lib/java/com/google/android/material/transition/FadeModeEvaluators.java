@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import static com.google.android.material.transition.MaterialContainerTransform.FADE_MODE_CROSS;
-import static com.google.android.material.transition.MaterialContainerTransform.FADE_MODE_IN;
-import static com.google.android.material.transition.MaterialContainerTransform.FADE_MODE_OUT;
-import static com.google.android.material.transition.MaterialContainerTransform.FADE_MODE_THROUGH;
-import static com.google.android.material.transition.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FADE_MODE_CROSS;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FADE_MODE_IN;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FADE_MODE_OUT;
+import static com.bottombar.navigation.material.transition.MaterialContainerTransform.FADE_MODE_THROUGH;
+import static com.bottombar.navigation.material.transition.TransitionUtils.lerp;
 
-import com.google.android.material.transition.MaterialContainerTransform.FadeMode;
+import com.bottombar.navigation.material.transition.MaterialContainerTransform.FadeMode;
 
 class FadeModeEvaluators {
 

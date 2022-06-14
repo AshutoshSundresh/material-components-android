@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.badge;
+package com.bottombar.navigation.material.badge;
 
 import static androidx.annotation.experimental.Experimental.Level.ERROR;
 import static java.lang.annotation.RetentionPolicy.CLASS;

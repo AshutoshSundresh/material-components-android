@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.materialswitch;
+package com.bottombar.navigation.material.materialswitch;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.core.graphics.ColorUtils.blendARGB;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -41,15 +41,15 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
 import java.lang.reflect.Field;
 import java.util.Arrays;
 
 /**
  * A class that creates a Material Themed Switch. This class is intended to provide a brand new
  * Switch design and replace the obsolete
- * {@link com.google.android.material.switchmaterial.SwitchMaterial} class.
+ * {@link com.bottombar.navigation.material.switchmaterial.SwitchMaterial} class.
  */
 public class MaterialSwitch extends SwitchCompat {
   private static final int DEF_STYLE_RES = R.style.Widget_Material3_CompoundButton_MaterialSwitch;
@@ -212,7 +212,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param resId Resource ID of a thumb icon drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIcon
    */
   public void setThumbIconResource(@DrawableRes int resId) {
     setThumbIconDrawable(AppCompatResources.getDrawable(getContext(), resId));
@@ -223,7 +223,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param icon Thumb icon drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIcon
    */
   public void setThumbIconDrawable(@Nullable Drawable icon) {
     thumbIconDrawable = icon;
@@ -233,7 +233,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Gets the drawable used for the thumb icon that will be drawn upon the thumb.
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIcon
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIcon
    */
   @Nullable
   public Drawable getThumbIconDrawable() {
@@ -250,7 +250,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param tintList the tint to apply, may be {@code null} to clear tint
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIconTint
    */
   public void setThumbIconTintList(@Nullable ColorStateList tintList) {
     thumbIconTintList = tintList;
@@ -260,7 +260,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Returns the tint applied to the thumb icon drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIconTint
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIconTint
    */
   @Nullable
   public ColorStateList getThumbIconTintList() {
@@ -274,7 +274,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param tintMode the blending mode used to apply the tint
 
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIconTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIconTintMode
    */
   public void setThumbIconTintMode(@NonNull PorterDuff.Mode tintMode) {
     thumbIconTintMode = tintMode;
@@ -284,7 +284,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Returns the blending mode used to apply the tint to the thumb icon drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_thumbIconTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_thumbIconTintMode
    */
   @NonNull
   public PorterDuff.Mode getThumbIconTintMode() {
@@ -326,7 +326,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param resId Resource ID of a track decoration drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecoration
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecoration
    */
   public void setTrackDecorationResource(@DrawableRes int resId) {
     setTrackDecorationDrawable(AppCompatResources.getDrawable(getContext(), resId));
@@ -337,7 +337,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param trackDecoration Track decoration drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecoration
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecoration
    */
   public void setTrackDecorationDrawable(@Nullable Drawable trackDecoration) {
     trackDecorationDrawable = trackDecoration;
@@ -347,7 +347,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Get the drawable used for the track decoration that will be drawn upon the track.
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecoration
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecoration
    */
   @Nullable
   public Drawable getTrackDecorationDrawable() {
@@ -364,7 +364,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param tintList the tint to apply, may be {@code null} to clear tint
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecorationTint
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecorationTint
    */
   public void setTrackDecorationTintList(@Nullable ColorStateList tintList) {
     trackDecorationTintList = tintList;
@@ -374,7 +374,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Returns the tint applied to the track decoration drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecorationTint
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecorationTint
    */
   @Nullable
   public ColorStateList getTrackDecorationTintList() {
@@ -388,7 +388,7 @@ public class MaterialSwitch extends SwitchCompat {
    *
    * @param tintMode the blending mode used to apply the tint
 
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecorationTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecorationTintMode
    */
   public void setTrackDecorationTintMode(@NonNull PorterDuff.Mode tintMode) {
     trackDecorationTintMode = tintMode;
@@ -398,7 +398,7 @@ public class MaterialSwitch extends SwitchCompat {
   /**
    * Returns the blending mode used to apply the tint to the track decoration drawable
    *
-   * @attr ref com.google.android.material.R.styleable#MaterialSwitch_trackDecorationTintMode
+   * @attr ref com.ssos.support.R.styleable#MaterialSwitch_trackDecorationTintMode
    */
   @NonNull
   public PorterDuff.Mode getTrackDecorationTintMode() {

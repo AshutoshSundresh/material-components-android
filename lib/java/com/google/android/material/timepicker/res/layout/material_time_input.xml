@@ -15,14 +15,14 @@
      limitations under the License.
  -->
 
-<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.bottombar.navigation.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content"
   app:errorIconDrawable="@null"
   app:hintEnabled="false" >
 
-  <com.google.android.material.textfield.TextInputEditText
+  <com.bottombar.navigation.material.textfield.TextInputEditText
     android:layout_width="96dp"
     android:textCursorDrawable="@drawable/material_cursor_drawable"
     android:layout_height="80dp"
@@ -34,4 +34,4 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 
-</com.google.android.material.textfield.TextInputLayout>
+</com.bottombar.navigation.material.textfield.TextInputLayout>

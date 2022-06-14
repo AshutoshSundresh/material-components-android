@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,7 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.datepicker.MaterialCalendar.OnDayClickListener;
+import com.bottombar.navigation.material.datepicker.MaterialCalendar.OnDayClickListener;
 
 /**
  * Manages the instances of {@link MaterialCalendarGridView} that represent each month in a {@link

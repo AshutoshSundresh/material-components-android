@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textview;
+package com.bottombar.navigation.material.textview;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,8 +29,8 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleableRes;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.resources.MaterialResources;
 
 /**
  * A MaterialTextView is a derivative of {@link AppCompatTextView} that displays text to the user.

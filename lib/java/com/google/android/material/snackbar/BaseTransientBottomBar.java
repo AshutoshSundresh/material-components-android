@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.android.material.snackbar;
+package com.bottombar.navigation.material.snackbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.animation.AnimationUtils.FAST_OUT_SLOW_IN_INTERPOLATOR;
-import static com.google.android.material.animation.AnimationUtils.LINEAR_INTERPOLATOR;
-import static com.google.android.material.animation.AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.animation.AnimationUtils.FAST_OUT_SLOW_IN_INTERPOLATOR;
+import static com.bottombar.navigation.material.animation.AnimationUtils.LINEAR_INTERPOLATOR;
+import static com.bottombar.navigation.material.animation.AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.animation.Animator;
@@ -78,13 +78,13 @@ import androidx.core.view.OnApplyWindowInsetsListener;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.behavior.SwipeDismissBehavior;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.behavior.SwipeDismissBehavior;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -177,11 +177,11 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
   /**
    * Interface that defines the behavior of the main content of a transient bottom bar.
    *
-   * @deprecated Use {@link com.google.android.material.snackbar.ContentViewCallback} instead.
+   * @deprecated Use {@link com.bottombar.navigation.material.snackbar.ContentViewCallback} instead.
    */
   @Deprecated
   public interface ContentViewCallback
-      extends com.google.android.material.snackbar.ContentViewCallback {}
+      extends com.bottombar.navigation.material.snackbar.ContentViewCallback {}
 
   /** @hide */
   @RestrictTo(LIBRARY_GROUP)
@@ -262,7 +262,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
   @NonNull protected final SnackbarBaseLayout view;
 
   @NonNull
-  private final com.google.android.material.snackbar.ContentViewCallback contentViewCallback;
+  private final com.bottombar.navigation.material.snackbar.ContentViewCallback contentViewCallback;
 
   private int duration;
   private boolean gestureInsetBottomIgnored;
@@ -330,7 +330,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
   protected BaseTransientBottomBar(
       @NonNull ViewGroup parent,
       @NonNull View content,
-      @NonNull com.google.android.material.snackbar.ContentViewCallback contentViewCallback) {
+      @NonNull com.bottombar.navigation.material.snackbar.ContentViewCallback contentViewCallback) {
     this(parent.getContext(), parent, content, contentViewCallback);
   }
 
@@ -338,7 +338,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
       @NonNull Context context,
       @NonNull ViewGroup parent,
       @NonNull View content,
-      @NonNull com.google.android.material.snackbar.ContentViewCallback contentViewCallback) {
+      @NonNull com.bottombar.navigation.material.snackbar.ContentViewCallback contentViewCallback) {
     if (parent == null) {
       throw new IllegalArgumentException("Transient bottom bar must have non-null parent");
     }

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -33,10 +33,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 import androidx.annotation.RestrictTo.Scope;
 import androidx.annotation.StyleRes;
-import com.google.android.material.dialog.InsetDialogOnTouchListener;
-import com.google.android.material.dialog.MaterialDialogs;
-import com.google.android.material.resources.MaterialAttributes;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.dialog.InsetDialogOnTouchListener;
+import com.bottombar.navigation.material.dialog.MaterialDialogs;
+import com.bottombar.navigation.material.resources.MaterialAttributes;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 
 /**
  * A Material version of {@link android.app.DatePickerDialog}

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.circularreveal;
+package com.bottombar.navigation.material.circularreveal;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -25,9 +25,9 @@ import android.os.Build.VERSION_CODES;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import androidx.annotation.NonNull;
-import com.google.android.material.circularreveal.CircularRevealWidget.CircularRevealEvaluator;
-import com.google.android.material.circularreveal.CircularRevealWidget.CircularRevealProperty;
-import com.google.android.material.circularreveal.CircularRevealWidget.RevealInfo;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.CircularRevealEvaluator;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.CircularRevealProperty;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget.RevealInfo;
 
 /**
  * Defines compat implementations of circular reveal animations.

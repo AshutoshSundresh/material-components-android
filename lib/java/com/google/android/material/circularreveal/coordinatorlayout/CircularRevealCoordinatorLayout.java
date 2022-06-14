@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.circularreveal.coordinatorlayout;
+package com.bottombar.navigation.material.circularreveal.coordinatorlayout;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -23,8 +23,8 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.google.android.material.circularreveal.CircularRevealHelper;
-import com.google.android.material.circularreveal.CircularRevealWidget;
+import com.bottombar.navigation.material.circularreveal.CircularRevealHelper;
+import com.bottombar.navigation.material.circularreveal.CircularRevealWidget;
 
 /** A CircularRevealWidget wrapper for {@link CoordinatorLayout}. */
 public class CircularRevealCoordinatorLayout extends CoordinatorLayout

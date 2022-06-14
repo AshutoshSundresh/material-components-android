@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.resources;
+package com.bottombar.navigation.material.resources;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.util.TypedValue.COMPLEX_UNIT_MASK;
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;

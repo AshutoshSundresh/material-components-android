@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.chip;
+package com.bottombar.navigation.material.chip;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -75,18 +75,18 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionItemInfoCompat;
 import androidx.customview.widget.ExploreByTouchHelper;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.chip.ChipDrawable.Delegate;
-import com.google.android.material.internal.MaterialCheckable;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.resources.TextAppearance;
-import com.google.android.material.resources.TextAppearanceFontCallback;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.chip.ChipDrawable.Delegate;
+import com.bottombar.navigation.material.internal.MaterialCheckable;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.resources.TextAppearance;
+import com.bottombar.navigation.material.resources.TextAppearanceFontCallback;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 import java.util.List;
 
 /**
@@ -1068,7 +1068,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's background color.
    *
    * @see #setChipBackgroundColor(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipBackgroundColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipBackgroundColor
    */
   @Nullable
   public ColorStateList getChipBackgroundColor() {
@@ -1079,7 +1079,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's background color using a resource id.
    *
    * @param id The resource id of this chip's background color.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipBackgroundColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipBackgroundColor
    */
   public void setChipBackgroundColorResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1091,7 +1091,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's background color.
    *
    * @param chipBackgroundColor This chip's background color.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipBackgroundColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipBackgroundColor
    */
   public void setChipBackgroundColor(@Nullable ColorStateList chipBackgroundColor) {
     if (chipDrawable != null) {
@@ -1103,7 +1103,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's minimum height.
    *
    * @see #setChipMinHeight(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipMinHeight
+   * @attr ref com.ssos.support.R.styleable#Chip_chipMinHeight
    */
   public float getChipMinHeight() {
     return chipDrawable != null ? chipDrawable.getChipMinHeight() : 0;
@@ -1113,7 +1113,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's minimum height using a resource id.
    *
    * @param id The resource id of this chip's minimum height.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipMinHeight
+   * @attr ref com.ssos.support.R.styleable#Chip_chipMinHeight
    */
   public void setChipMinHeightResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -1125,7 +1125,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's minimum height.
    *
    * @param minHeight This chip's minimum height.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipMinHeight
+   * @attr ref com.ssos.support.R.styleable#Chip_chipMinHeight
    */
   public void setChipMinHeight(float minHeight) {
     if (chipDrawable != null) {
@@ -1137,7 +1137,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's corner radius.
    *
    * @see #setChipCornerRadius(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipCornerRadius
+   * @attr ref com.ssos.support.R.styleable#Chip_chipCornerRadius
    */
   public float getChipCornerRadius() {
     return chipDrawable != null ? Math.max(0, chipDrawable.getChipCornerRadius()) : 0;
@@ -1184,7 +1184,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's stroke color.
    *
    * @see #setChipStrokeColor(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeColor
    */
   @Nullable
   public ColorStateList getChipStrokeColor() {
@@ -1195,7 +1195,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's stroke color using a resource id.
    *
    * @param id The resource id of this chip's stroke color.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeColor
    */
   public void setChipStrokeColorResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1207,7 +1207,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's stroke color.
    *
    * @param chipStrokeColor This chip's stroke color.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeColor
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeColor
    */
   public void setChipStrokeColor(@Nullable ColorStateList chipStrokeColor) {
     if (chipDrawable != null) {
@@ -1219,7 +1219,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's stroke width.
    *
    * @see #setChipStrokeWidth(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeWidth
    */
   public float getChipStrokeWidth() {
     return chipDrawable != null ? chipDrawable.getChipStrokeWidth() : 0;
@@ -1229,7 +1229,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's stroke width using a resource id.
    *
    * @param id The resource id of this chip's stroke width.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeWidth
    */
   public void setChipStrokeWidthResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -1241,7 +1241,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's stroke width.
    *
    * @param chipStrokeWidth This chip's stroke width.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStrokeWidth
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStrokeWidth
    */
   public void setChipStrokeWidth(float chipStrokeWidth) {
     if (chipDrawable != null) {
@@ -1253,7 +1253,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's ripple color.
    *
    * @see #setRippleColor(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_rippleColor
+   * @attr ref com.ssos.support.R.styleable#Chip_rippleColor
    */
   @Nullable
   public ColorStateList getRippleColor() {
@@ -1264,7 +1264,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's ripple color using a resource id.
    *
    * @param id The resource id of this chip's ripple color.
-   * @attr ref com.google.android.material.R.styleable#Chip_rippleColor
+   * @attr ref com.ssos.support.R.styleable#Chip_rippleColor
    */
   public void setRippleColorResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1279,7 +1279,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's ripple color.
    *
    * @param rippleColor This chip's ripple color.
-   * @attr ref com.google.android.material.R.styleable#Chip_rippleColor
+   * @attr ref com.ssos.support.R.styleable#Chip_rippleColor
    */
   public void setRippleColor(@Nullable ColorStateList rippleColor) {
     if (chipDrawable != null) {
@@ -1340,7 +1340,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's text appearance using a resource id.
    *
    * @param id The resource id of this chip's text appearance.
-   * @attr ref com.google.android.material.R.styleable#Chip_android_textAppearance
+   * @attr ref com.ssos.support.R.styleable#Chip_android_textAppearance
    */
   public void setTextAppearanceResource(@StyleRes int id) {
     this.setTextAppearance(getContext(), id);
@@ -1350,7 +1350,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's text appearance.
    *
    * @param textAppearance This chip's text appearance.
-   * @attr ref com.google.android.material.R.styleable#Chip_android_textAppearance
+   * @attr ref com.ssos.support.R.styleable#Chip_android_textAppearance
    */
   public void setTextAppearance(@Nullable TextAppearance textAppearance) {
     if (chipDrawable != null) {
@@ -1407,7 +1407,7 @@ public class Chip extends AppCompatCheckBox
    * Returns whether this chip's icon is visible.
    *
    * @see #setChipIconVisible(boolean)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconVisible
    */
   public boolean isChipIconVisible() {
     return chipDrawable != null && chipDrawable.isChipIconVisible();
@@ -1423,7 +1423,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the visibility of this chip's icon using a resource id.
    *
    * @param id The resource id for the visibility of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconVisible
    */
   public void setChipIconVisible(@BoolRes int id) {
     if (chipDrawable != null) {
@@ -1435,7 +1435,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip's icon is visible.
    *
    * @param chipIconVisible The visibility of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconIsVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconIsVisible
    */
   public void setChipIconVisible(boolean chipIconVisible) {
     if (chipDrawable != null) {
@@ -1459,7 +1459,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's icon.
    *
    * @see #setChipIcon(Drawable)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIcon
    */
   @Nullable
   public Drawable getChipIcon() {
@@ -1470,7 +1470,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's icon using a resource id.
    *
    * @param id The resource id for this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIcon
    */
   public void setChipIconResource(@DrawableRes int id) {
     if (chipDrawable != null) {
@@ -1482,7 +1482,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's icon.
    *
    * @param chipIcon drawable of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIcon
    */
   public void setChipIcon(@Nullable Drawable chipIcon) {
     if (chipDrawable != null) {
@@ -1494,7 +1494,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the {@link android.content.res.ColorStateList} used to tint the chip icon.
    *
    * @see #setChipIconTint(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconTint
    */
   @Nullable
   public ColorStateList getChipIconTint() {
@@ -1505,7 +1505,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip icon's color tint using a resource id.
    *
    * @param id The resource id for tinting the chip icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconTint
    */
   public void setChipIconTintResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1518,7 +1518,7 @@ public class Chip extends AppCompatCheckBox
    * android.content.res.ColorStateList}.
    *
    * @param chipIconTint The tint color of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconTint
    */
   public void setChipIconTint(@Nullable ColorStateList chipIconTint) {
     if (chipDrawable != null) {
@@ -1532,7 +1532,7 @@ public class Chip extends AppCompatCheckBox
    * instead.
    *
    * @see #setChipIconSize(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconTint
    */
   public float getChipIconSize() {
     return chipDrawable != null ? chipDrawable.getChipIconSize() : 0;
@@ -1544,7 +1544,7 @@ public class Chip extends AppCompatCheckBox
    * used instead.
    *
    * @param id The resource id of this chip's icon size.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconSize
    */
   public void setChipIconSizeResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -1558,7 +1558,7 @@ public class Chip extends AppCompatCheckBox
    * used instead.
    *
    * @param chipIconSize This chip's icon size.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconSize
    */
   public void setChipIconSize(float chipIconSize) {
     if (chipDrawable != null) {
@@ -1570,7 +1570,7 @@ public class Chip extends AppCompatCheckBox
    * Returns whether this chip's close icon is visible.
    *
    * @see id #setCloseIconVisible(boolean)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_chipIconSize
    */
   public boolean isCloseIconVisible() {
     return chipDrawable != null && chipDrawable.isCloseIconVisible();
@@ -1586,7 +1586,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip close icon is visible using a resource id.
    *
    * @param id The resource id of this chip's close icon visibility.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconVisible
    */
   public void setCloseIconVisible(@BoolRes int id) {
     setCloseIconVisible(getResources().getBoolean(id));
@@ -1596,7 +1596,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip close icon is visible.
    *
    * @param closeIconVisible This chip's close icon visibility.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconVisible
    */
   public void setCloseIconVisible(boolean closeIconVisible) {
     if (chipDrawable != null) {
@@ -1621,7 +1621,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's close icon.
    *
    * @see #setCloseIcon(Drawable).
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIcon
    */
   @Nullable
   public Drawable getCloseIcon() {
@@ -1632,7 +1632,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's close icon using a resource id.
    *
    * @param id The resource id of this chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIcon
    */
   public void setCloseIconResource(@DrawableRes int id) {
     if (chipDrawable != null) {
@@ -1645,7 +1645,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's close icon.
    *
    * @param closeIcon This chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIcon
    */
   public void setCloseIcon(@Nullable Drawable closeIcon) {
     if (chipDrawable != null) {
@@ -1658,7 +1658,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the tint color for this chip's close icon.
    *
    * @see #setCloseIconTint(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconTint
    */
   @Nullable
   public ColorStateList getCloseIconTint() {
@@ -1669,7 +1669,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the tint color for this chip's close icon using a resource id.
    *
    * @param id The resource id of this chip's close icon tint.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconTint
    */
   public void setCloseIconTintResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1681,7 +1681,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the tint color for this chip's close icon.
    *
    * @param closeIconTint This chip's close icon tint.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconTint
    */
   public void setCloseIconTint(@Nullable ColorStateList closeIconTint) {
     if (chipDrawable != null) {
@@ -1693,7 +1693,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's close icon size.
    *
    * @see #setCloseIconSize(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconSize
    */
   public float getCloseIconSize() {
     return chipDrawable != null ? chipDrawable.getCloseIconSize() : 0;
@@ -1703,7 +1703,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's close icon size using a resource id.
    *
    * @param id The resource id of this chip's close icon size.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconSize
    */
   public void setCloseIconSizeResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -1715,7 +1715,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's close icon size.
    *
    * @param closeIconSize This chip's close icon size.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconSize
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconSize
    */
   public void setCloseIconSize(float closeIconSize) {
     if (chipDrawable != null) {
@@ -1748,7 +1748,7 @@ public class Chip extends AppCompatCheckBox
    * Returns whether this chip is checkable.
    *
    * @see #setCheckable(boolean)
-   * @attr ref com.google.android.material.R.styleable#Chip_android_checkable
+   * @attr ref com.ssos.support.R.styleable#Chip_android_checkable
    */
   public boolean isCheckable() {
     return chipDrawable != null && chipDrawable.isCheckable();
@@ -1758,7 +1758,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip is checkable using a resource id.
    *
    * @param id The resource id of this chip is checkable.
-   * @attr ref com.google.android.material.R.styleable#Chip_android_checkable
+   * @attr ref com.ssos.support.R.styleable#Chip_android_checkable
    */
   public void setCheckableResource(@BoolRes int id) {
     if (chipDrawable != null) {
@@ -1770,7 +1770,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip is checkable.
    *
    * @param checkable Whether this chip is checkable.
-   * @attr ref com.google.android.material.R.styleable#Chip_android_checkable
+   * @attr ref com.ssos.support.R.styleable#Chip_android_checkable
    */
   public void setCheckable(boolean checkable) {
     if (chipDrawable != null) {
@@ -1782,7 +1782,7 @@ public class Chip extends AppCompatCheckBox
    * Returns whether this chip's checked icon is visible.
    *
    * @see #setCheckedIconVisible(boolean)
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconVisible
    */
   public boolean isCheckedIconVisible() {
     return chipDrawable != null && chipDrawable.isCheckedIconVisible();
@@ -1798,7 +1798,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip's checked icon is visible using a resource id.
    *
    * @param id The resource id of this chip's check icon visibility.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconVisible
    */
   public void setCheckedIconVisible(@BoolRes int id) {
     if (chipDrawable != null) {
@@ -1810,7 +1810,7 @@ public class Chip extends AppCompatCheckBox
    * Sets whether this chip's checked icon is visible.
    *
    * @param checkedIconVisible This chip's checked icon visibility.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconVisible
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconVisible
    */
   public void setCheckedIconVisible(boolean checkedIconVisible) {
     if (chipDrawable != null) {
@@ -1834,7 +1834,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's checked icon.
    *
    * @see #setCheckedIcon(Drawable)
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIcon
    */
   @Nullable
   public Drawable getCheckedIcon() {
@@ -1845,7 +1845,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's checked icon using a resource id.
    *
    * @param id The resource id of this chip's checked icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIcon
    */
   public void setCheckedIconResource(@DrawableRes int id) {
     if (chipDrawable != null) {
@@ -1857,7 +1857,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's checked icon.
    *
    * @param checkedIcon This chip's checked icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIcon
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIcon
    */
   public void setCheckedIcon(@Nullable Drawable checkedIcon) {
     if (chipDrawable != null) {
@@ -1869,7 +1869,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the {@link android.content.res.ColorStateList} used to tint the checked icon.
    *
    * @see #setCheckedIconTint(ColorStateList)
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconTint
    */
   @Nullable
   public ColorStateList getCheckedIconTint() {
@@ -1880,7 +1880,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's checked icon's color tint using a resource id.
    *
    * @param id The resource id for tinting the checked icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconTint
    */
   public void setCheckedIconTintResource(@ColorRes int id) {
     if (chipDrawable != null) {
@@ -1893,7 +1893,7 @@ public class Chip extends AppCompatCheckBox
    * android.content.res.ColorStateList}.
    *
    * @param checkedIconTint The tint color of this chip's checked icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_checkedIconTint
+   * @attr ref com.ssos.support.R.styleable#Chip_checkedIconTint
    */
   public void setCheckedIconTint(@Nullable ColorStateList checkedIconTint) {
     if (chipDrawable != null) {
@@ -1905,7 +1905,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's show motion spec.
    *
    * @see #setShowMotionSpec(MotionSpec)
-   * @attr ref com.google.android.material.R.styleable#Chip_showMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_showMotionSpec
    */
   @Nullable
   public MotionSpec getShowMotionSpec() {
@@ -1916,7 +1916,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's show motion spec using a resource id.
    *
    * @param id The resource id of this chip's show motion spec.
-   * @attr ref com.google.android.material.R.styleable#Chip_showMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_showMotionSpec
    */
   public void setShowMotionSpecResource(@AnimatorRes int id) {
     if (chipDrawable != null) {
@@ -1928,7 +1928,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's show motion spec.
    *
    * @param showMotionSpec This chip's show motion spec.
-   * @attr ref com.google.android.material.R.styleable#Chip_showMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_showMotionSpec
    */
   public void setShowMotionSpec(@Nullable MotionSpec showMotionSpec) {
     if (chipDrawable != null) {
@@ -1940,7 +1940,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's hide motion spec.
    *
    * @see #setHideMotionSpec(MotionSpec)
-   * @attr ref com.google.android.material.R.styleable#Chip_hideMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_hideMotionSpec
    */
   @Nullable
   public MotionSpec getHideMotionSpec() {
@@ -1951,7 +1951,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's hide motion spec using a resource id.
    *
    * @param id The resource id of this chip's hide motion spec.
-   * @attr ref com.google.android.material.R.styleable#Chip_hideMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_hideMotionSpec
    */
   public void setHideMotionSpecResource(@AnimatorRes int id) {
     if (chipDrawable != null) {
@@ -1963,7 +1963,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's hide motion spec.
    *
    * @param hideMotionSpec This chip's hide motion spec.
-   * @attr ref com.google.android.material.R.styleable#Chip_hideMotionSpec
+   * @attr ref com.ssos.support.R.styleable#Chip_hideMotionSpec
    */
   public void setHideMotionSpec(@Nullable MotionSpec hideMotionSpec) {
     if (chipDrawable != null) {
@@ -1975,7 +1975,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's start padding.
    *
    * @see #setChipStartPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStartPadding
    */
   public float getChipStartPadding() {
     return chipDrawable != null ? chipDrawable.getChipStartPadding() : 0;
@@ -1985,7 +1985,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's start padding using a resource id.
    *
    * @param id The resource id of this chip's start padding.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStartPadding
    */
   public void setChipStartPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -1997,7 +1997,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's start padding.
    *
    * @param chipStartPadding This chip's start padding.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipStartPadding
    */
   public void setChipStartPadding(float chipStartPadding) {
     if (chipDrawable != null) {
@@ -2009,7 +2009,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the start padding for this chip's icon.
    *
    * @see #setIconStartPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_iconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconStartPadding
    */
   public float getIconStartPadding() {
     return chipDrawable != null ? chipDrawable.getIconStartPadding() : 0;
@@ -2019,7 +2019,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the start padding for this chip's icon using a resource id.
    *
    * @param id The resource id for the start padding of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_iconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconStartPadding
    */
   public void setIconStartPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2031,7 +2031,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's icon start padding.
    *
    * @param iconStartPadding The start padding of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_iconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconStartPadding
    */
   public void setIconStartPadding(float iconStartPadding) {
     if (chipDrawable != null) {
@@ -2043,7 +2043,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the end padding for this chip's icon.
    *
    * @see #setIconEndPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_iconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconEndPadding
    */
   public float getIconEndPadding() {
     return chipDrawable != null ? chipDrawable.getIconEndPadding() : 0;
@@ -2053,7 +2053,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's icon using a resource id.
    *
    * @param id The resource id for the end padding of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_iconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconEndPadding
    */
   public void setIconEndPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2065,7 +2065,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's icon.
    *
    * @param iconEndPadding The end padding of this chip's icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_iconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_iconEndPadding
    */
   public void setIconEndPadding(float iconEndPadding) {
     if (chipDrawable != null) {
@@ -2077,7 +2077,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the start padding for this chip's text.
    *
    * @see #setTextStartPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_textStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textStartPadding
    */
   public float getTextStartPadding() {
     return chipDrawable != null ? chipDrawable.getTextStartPadding() : 0;
@@ -2087,7 +2087,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the start padding for this chip's text using a resource id.
    *
    * @param id The resource id for the start padding of this chip's text.
-   * @attr ref com.google.android.material.R.styleable#Chip_textStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textStartPadding
    */
   public void setTextStartPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2099,7 +2099,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the start padding for this chip's text.
    *
    * @param textStartPadding The start padding of this chip's text.
-   * @attr ref com.google.android.material.R.styleable#Chip_textStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textStartPadding
    */
   public void setTextStartPadding(float textStartPadding) {
     if (chipDrawable != null) {
@@ -2111,7 +2111,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the end padding for this chip's text.
    *
    * @see #setTextEndPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_textEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textEndPadding
    */
   public float getTextEndPadding() {
     return chipDrawable != null ? chipDrawable.getTextEndPadding() : 0;
@@ -2121,7 +2121,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's text using a resource id.
    *
    * @param id The resource id for the end padding of this chip's text.
-   * @attr ref com.google.android.material.R.styleable#Chip_textEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textEndPadding
    */
   public void setTextEndPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2133,7 +2133,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's text.
    *
    * @param textEndPadding The end padding of this chip's text.
-   * @attr ref com.google.android.material.R.styleable#Chip_textStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_textStartPadding
    */
   public void setTextEndPadding(float textEndPadding) {
     if (chipDrawable != null) {
@@ -2145,7 +2145,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the start padding for this chip's close icon.
    *
    * @see #setCloseIconStartPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconStartPadding
    */
   public float getCloseIconStartPadding() {
     return chipDrawable != null ? chipDrawable.getCloseIconStartPadding() : 0;
@@ -2155,7 +2155,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the start padding for this chip's close icon using a resource id.
    *
    * @param id The resource id for the start padding of this chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconStartPadding
    */
   public void setCloseIconStartPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2167,7 +2167,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the start padding for this chip's close icon.
    *
    * @param closeIconStartPadding The start padding of this chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconStartPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconStartPadding
    */
   public void setCloseIconStartPadding(float closeIconStartPadding) {
     if (chipDrawable != null) {
@@ -2179,7 +2179,7 @@ public class Chip extends AppCompatCheckBox
    * Returns the end padding for this chip's close icon.
    *
    * @see #setCloseIconEndPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconEndPadding
    */
   public float getCloseIconEndPadding() {
     return chipDrawable != null ? chipDrawable.getCloseIconEndPadding() : 0;
@@ -2189,7 +2189,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's close icon using a resource id.
    *
    * @param id The resource id for the end padding of this chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconEndPadding
    */
   public void setCloseIconEndPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2201,7 +2201,7 @@ public class Chip extends AppCompatCheckBox
    * Sets the end padding for this chip's close icon.
    *
    * @param closeIconEndPadding The end padding of this chip's close icon.
-   * @attr ref com.google.android.material.R.styleable#Chip_closeIconEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_closeIconEndPadding
    */
   public void setCloseIconEndPadding(float closeIconEndPadding) {
     if (chipDrawable != null) {
@@ -2213,7 +2213,7 @@ public class Chip extends AppCompatCheckBox
    * Returns this chip's end padding.
    *
    * @see #setChipEndPadding(float)
-   * @attr ref com.google.android.material.R.styleable#Chip_chipEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipEndPadding
    */
   public float getChipEndPadding() {
     return chipDrawable != null ? chipDrawable.getChipEndPadding() : 0;
@@ -2223,7 +2223,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's end padding using a resource id.
    *
    * @param id The resource id for this chip's end padding.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipEndPadding
    */
   public void setChipEndPaddingResource(@DimenRes int id) {
     if (chipDrawable != null) {
@@ -2235,7 +2235,7 @@ public class Chip extends AppCompatCheckBox
    * Sets this chip's end padding.
    *
    * @param chipEndPadding This chip's end padding.
-   * @attr ref com.google.android.material.R.styleable#Chip_chipEndPadding
+   * @attr ref com.ssos.support.R.styleable#Chip_chipEndPadding
    */
   public void setChipEndPadding(float chipEndPadding) {
     if (chipDrawable != null) {
@@ -2248,7 +2248,7 @@ public class Chip extends AppCompatCheckBox
    * size.
    *
    * @see #setEnsureMinTouchTargetSize(boolean)
-   * @attr ref com.google.android.material.R.styleable#Chip_ensureMinTouchTargetSize
+   * @attr ref com.ssos.support.R.styleable#Chip_ensureMinTouchTargetSize
    */
   public boolean shouldEnsureMinTouchTargetSize() {
     return ensureMinTouchTargetSize;
@@ -2259,7 +2259,7 @@ public class Chip extends AppCompatCheckBox
    * size.
    *
    * @param flag Whether this chip should meet the min touch target size.
-   * @attr ref com.google.android.material.R.styleable#Chip_ensureMinTouchTargetSize
+   * @attr ref com.ssos.support.R.styleable#Chip_ensureMinTouchTargetSize
    */
   public void setEnsureMinTouchTargetSize(boolean flag) {
     ensureMinTouchTargetSize = flag;

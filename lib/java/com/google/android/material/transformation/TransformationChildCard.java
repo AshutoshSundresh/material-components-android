@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import com.google.android.material.circularreveal.cardview.CircularRevealCardView;
-import com.google.android.material.expandable.ExpandableWidget;
+import com.bottombar.navigation.material.circularreveal.cardview.CircularRevealCardView;
+import com.bottombar.navigation.material.expandable.ExpandableWidget;
 
 /**
  * CardView layout for views that can react to an {@link ExpandableWidget}'s {@link
@@ -29,7 +29,7 @@ import com.google.android.material.expandable.ExpandableWidget;
  *
  * <p>This class should be used if you need to support shadows on pre-L devices.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated

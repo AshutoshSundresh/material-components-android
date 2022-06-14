@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shape;
+package com.bottombar.navigation.material.shape;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 
@@ -58,12 +58,12 @@ import androidx.annotation.RestrictTo;
 import androidx.annotation.StyleRes;
 import androidx.core.graphics.drawable.TintAwareDrawable;
 import androidx.core.util.ObjectsCompat;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.elevation.ElevationOverlayProvider;
-import com.google.android.material.shadow.ShadowRenderer;
-import com.google.android.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
-import com.google.android.material.shape.ShapeAppearancePathProvider.PathListener;
-import com.google.android.material.shape.ShapePath.ShadowCompatOperation;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.elevation.ElevationOverlayProvider;
+import com.bottombar.navigation.material.shadow.ShadowRenderer;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
+import com.bottombar.navigation.material.shape.ShapeAppearancePathProvider.PathListener;
+import com.bottombar.navigation.material.shape.ShapePath.ShadowCompatOperation;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.BitSet;

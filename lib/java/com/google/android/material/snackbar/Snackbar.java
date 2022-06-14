@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.snackbar;
+package com.bottombar.navigation.material.snackbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.accessibility.AccessibilityManager.FLAG_CONTENT_CONTROLS;
 import static android.view.accessibility.AccessibilityManager.FLAG_CONTENT_ICONS;
@@ -108,7 +108,7 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
       @NonNull Context context,
       @NonNull ViewGroup parent,
       @NonNull View content,
-      @NonNull com.google.android.material.snackbar.ContentViewCallback contentViewCallback) {
+      @NonNull com.bottombar.navigation.material.snackbar.ContentViewCallback contentViewCallback) {
     super(context, parent, content, contentViewCallback);
     accessibilityManager =
         (AccessibilityManager) parent.getContext().getSystemService(Context.ACCESSIBILITY_SERVICE);

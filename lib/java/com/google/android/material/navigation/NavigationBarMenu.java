@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigation;
+package com.bottombar.navigation.material.navigation;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 

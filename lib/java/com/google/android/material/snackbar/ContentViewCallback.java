@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.snackbar;
+package com.bottombar.navigation.material.snackbar;
 
 /** Interface that defines the behavior of the main content of a transient bottom bar. */
 public interface ContentViewCallback {

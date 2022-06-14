@@ -18,14 +18,14 @@
  * NOTE: THIS CLASS IS AUTO-GENERATED FROM THE EQUIVALENT CLASS IN THE PARENT TRANSITION PACKAGE.
  * IT SHOULD NOT BE EDITED DIRECTLY.
  */
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.animation.TimeInterpolator;
 import androidx.annotation.AttrRes;
 import androidx.annotation.NonNull;
-import com.google.android.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.animation.AnimationUtils;
 
 /**
  * A {@link android.transition.Visibility} transition that is composed of a fade and scale of

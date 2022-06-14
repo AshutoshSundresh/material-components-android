@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.button;
+package com.bottombar.navigation.material.button;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -41,12 +41,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionInfoCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.CollectionItemInfoCompat;
-import com.google.android.material.button.MaterialButton.OnPressedChangeListener;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.shape.AbsoluteCornerSize;
-import com.google.android.material.shape.CornerSize;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.button.MaterialButton.OnPressedChangeListener;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.shape.AbsoluteCornerSize;
+import com.bottombar.navigation.material.shape.CornerSize;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -65,34 +65,34 @@ import java.util.TreeMap;
  * added to this view group via XML, as follows:
  *
  * <pre>
- * &lt;com.google.android.material.button.MaterialButtonToggleGroup
+ * &lt;com.bottombar.navigation.material.button.MaterialButtonToggleGroup
  *     xmlns:android="http://schemas.android.com/apk/res/android"
  *     android:id="@+id/toggle_button_group"
  *     android:layout_width="wrap_content"
  *     android:layout_height="wrap_content"&gt;
  *
- *     &lt;com.google.android.material.button.MaterialButton
+ *     &lt;com.bottombar.navigation.material.button.MaterialButton
  *         style="?attr/materialButtonOutlinedStyle"
  *         android:layout_width="wrap_content"
  *         android:layout_height="wrap_content"
  *         android:text="@string/button_label_private"/&gt;
- *     &lt;com.google.android.material.button.MaterialButton
+ *     &lt;com.bottombar.navigation.material.button.MaterialButton
  *         style="?attr/materialButtonOutlinedStyle"
  *         android:layout_width="wrap_content"
  *         android:layout_height="wrap_content"
  *         android:text="@string/button_label_team"/&gt;
- *     &lt;com.google.android.material.button.MaterialButton
+ *     &lt;com.bottombar.navigation.material.button.MaterialButton
  *         style="?attr/materialButtonOutlinedStyle"
  *         android:layout_width="wrap_content"
  *         android:layout_height="wrap_content"
  *         android:text="@string/button_label_everyone"/&gt;
- *     &lt;com.google.android.material.button.MaterialButton
+ *     &lt;com.bottombar.navigation.material.button.MaterialButton
  *         style="?attr/materialButtonOutlinedStyle"
  *         android:layout_width="wrap_content"
  *         android:layout_height="wrap_content"
  *         android:text="@string/button_label_custom"/&gt;
  *
- * &lt;/com.google.android.material.button.MaterialButtonToggleGroup&gt;
+ * &lt;/com.bottombar.navigation.material.button.MaterialButtonToggleGroup&gt;
  * </pre>
  *
  * <p>Buttons can also be added to this view group programmatically via the {@link #addView(View)}

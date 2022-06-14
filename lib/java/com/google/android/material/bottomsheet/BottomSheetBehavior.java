@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomsheet;
+package com.bottombar.navigation.material.bottomsheet;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static java.lang.Math.max;
@@ -63,11 +63,11 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat.Accessibilit
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 import androidx.customview.view.AbsSavedState;
 import androidx.customview.widget.ViewDragHelper;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.internal.ViewUtils.RelativePadding;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.internal.ViewUtils.RelativePadding;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
@@ -883,7 +883,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * be adjusted as expected.
    *
    * @param maxWidth The maximum width in pixels to be set
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_android_maxWidth
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_android_maxWidth
    * @see #getMaxWidth()
    */
   public void setMaxWidth(@Px int maxWidth) {
@@ -893,7 +893,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
   /**
    * Returns the bottom sheet's maximum width, or -1 if no maximum width is set.
    *
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_android_maxWidth
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_android_maxWidth
    * @see #setMaxWidth(int)
    */
   @Px
@@ -906,7 +906,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * BottomSheetDialog#show()} in order for the height to be adjusted as expected.
    *
    * @param maxHeight The maximum height in pixels to be set
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_android_maxHeight
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_android_maxHeight
    * @see #getMaxHeight()
    */
   public void setMaxHeight(@Px int maxHeight) {
@@ -916,7 +916,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
   /**
    * Returns the bottom sheet's maximum height, or -1 if no maximum height is set.
    *
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_android_maxHeight
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_android_maxHeight
    * @see #setMaxHeight(int)
    */
   @Px
@@ -930,7 +930,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * @param peekHeight The height of the collapsed bottom sheet in pixels, or {@link
    *     #PEEK_HEIGHT_AUTO} to configure the sheet to peek automatically at 16:9 ratio keyline.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
    */
   public void setPeekHeight(int peekHeight) {
     setPeekHeight(peekHeight, false);
@@ -944,7 +944,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    *     #PEEK_HEIGHT_AUTO} to configure the sheet to peek automatically at 16:9 ratio keyline.
    * @param animate Whether to animate between the old height and the new height.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
    */
   public final void setPeekHeight(int peekHeight, boolean animate) {
     boolean layout = false;
@@ -987,7 +987,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * @return The height of the collapsed bottom sheet in pixels, or {@link #PEEK_HEIGHT_AUTO} if the
    *     sheet is configured to peek automatically at 16:9 ratio keyline
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_peekHeight
    */
   public int getPeekHeight() {
     return peekHeightAuto ? PEEK_HEIGHT_AUTO : peekHeight;
@@ -1001,7 +1001,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    *
    * @param ratio a float between 0 and 1, representing the {@link #STATE_HALF_EXPANDED} ratio.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_halfExpandedRatio
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_halfExpandedRatio
    */
   public void setHalfExpandedRatio(
       @FloatRange(from = 0.0f, to = 1.0f, fromInclusive = false, toInclusive = false) float ratio) {
@@ -1021,7 +1021,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * Gets the ratio for the height of the BottomSheet in the {@link #STATE_HALF_EXPANDED} state.
    *
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_halfExpandedRatio
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_halfExpandedRatio
    */
   @FloatRange(from = 0.0f, to = 1.0f)
   public float getHalfExpandedRatio() {
@@ -1036,7 +1036,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * @param offset an integer value greater than equal to 0, representing the {@link
    *     #STATE_EXPANDED} offset. Value must not exceed the offset in the half expanded state.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_expandedOffset
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_expandedOffset
    */
   public void setExpandedOffset(int offset) {
     if (offset < 0) {
@@ -1050,7 +1050,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * pick the offset depending on the height of the content.
    *
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_expandedOffset
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_expandedOffset
    */
   public int getExpandedOffset() {
     return fitToContents
@@ -1062,7 +1062,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * Sets whether this bottom sheet can hide.
    *
    * @param hideable {@code true} to make this bottom sheet hideable.
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_hideable
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_hideable
    */
   public void setHideable(boolean hideable) {
     if (this.hideable != hideable) {
@@ -1079,7 +1079,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * Gets whether this bottom sheet can hide when it is swiped down.
    *
    * @return {@code true} if this bottom sheet can hide.
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_hideable
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_hideable
    */
   public boolean isHideable() {
     return hideable;
@@ -1091,7 +1091,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    *
    * @param skipCollapsed True if the bottom sheet should skip the collapsed state.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_skipCollapsed
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_skipCollapsed
    */
   public void setSkipCollapsed(boolean skipCollapsed) {
     this.skipCollapsed = skipCollapsed;
@@ -1103,7 +1103,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    *
    * @return Whether the bottom sheet should skip the collapsed state.
    * @attr ref
-   *     com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_skipCollapsed
+   *     com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_skipCollapsed
    */
   public boolean getSkipCollapsed() {
     return skipCollapsed;
@@ -1114,7 +1114,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * dragging, an app will require to implement a custom way to expand/collapse the bottom sheet
    *
    * @param draggable {@code false} to prevent dragging the sheet to collapse and expand
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_draggable
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_draggable
    */
   public void setDraggable(boolean draggable) {
     this.draggable = draggable;
@@ -1130,7 +1130,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * @param flags bitwise int of {@link #SAVE_PEEK_HEIGHT}, {@link #SAVE_FIT_TO_CONTENTS}, {@link
    *     #SAVE_HIDEABLE}, {@link #SAVE_SKIP_COLLAPSED}, {@link #SAVE_ALL} and {@link #SAVE_NONE}.
    * @see #getSaveFlags()
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_saveFlags
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_saveFlags
    */
   public void setSaveFlags(@SaveFlags int flags) {
     this.saveFlags = flags;
@@ -1139,7 +1139,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
    * Returns the save flags.
    *
    * @see #setSaveFlags(int)
-   * @attr ref com.google.android.material.R.styleable#BottomSheetBehavior_Layout_behavior_saveFlags
+   * @attr ref com.ssos.support.R.styleable#BottomSheetBehavior_Layout_behavior_saveFlags
    */
   @SaveFlags
   public int getSaveFlags() {

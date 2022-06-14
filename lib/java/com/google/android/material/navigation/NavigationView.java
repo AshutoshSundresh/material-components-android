@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.google.android.material.navigation;
+package com.bottombar.navigation.material.navigation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.app.Activity;
 import android.content.Context;
@@ -67,17 +67,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.customview.view.AbsSavedState;
 import androidx.drawerlayout.widget.DrawerLayout;
-import com.google.android.material.internal.ContextUtils;
-import com.google.android.material.internal.NavigationMenu;
-import com.google.android.material.internal.NavigationMenuPresenter;
-import com.google.android.material.internal.ScrimInsetsFrameLayout;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.ripple.RippleUtils;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearancePathProvider;
+import com.bottombar.navigation.material.internal.ContextUtils;
+import com.bottombar.navigation.material.internal.NavigationMenu;
+import com.bottombar.navigation.material.internal.NavigationMenuPresenter;
+import com.bottombar.navigation.material.internal.ScrimInsetsFrameLayout;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.ripple.RippleUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearancePathProvider;
 
 /**
  * Represents a standard navigation menu for application. The menu contents can be populated by a
@@ -96,7 +96,7 @@ import com.google.android.material.shape.ShapeAppearancePathProvider;
  *
  *     &lt;!-- Your contents --&gt;
  *
- *     &lt;com.google.android.material.navigation.NavigationView
+ *     &lt;com.bottombar.navigation.material.navigation.NavigationView
  *         android:id="@+id/navigation"
  *         android:layout_width="wrap_content"
  *         android:layout_height="match_parent"
@@ -347,7 +347,7 @@ public class NavigationView extends ScrimInsetsFrameLayout {
    * Determine whether this view is placed inside a drawer layout and should have its exposed
    * corners shaped according to the <code>app:drawerLayoutCornerSize</code> attribute.
    *
-   * @attr ref com.google.android.material.R.styleable#NavigationView_drawerLayoutCornerSize
+   * @attr ref com.ssos.support.R.styleable#NavigationView_drawerLayoutCornerSize
    */
   private void maybeUpdateCornerSizeForDrawerLayout(@Px int width, @Px int height) {
     if (getParent() instanceof DrawerLayout

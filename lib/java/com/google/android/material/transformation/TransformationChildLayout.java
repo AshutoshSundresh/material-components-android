@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.circularreveal.CircularRevealFrameLayout;
-import com.google.android.material.expandable.ExpandableWidget;
+import com.bottombar.navigation.material.circularreveal.CircularRevealFrameLayout;
+import com.bottombar.navigation.material.expandable.ExpandableWidget;
 
 /**
  * Wrapper layout for views that can react to an {@link ExpandableWidget}'s {@link
@@ -32,7 +32,7 @@ import com.google.android.material.expandable.ExpandableWidget;
  * <p>If this layout needs to support shadows on pre-L devices, use {@link TransformationChildCard}
  * instead.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated

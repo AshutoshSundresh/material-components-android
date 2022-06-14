@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.appbar;
+package com.bottombar.navigation.material.appbar;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 import static java.lang.Math.max;
 
 import android.content.Context;
@@ -41,10 +41,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.internal.ToolbarUtils;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.MaterialShapeUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.internal.ToolbarUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.MaterialShapeUtils;
 
 /**
  * {@code MaterialToolbar} is a {@link Toolbar} that implements certain Material features, such as
@@ -58,11 +58,11 @@ import com.google.android.material.shape.MaterialShapeUtils;
  * case, when using the {@code Widget.MaterialComponents.Toolbar.Surface} style with elevation.
  *
  * <p>To get started with the {@code MaterialToolbar} component, use {@code
- * com.google.android.material.appbar.MaterialToolbar} in your layout XML instead of {@code
+ * com.bottombar.navigation.material.appbar.MaterialToolbar} in your layout XML instead of {@code
  * androidx.appcompat.widget.Toolbar} or {@code Toolbar}. E.g.,:
  *
  * <pre>
- * &lt;com.google.android.material.appbar.MaterialToolbar
+ * &lt;com.bottombar.navigation.material.appbar.MaterialToolbar
  *         android:layout_width=&quot;match_parent&quot;
  *         android:layout_height=&quot;wrap_content&quot;/&gt;
  * </pre>

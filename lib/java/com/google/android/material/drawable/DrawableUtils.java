@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.drawable;
+package com.bottombar.navigation.material.drawable;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;

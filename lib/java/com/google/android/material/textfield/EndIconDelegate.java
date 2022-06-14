@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
 import android.content.Context;
 import android.text.Editable;
@@ -29,8 +29,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.core.view.accessibility.AccessibilityManagerCompat.TouchExplorationStateChangeListener;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.textfield.TextInputLayout.BoxBackgroundMode;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.textfield.TextInputLayout.BoxBackgroundMode;
 
 /**
  * End icon delegate abstract class.

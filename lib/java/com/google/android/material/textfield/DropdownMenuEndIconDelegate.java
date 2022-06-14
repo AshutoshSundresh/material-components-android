@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static android.view.accessibility.AccessibilityEvent.TYPE_VIEW_CLICKED;
 import static androidx.core.view.ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_NO;
 import static androidx.core.view.ViewCompat.IMPORTANT_FOR_ACCESSIBILITY_YES;
-import static com.google.android.material.textfield.EditTextUtils.isEditable;
+import static com.bottombar.navigation.material.textfield.EditTextUtils.isEditable;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -46,8 +46,8 @@ import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityManagerCompat.TouchExplorationStateChangeListener;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.textfield.TextInputLayout.BoxBackgroundMode;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.textfield.TextInputLayout.BoxBackgroundMode;
 
 /** Default initialization of the exposed dropdown menu {@link TextInputLayout.EndIconMode}. */
 class DropdownMenuEndIconDelegate extends EndIconDelegate {

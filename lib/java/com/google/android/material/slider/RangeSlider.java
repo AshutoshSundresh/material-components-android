@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.slider;
+package com.bottombar.navigation.material.slider;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -29,9 +29,9 @@ import androidx.annotation.Dimension;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.slider.RangeSlider.OnChangeListener;
-import com.google.android.material.slider.RangeSlider.OnSliderTouchListener;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.slider.RangeSlider.OnChangeListener;
+import com.bottombar.navigation.material.slider.RangeSlider.OnSliderTouchListener;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,8 +47,8 @@ import java.util.List;
  * <p>{@code app:minSeparation}: <b>Optional.</b> The minimum distance between two thumbs that would
  * otherwise overlap.
  *
- * @attr ref com.google.android.material.R.styleable#RangeSlider_values
- * @attr ref com.google.android.material.R.styleable#RangeSlider_minSeparation
+ * @attr ref com.ssos.support.R.styleable#RangeSlider_values
+ * @attr ref com.ssos.support.R.styleable#RangeSlider_minSeparation
  */
 public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSliderTouchListener> {
 
@@ -169,7 +169,7 @@ public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSli
    * Returns the minimum separation between two thumbs
    *
    * @see #setMinSeparation(float)
-   * @attr ref com.google.android.material.R.styleable#RangeSlider_minSeparation
+   * @attr ref com.ssos.support.R.styleable#RangeSlider_minSeparation
    */
   @Override
   public float getMinSeparation() {
@@ -180,7 +180,7 @@ public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSli
    * Sets the minimum separation between two thumbs
    *
    * @see #getMinSeparation()
-   * @attr ref com.google.android.material.R.styleable#RangeSlider_minSeparation
+   * @attr ref com.ssos.support.R.styleable#RangeSlider_minSeparation
    * @throws IllegalStateException if used in conjunction with {@link #setStepSize(float)}, use
    *     {@link #setMinSeparationValue(float)} instead.
    */
@@ -196,7 +196,7 @@ public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSli
    *
    * @see #getMinSeparation()
    * @see #setMinSeparation(float)
-   * @attr ref com.google.android.material.R.styleable#RangeSlider_minSeparation
+   * @attr ref com.ssos.support.R.styleable#RangeSlider_minSeparation
    */
   public void setMinSeparationValue(float minSeparation) {
     this.minSeparation = minSeparation;

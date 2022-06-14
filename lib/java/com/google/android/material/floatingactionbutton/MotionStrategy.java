@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.floatingactionbutton;
+package com.bottombar.navigation.material.floatingactionbutton;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -22,8 +22,8 @@ import android.animation.AnimatorSet;
 import androidx.annotation.AnimatorRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.google.android.material.animation.MotionSpec;
-import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton.OnChangedCallback;
+import com.bottombar.navigation.material.animation.MotionSpec;
+import com.bottombar.navigation.material.floatingactionbutton.ExtendedFloatingActionButton.OnChangedCallback;
 import java.util.List;
 
 /**

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.transition.platform.TransitionUtils.getRelativeBoundsRect;
+import static com.bottombar.navigation.material.transition.platform.TransitionUtils.getRelativeBoundsRect;
 
 import android.app.Activity;
 import android.app.SharedElementCallback;
@@ -39,9 +39,9 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.graphics.BlendModeColorFilterCompat;
 import androidx.core.graphics.BlendModeCompat;
-import com.google.android.material.internal.ContextUtils;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.internal.ContextUtils;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
 import java.lang.ref.WeakReference;
 import java.util.List;
 import java.util.Map;

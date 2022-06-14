@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.animation;
+package com.bottombar.navigation.material.animation;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.util.Property;
 import android.view.View;

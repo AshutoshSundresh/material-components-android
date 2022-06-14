@@ -14,11 +14,11 @@
  *  limitations under the License.
  */
 
-package com.google.android.material.imageview;
+package com.bottombar.navigation.material.imageview;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -48,11 +48,11 @@ import androidx.annotation.Dimension;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import com.google.android.material.resources.MaterialResources;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearancePathProvider;
-import com.google.android.material.shape.Shapeable;
+import com.bottombar.navigation.material.resources.MaterialResources;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearancePathProvider;
+import com.bottombar.navigation.material.shape.Shapeable;
 
 /** An ImageView that draws the bitmap with the provided Shape. */
 public class ShapeableImageView extends AppCompatImageView implements Shapeable {
@@ -507,7 +507,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
    * set for a stroke to be drawn.
    *
    * @param strokeColorResourceId Color resource to use for the stroke.
-   * @attr ref com.google.android.material.R.styleable#ShapeableImageView_strokeColor
+   * @attr ref com.ssos.support.R.styleable#ShapeableImageView_strokeColor
    * @see #setStrokeColor(ColorStateList)
    * @see #getStrokeColor()
    */
@@ -518,7 +518,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
   /**
    * Returns the stroke color for this ImageView.
    *
-   * @attr ref com.google.android.material.R.styleable#ShapeableImageView_strokeColor
+   * @attr ref com.ssos.support.R.styleable#ShapeableImageView_strokeColor
    * @see #setStrokeColor(ColorStateList)
    * @see #setStrokeColorResource(int)
    */
@@ -532,7 +532,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
    * stroke to be drawn.
    *
    * @param strokeWidth Stroke width for this ImageView.
-   * @attr ref com.google.android.material.R.styleable#ShapeableImageView_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#ShapeableImageView_strokeWidth
    * @see #setStrokeWidthResource(int)
    * @see #getStrokeWidth()
    */
@@ -548,7 +548,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
    * must be set for a stroke to be drawn.
    *
    * @param strokeWidthResourceId Stroke width dimension resource for this ImageView.
-   * @attr ref com.google.android.material.R.styleable#ShapeableImageView_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#ShapeableImageView_strokeWidth
    * @see #setStrokeWidth(float)
    * @see #getStrokeWidth()
    */
@@ -560,7 +560,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
    * Gets the stroke width for this ImageView.
    *
    * @return Stroke width for this ImageView.
-   * @attr ref com.google.android.material.R.styleable#ShapeableImageView_strokeWidth
+   * @attr ref com.ssos.support.R.styleable#ShapeableImageView_strokeWidth
    * @see #setStrokeWidth(float)
    * @see #setStrokeWidthResource(int)
    */

@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.textfield.IconHelper.applyIconTint;
-import static com.google.android.material.textfield.IconHelper.refreshIconDrawableState;
-import static com.google.android.material.textfield.IconHelper.setCompatRippleBackgroundIfNeeded;
-import static com.google.android.material.textfield.IconHelper.setIconOnClickListener;
-import static com.google.android.material.textfield.IconHelper.setIconOnLongClickListener;
+import static com.bottombar.navigation.material.textfield.IconHelper.applyIconTint;
+import static com.bottombar.navigation.material.textfield.IconHelper.refreshIconDrawableState;
+import static com.bottombar.navigation.material.textfield.IconHelper.setCompatRippleBackgroundIfNeeded;
+import static com.bottombar.navigation.material.textfield.IconHelper.setIconOnClickListener;
+import static com.bottombar.navigation.material.textfield.IconHelper.setIconOnLongClickListener;
 
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
@@ -46,9 +46,9 @@ import androidx.core.view.MarginLayoutParamsCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.widget.TextViewCompat;
-import com.google.android.material.internal.CheckableImageButton;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.internal.CheckableImageButton;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.resources.MaterialResources;
 
 /**
  * A compound layout that includes views that will be shown at the start of {@link TextInputLayout}

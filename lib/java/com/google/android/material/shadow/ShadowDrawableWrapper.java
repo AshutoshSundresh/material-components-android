@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.shadow;
+package com.bottombar.navigation.material.shadow;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -37,7 +37,7 @@ import androidx.core.content.ContextCompat;
  * A {@link android.graphics.drawable.Drawable} which wraps another drawable and draws a shadow
  * around it.
  *
- * @deprecated Use {@link com.google.android.material.shape.MaterialShapeDrawable} instead.
+ * @deprecated Use {@link com.bottombar.navigation.material.shape.MaterialShapeDrawable} instead.
  */
 @Deprecated
 public class ShadowDrawableWrapper extends DrawableWrapper {

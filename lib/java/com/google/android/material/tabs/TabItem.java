@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.google.android.material.tabs;
+package com.bottombar.navigation.material.tabs;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -30,9 +30,9 @@ import android.view.View;
  * of a tab items's text, icon and custom layout. See TabLayout for more information on how to use
  * it.
  *
- * @attr ref com.google.android.material.R.styleable#TabItem_android_icon
- * @attr ref com.google.android.material.R.styleable#TabItem_android_text
- * @attr ref com.google.android.material.R.styleable#TabItem_android_layout
+ * @attr ref com.ssos.support.R.styleable#TabItem_android_icon
+ * @attr ref com.ssos.support.R.styleable#TabItem_android_text
+ * @attr ref com.ssos.support.R.styleable#TabItem_android_layout
  * @see TabLayout
  */
 //TODO(b/76413401): make class final after the widget migration

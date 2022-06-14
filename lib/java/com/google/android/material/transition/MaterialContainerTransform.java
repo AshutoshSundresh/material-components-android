@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package com.google.android.material.transition;
+package com.bottombar.navigation.material.transition;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
 import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP;
 import static androidx.core.util.Preconditions.checkNotNull;
-import static com.google.android.material.transition.TransitionUtils.calculateArea;
-import static com.google.android.material.transition.TransitionUtils.convertToRelativeCornerSizes;
-import static com.google.android.material.transition.TransitionUtils.createColorShader;
-import static com.google.android.material.transition.TransitionUtils.defaultIfNull;
-import static com.google.android.material.transition.TransitionUtils.findAncestorById;
-import static com.google.android.material.transition.TransitionUtils.findDescendantOrAncestorById;
-import static com.google.android.material.transition.TransitionUtils.getLocationOnScreen;
-import static com.google.android.material.transition.TransitionUtils.getRelativeBounds;
-import static com.google.android.material.transition.TransitionUtils.lerp;
-import static com.google.android.material.transition.TransitionUtils.transform;
+import static com.bottombar.navigation.material.transition.TransitionUtils.calculateArea;
+import static com.bottombar.navigation.material.transition.TransitionUtils.convertToRelativeCornerSizes;
+import static com.bottombar.navigation.material.transition.TransitionUtils.createColorShader;
+import static com.bottombar.navigation.material.transition.TransitionUtils.defaultIfNull;
+import static com.bottombar.navigation.material.transition.TransitionUtils.findAncestorById;
+import static com.bottombar.navigation.material.transition.TransitionUtils.findDescendantOrAncestorById;
+import static com.bottombar.navigation.material.transition.TransitionUtils.getLocationOnScreen;
+import static com.bottombar.navigation.material.transition.TransitionUtils.getRelativeBounds;
+import static com.bottombar.navigation.material.transition.TransitionUtils.lerp;
+import static com.bottombar.navigation.material.transition.TransitionUtils.transform;
 
 import android.animation.Animator;
 import android.animation.TimeInterpolator;
@@ -69,12 +69,12 @@ import androidx.transition.ArcMotion;
 import androidx.transition.PathMotion;
 import androidx.transition.Transition;
 import androidx.transition.TransitionValues;
-import com.google.android.material.animation.AnimationUtils;
-import com.google.android.material.internal.ViewUtils;
-import com.google.android.material.shape.MaterialShapeDrawable;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.Shapeable;
-import com.google.android.material.transition.TransitionUtils.CanvasOperation;
+import com.bottombar.navigation.material.animation.AnimationUtils;
+import com.bottombar.navigation.material.internal.ViewUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.Shapeable;
+import com.bottombar.navigation.material.transition.TransitionUtils.CanvasOperation;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 

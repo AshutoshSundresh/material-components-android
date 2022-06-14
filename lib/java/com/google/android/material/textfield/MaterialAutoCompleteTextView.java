@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.textfield;
+package com.bottombar.navigation.material.textfield;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.theme.overlay.MaterialThemeOverlay.wrap;
+import static com.bottombar.navigation.material.theme.overlay.MaterialThemeOverlay.wrap;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -52,10 +52,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.color.MaterialColors;
-import com.google.android.material.internal.ManufacturerUtils;
-import com.google.android.material.internal.ThemeEnforcement;
-import com.google.android.material.resources.MaterialResources;
+import com.bottombar.navigation.material.color.MaterialColors;
+import com.bottombar.navigation.material.internal.ManufacturerUtils;
+import com.bottombar.navigation.material.internal.ThemeEnforcement;
+import com.bottombar.navigation.material.resources.MaterialResources;
 
 /**
  * A special sub-class of {@link android.widget.AutoCompleteTextView} that is auto-inflated so that
@@ -231,7 +231,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
    * @see #getSimpleItemSelectedColor()
    * @see #setSimpleItems(int)
    * @attr ref
-   *     com.google.android.material.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedColor
+   *     com.ssos.support.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedColor
    */
   public void setSimpleItemSelectedColor(int simpleItemSelectedColor) {
     this.simpleItemSelectedColor = simpleItemSelectedColor;
@@ -245,7 +245,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
    *
    * @see #setSimpleItemSelectedColor(int)
    * @attr ref
-   *     com.google.android.material.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedColor
+   *     com.ssos.support.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedColor
    */
   public int getSimpleItemSelectedColor() {
     return simpleItemSelectedColor;
@@ -259,7 +259,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
    * @see #getSimpleItemSelectedRippleColor()
    * @see #setSimpleItems(int)
    * @attr ref
-   *     com.google.android.material.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedRippleColor
+   *     com.ssos.support.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedRippleColor
    */
   public void setSimpleItemSelectedRippleColor(
       @Nullable ColorStateList simpleItemSelectedRippleColor) {
@@ -274,7 +274,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
    *
    * @see #setSimpleItemSelectedRippleColor(ColorStateList)
    * @attr ref
-   *     com.google.android.material.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedRippleColor
+   *     com.ssos.support.R.styleable#MaterialAutoCompleteTextView_simpleItemSelectedRippleColor
    */
   @Nullable
   public ColorStateList getSimpleItemSelectedRippleColor() {
@@ -285,7 +285,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
    * Returns the elevation of the dropdown popup.
    *
    * @attr ref
-   *     com.google.android.material.R.styleable#MaterialAutoCompleteTextView_android_popupElevation
+   *     com.ssos.support.R.styleable#MaterialAutoCompleteTextView_android_popupElevation
    */
   public float getPopupElevation() {
     return popupElevation;

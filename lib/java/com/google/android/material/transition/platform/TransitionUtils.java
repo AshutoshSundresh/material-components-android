@@ -18,7 +18,7 @@
  * NOTE: THIS CLASS IS AUTO-GENERATED FROM THE EQUIVALENT CLASS IN THE PARENT TRANSITION PACKAGE.
  * IT SHOULD NOT BE EDITED DIRECTLY.
  */
-package com.google.android.material.transition.platform;
+package com.bottombar.navigation.material.transition.platform;
 
 import android.animation.TimeInterpolator;
 import android.content.Context;
@@ -43,12 +43,12 @@ import android.transition.PathMotion;
 import android.transition.PatternPathMotion;
 import android.transition.Transition;
 import android.transition.TransitionSet;
-import com.google.android.material.motion.MotionUtils;
-import com.google.android.material.shape.AbsoluteCornerSize;
-import com.google.android.material.shape.CornerSize;
-import com.google.android.material.shape.RelativeCornerSize;
-import com.google.android.material.shape.ShapeAppearanceModel;
-import com.google.android.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
+import com.bottombar.navigation.material.motion.MotionUtils;
+import com.bottombar.navigation.material.shape.AbsoluteCornerSize;
+import com.bottombar.navigation.material.shape.CornerSize;
+import com.bottombar.navigation.material.shape.RelativeCornerSize;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel;
+import com.bottombar.navigation.material.shape.ShapeAppearanceModel.CornerSizeUnaryOperator;
 
 @androidx.annotation.RequiresApi(android.os.Build.VERSION_CODES.LOLLIPOP)
 class TransitionUtils {

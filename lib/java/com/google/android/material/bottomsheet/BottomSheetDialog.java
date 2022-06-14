@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomsheet;
+package com.bottombar.navigation.material.bottomsheet;
 
-import com.google.android.material.R;
+import com.ssos.support.R;
 
-import static com.google.android.material.color.MaterialColors.isColorLight;
+import static com.bottombar.navigation.material.color.MaterialColors.isColorLight;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -49,8 +49,8 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import com.google.android.material.internal.EdgeToEdgeUtils;
-import com.google.android.material.shape.MaterialShapeDrawable;
+import com.bottombar.navigation.material.internal.EdgeToEdgeUtils;
+import com.bottombar.navigation.material.shape.MaterialShapeDrawable;
 
 /**
  * Base class for {@link android.app.Dialog}s styled as a bottom sheet.

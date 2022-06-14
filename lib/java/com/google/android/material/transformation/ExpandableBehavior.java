@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.transformation;
+package com.bottombar.navigation.material.transformation;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -27,7 +27,7 @@ import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior;
 import androidx.core.view.ViewCompat;
-import com.google.android.material.expandable.ExpandableWidget;
+import com.bottombar.navigation.material.expandable.ExpandableWidget;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.List;
@@ -36,7 +36,7 @@ import java.util.List;
  * Base Behavior for views that can react to an {@link ExpandableWidget}'s {@link
  * ExpandableWidget#setExpanded(boolean)} state changes.
  *
- * @deprecated Use {@link com.google.android.material.transition.MaterialContainerTransform}
+ * @deprecated Use {@link com.bottombar.navigation.material.transition.MaterialContainerTransform}
  *     instead.
  */
 @Deprecated
@@ -55,7 +55,7 @@ public abstract class ExpandableBehavior extends Behavior<View> {
 
   /**
    * The current expanded state of this behavior. This state follows the expanded state of the
-   * {@link com.google.android.material.expandable.ExpandableWidget} dependency, and is updated in
+   * {@link com.bottombar.navigation.material.expandable.ExpandableWidget} dependency, and is updated in
    * {@link #onLayoutChild(CoordinatorLayout, View, int)} and {@link
    * #onDependentViewChanged(CoordinatorLayout, View, View)}.
    *
@@ -75,16 +75,16 @@ public abstract class ExpandableBehavior extends Behavior<View> {
 
   /**
    * Reacts to a change in expanded state. This callback is guaranteed to be called only once even
-   * if {@link com.google.android.material.expandable.ExpandableWidget#setExpanded(boolean)} is
+   * if {@link com.bottombar.navigation.material.expandable.ExpandableWidget#setExpanded(boolean)} is
    * called multiple times with the same value. Upon configuration change, this callback is called
    * with {@code animated} set to false.
    *
-   * @param dependency the {@link com.google.android.material.expandable.ExpandableWidget}
+   * @param dependency the {@link com.bottombar.navigation.material.expandable.ExpandableWidget}
    *     dependency containing the new expanded state.
    * @param child the view that should react to the change in expanded state.
    * @param expanded the new expanded state.
    * @param animated true if {@link
-   *     com.google.android.material.expandable.ExpandableWidget#setExpanded(boolean)} was called,
+   *     com.bottombar.navigation.material.expandable.ExpandableWidget#setExpanded(boolean)} was called,
    *     false if restoring from a configuration change.
    * @return true if the Behavior changed the child view's size or position, false otherwise.
    */

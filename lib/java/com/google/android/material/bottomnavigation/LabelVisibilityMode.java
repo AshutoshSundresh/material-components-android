@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.bottomnavigation;
+package com.bottombar.navigation.material.bottomnavigation;
 
 import androidx.annotation.IntDef;
 import java.lang.annotation.Retention;
@@ -34,7 +34,7 @@ import java.lang.annotation.RetentionPolicy;
  * items or more.
  *
  * @deprecated Please use {@link
- *     com.google.android.material.navigation.NavigationBarView.LabelVisibility instead}.
+ *     com.bottombar.navigation.material.navigation.NavigationBarView.LabelVisibility instead}.
  */
 @IntDef({
   LabelVisibilityMode.LABEL_VISIBILITY_AUTO,

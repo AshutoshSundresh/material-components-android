@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.material.timepicker;
+package com.bottombar.navigation.material.timepicker;
 
 import androidx.annotation.IntDef;
 import java.lang.annotation.Retention;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.google.android.material.datepicker;
+package com.bottombar.navigation.material.datepicker;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -178,7 +178,7 @@ final class Month implements Comparable<Month>, Parcelable {
   }
 
   /**
-   * Returns a {@link com.google.android.material.datepicker.Month} {@code months} months after this
+   * Returns a {@link com.bottombar.navigation.material.datepicker.Month} {@code months} months after this
    * instance.
    */
   @NonNull
