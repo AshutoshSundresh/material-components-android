@@ -19,7 +19,7 @@ package com.bottombar.navigation.material.bottomsheet;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatDialogFragment;
+import com.ssos.support.preferences.AppCompatDialogFragment;
 import android.view.View;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
